@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:cache="http://www.springframework.org/schema/cache"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/cache http://www.springframework.org/schema/cache/spring-cache.xsd">
+
+    <!-- =====================需要在server项目配置 START ====================== -->
+    <!--<bean id="cacheRedisSentinelConfiguration"-->
+          <!--class="org.springframework.data.redis.connection.RedisSentinelConfiguration">-->
+        <!--<property name="master">-->
+            <!--<bean class="org.springframework.data.redis.connection.RedisNode">-->
+                <!--<property name="name" value="mymaster"/>-->
+            <!--</bean>-->
+        <!--</property>-->
+        <!--<property name="sentinels">-->
+            <!--<set>-->
+                <!--<bean class="org.springframework.data.redis.connection.RedisNode">-->
+                    <!--<constructor-arg name="host" value="${cache.redis.sentinels.host1}"/>-->
+                    <!--<constructor-arg name="port" value="${cache.redis.sentinels.port1}"/>-->
+                <!--</bean>-->
+                <!--<bean class="org.springframework.data.redis.connection.RedisNode">-->
+                    <!--<constructor-arg name="host" value="${cache.redis.sentinels.host2}"/>-->
+                    <!--<constructor-arg name="port" value="${cache.redis.sentinels.port2}"/>-->
+                <!--</bean>-->
+                <!--<bean class="org.springframework.data.redis.connection.RedisNode">-->
+                    <!--<constructor-arg name="host" value="${cache.redis.sentinels.host3}"/>-->
+                    <!--<constructor-arg name="port" value="${cache.redis.sentinels.port3}"/>-->
+                <!--</bean>-->
+            <!--</set>-->
+        <!--</property>-->
+    <!--</bean>-->
+
+    <!--database根据自己的业务线来设定,几号库-->
+    <!--<bean id="cacheJedisConnectionFactory"-->
+          <!--class="org.springframework.data.redis.connection.jedis.JedisConnectionFactory"-->
+          <!--p:usePool="true" p:database="8" p:poolConfig-ref="jedisPoolConfig">-->
+        <!--<constructor-arg name="sentinelConfig" ref="cacheRedisSentinelConfiguration"/>-->
+    <!--</bean>-->
+    <!--<bean id="jedisPoolConfig" class="redis.clients.jedis.JedisPoolConfig">-->
+        <!--<property name="maxTotal" value="60"/>-->
+        <!--<property name="maxIdle" value="40"/>-->
+        <!--<property name="minIdle" value="20"/>-->
+    <!--</bean>-->
+
+    <!-- =====================需要在server项目配置 END ====================== -->
+
+    <!--&lt;!&ndash;此处禁用默认value序列化 所以在使用时全部使用protoStuff序列化的字节数组&ndash;&gt;-->
+    <!--<bean id="cacheRedisTemplate" class="org.springframework.data.redis.core.RedisTemplate"-->
+          <!--p:connectionFactory-ref="cacheJedisConnectionFactory" p:enableDefaultSerializer="true">-->
+        <!--<property name="keySerializer">-->
+            <!--<bean class="org.springframework.data.redis.serializer.StringRedisSerializer"/>-->
+        <!--</property>-->
+        <!--<property name="hashKeySerializer">-->
+            <!--<bean class="org.springframework.data.redis.serializer.StringRedisSerializer"/>-->
+        <!--</property>-->
+    <!--</bean>-->
+    <!--&lt;!&ndash;缓存时长根据自己的业务需求来设定&ndash;&gt;-->
+    <!--<bean id="cacheManager" class="org.springframework.data.redis.cache.RedisCacheManager">-->
+        <!--<constructor-arg ref="cacheRedisTemplate"/>-->
+        <!--<property name="defaultExpiration" value="300"/>-->
+    <!--</bean>-->
+
+    <!--<bean id="stringRedisSerializer" class="org.springframework.data.redis.serializer.StringRedisSerializer"/>-->
+
+
+    <!-- 上面的配置在 RedisBeanFactoryAwareBean 代码中实现-->
+    <bean id="redisBeanFactoryAwareBean" class="com.greatbee.core.config.RedisBeanFactoryAwareBean"/>
+
+</beans>

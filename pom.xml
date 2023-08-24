@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.mokelay</groupId>
+    <artifactId>mokelay-apaas-server</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0.21</version>
+    <modules>
+        <module>mokelay-web</module>
+        <module>ty-server-base</module>
+        <module>ty-lego-api</module>
+        <module>ty-server-db</module>
+        <module>ty-server-core</module>
+        <module>ty-lego-vendor</module>
+    </modules>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+
+        <spring.version>4.2.5.RELEASE</spring.version>
+        <org.springframework.boot>1.3.3.RELEASE</org.springframework.boot>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <org.thymeleaf>2.1.4.RELEASE</org.thymeleaf>
+    </properties>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.3.3.RELEASE</version>
+        <relativePath/>
+    </parent>
+
+<!--    <distributionManagement>-->
+<!--        <repository>-->
+<!--            <id>releases-ty</id>-->
+<!--            <name>Nexus TY</name>-->
+<!--            <url>http://nexus.greatbee.com/repository/maven-releases/-->
+<!--            </url>-->
+<!--        </repository>-->
+<!--    </distributionManagement>-->
+
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <scm>
+        <url>https://github.com/Great-Bee/TY</url>
+        <connection>git@github.com:Great-Bee/TY.git</connection>
+        <developerConnection>http://www.greatbee.com</developerConnection>
+    </scm>
+
+    <developers>
+        <developer>
+            <name>CarlChen</name>
+            <email>carl@greatbee.com.com</email>
+            <url>http://www.greatbee.com</url>
+        </developer>
+    </developers>
+
+
+</project>
