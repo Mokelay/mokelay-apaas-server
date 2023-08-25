@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <title>加载中......</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<!--    <meta http-equiv="Content-Security-Policy" content="script-src 'unsafe-inline' 'unsafe-eval' 'self' ty-cdn.greatbee.com cdn.mokelay.com cdnjs.cloudflare.com cdn.bootcss.com *.baidu.com ">-->
+</head>
+
+<style>
+    @keyframes load{
+        0%{
+            opacity: 1;
+            -webkit-transform: scale(1.2);
+        }
+        100%{
+            opacity: .2;
+            -webkit-transform: scale(.2);
+        }
+    }
+    @-webkit-keyframes load{
+        0%{
+            opacity: 1;
+            -webkit-transform: scale(1.2);
+        }
+        100%{
+            opacity: .2;
+            -webkit-transform: scale(.2);
+        }
+    }
+    .bb_loading{
+        width: 150px;
+        height: 5px;
+        margin: 0 auto;
+        text-align: center;
+        box-sizing: content-box;
+        padding-bottom: 1rem;
+    }
+    .bb_loading span{
+        display: inline-block;
+        width: 15px;
+        height: 100%;
+        margin-right: 5px;
+        background: lightgreen;
+        background:#33BEFE;
+        -webkit-animation: load 1.04s ease infinite;
+        animation: load 1.04s ease infinite;
+    }
+    .bb_loading span:last-child{
+        margin-right: 0px;
+    }
+
+    .bb_loading span:nth-child(1){
+        -webkit-animation-delay:0.13s;
+        animation-delay:0.13s;
+    }
+    .bb_loading span:nth-child(2){
+        -webkit-animation-delay:0.26s;
+        animation-delay:0.26s;
+    }
+    .bb_loading span:nth-child(3){
+        -webkit-animation-delay:0.39s;
+        animation-delay:0.39s;
+    }
+    .bb_loading span:nth-child(4){
+        -webkit-animation-delay:0.52s;
+        animation-delay:0.52s;
+    }
+    .bb_loading span:nth-child(5){
+        -webkit-animation-delay:0.65s;
+        animation-delay:0.65s;
+    }
+    #home_loading{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-top: -30px;
+        margin-left: -75px;
+    }
+</style>
+
+<body>
+    <div id="app">
+        <router-view name="header"></router-view>
+        <router-view></router-view>
+    </div>
+
+    <div id="home_loading" class="bb_loading ">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+</body>
+
+</html>
+
+<script>
+    var time = window.setInterval(function(){
+        var pageTitle = document.title;
+        if(pageTitle!='加载中......'){
+            window.clearInterval(time);
+            document.getElementById("home_loading").style.display="none";
+        }
+    },300);
+</script>
+
+
+<script type="text/javascript">
+    var Domain_Home = {
+
+        //Mokelay相关
+        "demo.greatbee.com":"/home_ln",
+        "www.mokelay.com":"/home_ln",
+        "m.mokelay.com":"/mokelay_home_page",
+
+    };
+
+    var Domain_SSO = {
+        // Mokelay 相关
+        "www.mokelay.com":"/ty-login",
+    };
+
+    var home = Domain_Home[document.location.hostname];
+    if(home){
+        window._TY_Home = home;
+    }
+
+    var sso = Domain_SSO[document.location.hostname];
+    if(sso){
+        var CurrentDomain = window.location.protocol + "//" + window.location.host;
+        window._TY_SSOURL = CurrentDomain + "/#"+sso;
+    }
+
+    // var TY_Client_Domain = "http://ty-cdn.greatbee.com/ty-client-core/";
+    var TY_Client_Domain = "http://greatbee-ty.oss-cn-hangzhou.aliyuncs.com/mokelay2023/";
+    window.loadTY = function(hash){
+        console.log("load hash=" + hash);
+
+        function addLink(url) {
+            var link = document.createElement("link");
+            link.type = "text/css";
+            link.rel = "stylesheet";
+            link.href = url;
+            var head = document.getElementsByTagName("head")[0];
+            head.appendChild(link);
+        }
+
+        function addScript(url) {
+            var script = document.createElement("script");
+            script.type = "text/javascript";
+            script.src = url;
+            document.body.appendChild(script);
+        }
+
+        if(hash && hash.length>0){
+            addLink(TY_Client_Domain + "main." + hash + ".css");
+            addScript(TY_Client_Domain + "main." + hash + ".js");
+        }else{
+            addLink(TY_Client_Domain + "main.css");
+            addScript(TY_Client_Domain + "main.js");
+        }
+    }
+
+//    window.loadTY("e74f2a2eb280f1a7260d");
+
+    var currentDomain = window.location.protocol+"//"+window.location.host;
+    var iframe = document.createElement("iframe");
+    iframe.src = TY_Client_Domain + "hash.html?time=" + new Date().getTime() + "&domain="+ currentDomain;
+    iframe.id = "ty";
+    iframe.width = 0;
+    iframe.height = 0;
+    iframe.style.display = 'none';
+    document.body.appendChild(iframe);
+</script>
+
+<script>
+    window.onload=function () {
+        document.addEventListener('touchstart',function (event) {
+            if(event.touches.length>1){
+                event.preventDefault();
+            }
+        })
+        var lastTouchEnd=0;
+        document.addEventListener('touchend',function (event) {
+            var now=(new Date()).getTime();
+            if(now-lastTouchEnd<=300){
+                event.preventDefault();
+            }
+            lastTouchEnd=now;
+        },false)
+    }
+</script>
