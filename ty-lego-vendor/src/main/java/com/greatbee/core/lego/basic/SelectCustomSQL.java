@@ -29,6 +29,7 @@ import org.springframework.stereotype.Component;
 
 import java.sql.*;
 import java.util.*;
+import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -91,7 +92,7 @@ public class SelectCustomSQL extends BaseTYJDBCTemplate implements ExceptionCode
             e.printStackTrace();
             throw new LegoException(e.getMessage(),e.getCode());
         }
-        List ifs = input.getInputFields();
+        java.util.List<InputField> ifs = input.getInputFields();
         Map<String,Object> params = LegoUtil.buildTPLParams(input.getRequest(),null,null,input);
         Iterator result = ifs.iterator();
         while(result.hasNext()) {

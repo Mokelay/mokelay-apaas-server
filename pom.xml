@@ -9,12 +9,12 @@
     <packaging>pom</packaging>
     <version>1.0.21</version>
     <modules>
-        <module>mokelay-web</module>
         <module>ty-server-base</module>
         <module>ty-lego-api</module>
         <module>ty-server-db</module>
         <module>ty-server-core</module>
         <module>ty-lego-vendor</module>
+        <module>mokelay-web</module>
     </modules>
 
     <properties>
