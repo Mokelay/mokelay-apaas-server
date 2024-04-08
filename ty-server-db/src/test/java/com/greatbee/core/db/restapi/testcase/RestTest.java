@@ -7,7 +7,7 @@ import com.greatbee.core.bean.oi.Field;
 import com.greatbee.core.bean.oi.OI;
 import com.greatbee.core.bean.view.RestApiResponse;
 import com.greatbee.core.db.restapi.basecase.BaseConnectTest;
-import com.greatbee.core.util.SpringContextUtil;
+import com.greatbee.api.util.SpringContextUtil;
 import org.springframework.context.ApplicationContext;
 
 import java.lang.reflect.InvocationTargetException;

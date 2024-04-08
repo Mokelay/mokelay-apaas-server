@@ -2,10 +2,10 @@ package com.greatbee.core.lego.user;
 
 import com.alibaba.fastjson.JSONObject;
 import com.greatbee.base.util.StringUtil;
-import com.greatbee.core.lego.Input;
-import com.greatbee.core.lego.Lego;
-import com.greatbee.core.lego.LegoException;
-import com.greatbee.core.lego.Output;
+import com.greatbee.api.lego.Input;
+import com.greatbee.api.lego.Lego;
+import com.greatbee.api.lego.LegoException;
+import com.greatbee.api.lego.Output;
 import org.springframework.stereotype.Component;
 
 import javax.servlet.http.HttpServletRequest;

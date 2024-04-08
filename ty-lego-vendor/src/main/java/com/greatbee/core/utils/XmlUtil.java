@@ -1,7 +1,7 @@
 package com.greatbee.core.utils;
 
 import com.greatbee.base.bean.Data;
-import com.greatbee.core.lego.LegoException;
+import com.greatbee.api.lego.LegoException;
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
 import org.dom4j.DocumentHelper;

@@ -1,8 +1,8 @@
 package com.greatbee.core.bean.view;
 
-import com.greatbee.core.bean.server.APILego;
-import com.greatbee.core.bean.server.InputField;
-import com.greatbee.core.bean.server.OutputField;
+import com.greatbee.api.bean.server.APILego;
+import com.greatbee.api.bean.server.InputField;
+import com.greatbee.api.bean.server.OutputField;
 
 import java.util.List;
 

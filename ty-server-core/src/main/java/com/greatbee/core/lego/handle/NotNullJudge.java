@@ -1,10 +1,10 @@
 package com.greatbee.core.lego.handle;
 
 import com.greatbee.core.ExceptionCode;
-import com.greatbee.core.bean.server.OutputField;
-import com.greatbee.core.lego.FieldHandle;
-import com.greatbee.core.lego.LegoException;
-import com.greatbee.core.lego.Output;
+import com.greatbee.api.bean.server.OutputField;
+import com.greatbee.api.lego.FieldHandle;
+import com.greatbee.api.lego.LegoException;
+import com.greatbee.api.lego.Output;
 import com.greatbee.core.lego.util.LegoUtil;
 import org.springframework.stereotype.Component;
 

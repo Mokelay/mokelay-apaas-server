@@ -2,12 +2,12 @@ package com.greatbee.core.lego.util;
 
 import com.alibaba.fastjson.JSONArray;
 import com.greatbee.core.bean.oi.OI;
-import com.greatbee.core.bean.server.APILego;
-import com.greatbee.core.bean.server.InputField;
-import com.greatbee.core.bean.server.OutputField;
+import com.greatbee.api.bean.server.APILego;
+import com.greatbee.api.bean.server.InputField;
+import com.greatbee.api.bean.server.OutputField;
 import com.greatbee.core.bean.user.Log;
-import com.greatbee.core.lego.Input;
-import com.greatbee.core.lego.Output;
+import com.greatbee.api.lego.Input;
+import com.greatbee.api.lego.Output;
 import com.greatbee.core.manager.TYDriver;
 import com.greatbee.core.utils.SessionUtil;
 import org.apache.log4j.Logger;

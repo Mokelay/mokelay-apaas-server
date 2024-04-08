@@ -1,4 +1,4 @@
-package com.greatbee.core.lego;
+package com.greatbee.api.lego;
 
 /**
  * Lego Exception

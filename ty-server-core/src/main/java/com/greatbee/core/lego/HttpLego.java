@@ -1,5 +1,10 @@
 package com.greatbee.core.lego;
 
+import com.greatbee.api.lego.Input;
+import com.greatbee.api.lego.Lego;
+import com.greatbee.api.lego.LegoException;
+import com.greatbee.api.lego.Output;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

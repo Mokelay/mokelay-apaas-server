@@ -5,13 +5,13 @@ import com.greatbee.core.ExceptionCode;
 import com.greatbee.core.bean.constant.DBMT;
 import com.greatbee.core.bean.view.ConnectorTree;
 import com.greatbee.core.db.RelationalDataManager;
-import com.greatbee.core.lego.Input;
-import com.greatbee.core.lego.Lego;
-import com.greatbee.core.lego.LegoException;
-import com.greatbee.core.lego.Output;
+import com.greatbee.api.lego.Input;
+import com.greatbee.api.lego.Lego;
+import com.greatbee.api.lego.LegoException;
+import com.greatbee.api.lego.Output;
 import com.greatbee.core.lego.basic.ext.BaseRead;
 import com.greatbee.core.manager.TYDriver;
-import com.greatbee.core.util.SpringContextUtil;
+import com.greatbee.api.util.SpringContextUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

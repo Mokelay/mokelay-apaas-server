@@ -2,7 +2,7 @@ package com.greatbee.core.manager.ext;
 
 import com.greatbee.base.bean.DBException;
 import com.greatbee.base.manager.ext.AbstractBasicManager;
-import com.greatbee.core.bean.server.InputField;
+import com.greatbee.api.bean.server.InputField;
 import com.greatbee.core.manager.InputFieldManager;
 
 import java.util.List;

@@ -3,10 +3,10 @@ package com.greatbee.core.lego.validator;
 
 import com.greatbee.base.util.DataUtil;
 import com.greatbee.core.ExceptionCode;
-import com.greatbee.core.bean.server.InputField;
-import com.greatbee.core.lego.FieldValidation;
-import com.greatbee.core.lego.Input;
-import com.greatbee.core.lego.LegoException;
+import com.greatbee.api.bean.server.InputField;
+import com.greatbee.api.lego.FieldValidation;
+import com.greatbee.api.lego.Input;
+import com.greatbee.api.lego.LegoException;
 import org.springframework.stereotype.Component;
 
 /**

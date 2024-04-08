@@ -3,7 +3,7 @@ package com.greatbee.core.lego.utils;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.greatbee.base.util.StringUtil;
-import com.greatbee.core.lego.LegoException;
+import com.greatbee.api.lego.LegoException;
 import com.greatbee.core.lego.system.TYPPC;
 import org.apache.log4j.Logger;
 

@@ -2,10 +2,10 @@ package com.greatbee.core.lego.handle;
 
 import com.greatbee.base.bean.Data;
 import com.greatbee.base.bean.DataList;
-import com.greatbee.core.bean.server.OutputField;
-import com.greatbee.core.lego.FieldHandle;
-import com.greatbee.core.lego.LegoException;
-import com.greatbee.core.lego.Output;
+import com.greatbee.api.bean.server.OutputField;
+import com.greatbee.api.lego.FieldHandle;
+import com.greatbee.api.lego.LegoException;
+import com.greatbee.api.lego.Output;
 import org.springframework.stereotype.Component;
 
 import java.util.HashMap;

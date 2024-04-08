@@ -22,7 +22,7 @@
     </class>
 
     <!-- APILego-->
-    <class name="com.greatbee.core.bean.server.APILego" table="ty_api_lego" lazy="false">
+    <class name="com.greatbee.api.bean.server.APILego" table="ty_api_lego" lazy="false">
         <id name="id" column="id">
             <generator class="identity"/>
         </id>
@@ -36,7 +36,7 @@
     </class>
 
     <!-- InputField-->
-    <class name="com.greatbee.core.bean.server.InputField" table="ty_input_field" lazy="false">
+    <class name="com.greatbee.api.bean.server.InputField" table="ty_input_field" lazy="false">
         <id name="id" column="id">
             <generator class="identity"/>
         </id>
@@ -103,7 +103,7 @@
     </class>
 
     <!-- OutputField-->
-    <class name="com.greatbee.core.bean.server.OutputField" table="ty_output_field" lazy="false">
+    <class name="com.greatbee.api.bean.server.OutputField" table="ty_output_field" lazy="false">
         <id name="id" column="id">
             <generator class="identity"/>
         </id>

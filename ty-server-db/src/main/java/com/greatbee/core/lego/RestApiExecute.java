@@ -1,17 +1,21 @@
 package com.greatbee.core.lego;
 
 import com.alibaba.fastjson.JSONObject;
+import com.greatbee.api.lego.Input;
+import com.greatbee.api.lego.Lego;
+import com.greatbee.api.lego.LegoException;
+import com.greatbee.api.lego.Output;
 import com.greatbee.base.util.CollectionUtil;
 import com.greatbee.core.ExceptionCode;
-import com.greatbee.core.bean.constant.IOFT;
+import com.greatbee.api.bean.constant.IOFT;
 import com.greatbee.core.bean.oi.Field;
 import com.greatbee.core.bean.oi.OI;
-import com.greatbee.core.bean.server.InputField;
+import com.greatbee.api.bean.server.InputField;
 import com.greatbee.core.bean.view.RestApiResponse;
 import com.greatbee.core.db.rest.RestAPIManager;
 import com.greatbee.core.manager.FieldManager;
 import com.greatbee.core.manager.OIManager;
-import com.greatbee.core.util.SpringContextUtil;
+import com.greatbee.api.util.SpringContextUtil;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;

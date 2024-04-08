@@ -2,7 +2,7 @@ package com.greatbee.core.manager.ext;
 
 import com.greatbee.base.bean.DBException;
 import com.greatbee.base.manager.ext.AbstractBasicManager;
-import com.greatbee.core.bean.server.APILego;
+import com.greatbee.api.bean.server.APILego;
 import com.greatbee.core.manager.APILegoManager;
 
 import java.util.List;

@@ -8,10 +8,10 @@ import com.aliyuncs.exceptions.ClientException;
 import com.aliyuncs.profile.DefaultProfile;
 import com.aliyuncs.profile.IClientProfile;
 import com.greatbee.core.ExceptionCode;
-import com.greatbee.core.lego.Input;
-import com.greatbee.core.lego.Lego;
-import com.greatbee.core.lego.LegoException;
-import com.greatbee.core.lego.Output;
+import com.greatbee.api.lego.Input;
+import com.greatbee.api.lego.Lego;
+import com.greatbee.api.lego.LegoException;
+import com.greatbee.api.lego.Output;
 import org.springframework.stereotype.Component;
 
 /**

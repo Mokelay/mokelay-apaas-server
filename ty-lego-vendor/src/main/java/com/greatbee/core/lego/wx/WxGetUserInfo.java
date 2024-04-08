@@ -3,10 +3,10 @@ package com.greatbee.core.lego.wx;
 import com.alibaba.fastjson.JSONObject;
 import com.greatbee.base.bean.DBException;
 import com.greatbee.base.util.StringUtil;
-import com.greatbee.core.bean.server.OutputField;
-import com.greatbee.core.lego.Input;
-import com.greatbee.core.lego.LegoException;
-import com.greatbee.core.lego.Output;
+import com.greatbee.api.bean.server.OutputField;
+import com.greatbee.api.lego.Input;
+import com.greatbee.api.lego.LegoException;
+import com.greatbee.api.lego.Output;
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Component;
 

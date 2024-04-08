@@ -1,7 +1,11 @@
 package com.greatbee.core.lego;
 
+import com.greatbee.api.lego.Input;
+import com.greatbee.api.lego.Lego;
+import com.greatbee.api.lego.LegoException;
+import com.greatbee.api.lego.Output;
 import com.greatbee.base.util.StringUtil;
-import com.greatbee.core.bean.server.InputField;
+import com.greatbee.api.bean.server.InputField;
 import org.springframework.stereotype.Component;
 
 /**

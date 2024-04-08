@@ -1,12 +1,12 @@
-package com.greatbee.core.lego;
+package com.greatbee.api.lego;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.greatbee.base.util.CollectionUtil;
 import com.greatbee.base.util.StringUtil;
-import com.greatbee.core.bean.constant.IOFT;
-import com.greatbee.core.bean.server.OutputField;
-import com.greatbee.core.util.SpringContextUtil;
+import com.greatbee.api.bean.constant.IOFT;
+import com.greatbee.api.bean.server.OutputField;
+import com.greatbee.api.util.SpringContextUtil;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

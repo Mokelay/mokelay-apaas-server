@@ -1,6 +1,6 @@
-package com.greatbee.core.lego;
+package com.greatbee.api.lego;
 
-import com.greatbee.core.bean.server.OutputField;
+import com.greatbee.api.bean.server.OutputField;
 
 /**
  * 字段处理

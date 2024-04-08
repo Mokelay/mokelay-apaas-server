@@ -2,6 +2,7 @@ package com.greatbee.core.lego.basic.ext;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
+import com.greatbee.api.bean.constant.IOFT;
 import com.greatbee.base.bean.DBException;
 import com.greatbee.base.bean.Data;
 import com.greatbee.base.util.CollectionUtil;
@@ -9,14 +10,14 @@ import com.greatbee.base.util.StringUtil;
 import com.greatbee.core.ExceptionCode;
 import com.greatbee.core.bean.constant.*;
 import com.greatbee.core.bean.oi.Field;
-import com.greatbee.core.bean.server.InputField;
-import com.greatbee.core.bean.server.OutputField;
+import com.greatbee.api.bean.server.InputField;
+import com.greatbee.api.bean.server.OutputField;
 import com.greatbee.core.bean.view.Condition;
 import com.greatbee.core.bean.view.ConnectorTree;
 import com.greatbee.core.bean.view.MultiCondition;
-import com.greatbee.core.lego.Input;
-import com.greatbee.core.lego.LegoException;
-import com.greatbee.core.lego.Output;
+import com.greatbee.api.lego.Input;
+import com.greatbee.api.lego.LegoException;
+import com.greatbee.api.lego.Output;
 import com.greatbee.core.lego.util.BuildConnectorTreeUtils;
 import com.greatbee.core.manager.TYDriver;
 

@@ -2,11 +2,11 @@ package com.greatbee.core.lego.basic;
 
 import com.greatbee.base.util.StringUtil;
 import com.greatbee.core.ExceptionCode;
-import com.greatbee.core.bean.server.InputField;
-import com.greatbee.core.lego.Input;
-import com.greatbee.core.lego.Lego;
-import com.greatbee.core.lego.LegoException;
-import com.greatbee.core.lego.Output;
+import com.greatbee.api.bean.server.InputField;
+import com.greatbee.api.lego.Input;
+import com.greatbee.api.lego.Lego;
+import com.greatbee.api.lego.LegoException;
+import com.greatbee.api.lego.Output;
 import com.greatbee.core.lego.util.LegoUtil;
 import com.greatbee.core.utils.VendorExceptionCode;
 import org.apache.log4j.Logger;

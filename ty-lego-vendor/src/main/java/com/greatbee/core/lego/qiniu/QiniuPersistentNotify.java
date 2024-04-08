@@ -2,11 +2,11 @@ package com.greatbee.core.lego.qiniu;
 
 import com.alibaba.fastjson.JSONObject;
 import com.greatbee.core.ExceptionCode;
-import com.greatbee.core.bean.server.InputField;
-import com.greatbee.core.lego.Input;
-import com.greatbee.core.lego.Lego;
-import com.greatbee.core.lego.LegoException;
-import com.greatbee.core.lego.Output;
+import com.greatbee.api.bean.server.InputField;
+import com.greatbee.api.lego.Input;
+import com.greatbee.api.lego.Lego;
+import com.greatbee.api.lego.LegoException;
+import com.greatbee.api.lego.Output;
 import com.greatbee.core.lego.util.LegoUtil;
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Component;
@@ -15,7 +15,6 @@ import javax.servlet.http.HttpServletRequest;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 

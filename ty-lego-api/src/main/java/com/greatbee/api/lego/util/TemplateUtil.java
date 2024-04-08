@@ -1,4 +1,4 @@
-package com.greatbee.core.lego.util;
+package com.greatbee.api.lego.util;
 
 import com.alibaba.fastjson.JSONObject;
 import com.greatbee.base.bean.Data;
@@ -7,9 +7,9 @@ import com.greatbee.base.bean.DataPage;
 import com.greatbee.base.util.CollectionUtil;
 import com.greatbee.base.util.DataUtil;
 import com.greatbee.base.util.StringUtil;
-import com.greatbee.core.bean.server.OutputField;
-import com.greatbee.core.lego.Input;
-import com.greatbee.core.lego.LegoException;
+import com.greatbee.api.bean.server.OutputField;
+import com.greatbee.api.lego.Input;
+import com.greatbee.api.lego.LegoException;
 import freemarker.cache.StringTemplateLoader;
 import freemarker.template.Configuration;
 import freemarker.template.Template;

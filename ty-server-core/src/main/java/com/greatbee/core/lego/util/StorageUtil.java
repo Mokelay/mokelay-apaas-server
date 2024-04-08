@@ -3,7 +3,7 @@ package com.greatbee.core.lego.util;
 import com.greatbee.base.bean.DBException;
 import com.greatbee.base.util.StringUtil;
 import com.greatbee.core.bean.server.FileStorage;
-import com.greatbee.core.lego.Output;
+import com.greatbee.api.lego.Output;
 import com.greatbee.core.manager.TYDriver;
 
 /**

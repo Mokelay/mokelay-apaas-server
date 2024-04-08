@@ -2,10 +2,10 @@
 package com.greatbee.core.lego.wps;
 
 import com.greatbee.base.util.StringUtil;
-import com.greatbee.core.lego.Input;
-import com.greatbee.core.lego.Lego;
-import com.greatbee.core.lego.LegoException;
-import com.greatbee.core.lego.Output;
+import com.greatbee.api.lego.Input;
+import com.greatbee.api.lego.Lego;
+import com.greatbee.api.lego.LegoException;
+import com.greatbee.api.lego.Output;
 import com.greatbee.core.lego.system.TYPPC;
 import com.itextpdf.text.BaseColor;
 import com.itextpdf.text.Document;

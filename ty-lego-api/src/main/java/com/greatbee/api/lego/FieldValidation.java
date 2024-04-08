@@ -1,6 +1,6 @@
-package com.greatbee.core.lego;
+package com.greatbee.api.lego;
 
-import com.greatbee.core.bean.server.InputField;
+import com.greatbee.api.bean.server.InputField;
 
 /**
  * 字段验证接口

@@ -1,4 +1,4 @@
-package com.greatbee.core.bean.constant;
+package com.greatbee.api.bean.constant;
 
 /**
  * Input & Output Field Type

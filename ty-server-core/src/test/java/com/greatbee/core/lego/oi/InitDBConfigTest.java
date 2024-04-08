@@ -1,10 +1,12 @@
 package com.greatbee.core.lego.oi;
 
 import com.greatbee.TYBaseTest;
+import com.greatbee.api.lego.Input;
+import com.greatbee.api.lego.Lego;
+import com.greatbee.api.lego.LegoException;
 import com.greatbee.base.bean.DBException;
 import com.greatbee.core.bean.oi.DS;
-import com.greatbee.core.bean.server.InputField;
-import com.greatbee.core.lego.*;
+import com.greatbee.api.bean.server.InputField;
 import com.greatbee.core.manager.DSManager;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -48,7 +50,7 @@ public class InitDBConfigTest extends TYBaseTest {
         }
     }
 
-    public void testExecute() throws DBException,LegoException {
+    public void testExecute() throws DBException, LegoException {
 
         Input input = new Input(null,null);
         List<InputField> inputFields = new ArrayList<InputField>();

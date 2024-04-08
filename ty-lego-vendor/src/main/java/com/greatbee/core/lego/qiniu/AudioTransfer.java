@@ -6,11 +6,11 @@ import com.greatbee.base.util.RandomGUIDUtil;
 import com.greatbee.base.util.StringUtil;
 import com.greatbee.core.ExceptionCode;
 import com.greatbee.core.bean.server.FileStorage;
-import com.greatbee.core.bean.server.InputField;
-import com.greatbee.core.lego.Input;
-import com.greatbee.core.lego.Lego;
-import com.greatbee.core.lego.LegoException;
-import com.greatbee.core.lego.Output;
+import com.greatbee.api.bean.server.InputField;
+import com.greatbee.api.lego.Input;
+import com.greatbee.api.lego.Lego;
+import com.greatbee.api.lego.LegoException;
+import com.greatbee.api.lego.Output;
 import com.greatbee.core.lego.util.LegoUtil;
 import com.greatbee.core.manager.TYDriver;
 import com.qiniu.common.QiniuException;
@@ -30,7 +30,6 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.*;
-import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 

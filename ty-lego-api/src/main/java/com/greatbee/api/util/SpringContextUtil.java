@@ -1,4 +1,4 @@
-package com.greatbee.core.util;
+package com.greatbee.api.util;
 
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;

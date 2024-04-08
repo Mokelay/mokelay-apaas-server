@@ -1,5 +1,8 @@
 package com.greatbee.core.lego;
 
+import com.greatbee.api.lego.Input;
+import com.greatbee.api.lego.LegoException;
+import com.greatbee.api.lego.Output;
 import com.greatbee.core.bean.constant.ExecuteStatus;
 
 /**

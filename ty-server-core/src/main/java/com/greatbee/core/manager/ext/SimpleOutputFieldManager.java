@@ -2,7 +2,7 @@ package com.greatbee.core.manager.ext;
 
 import com.greatbee.base.bean.DBException;
 import com.greatbee.base.manager.ext.AbstractBasicManager;
-import com.greatbee.core.bean.server.OutputField;
+import com.greatbee.api.bean.server.OutputField;
 import com.greatbee.core.manager.OutputFieldManager;
 
 import java.util.List;

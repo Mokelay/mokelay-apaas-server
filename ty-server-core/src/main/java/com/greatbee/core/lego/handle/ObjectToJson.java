@@ -1,10 +1,10 @@
 package com.greatbee.core.lego.handle;
 
 import com.alibaba.fastjson.JSON;
-import com.greatbee.core.bean.server.OutputField;
-import com.greatbee.core.lego.FieldHandle;
-import com.greatbee.core.lego.LegoException;
-import com.greatbee.core.lego.Output;
+import com.greatbee.api.bean.server.OutputField;
+import com.greatbee.api.lego.FieldHandle;
+import com.greatbee.api.lego.LegoException;
+import com.greatbee.api.lego.Output;
 import org.springframework.stereotype.Component;
 
 /**

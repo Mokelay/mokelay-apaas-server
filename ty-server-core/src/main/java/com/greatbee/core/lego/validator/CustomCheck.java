@@ -4,11 +4,11 @@ import com.greatbee.base.util.ArrayUtil;
 import com.greatbee.base.util.DataUtil;
 import com.greatbee.base.util.StringUtil;
 import com.greatbee.core.ExceptionCode;
-import com.greatbee.core.bean.server.InputField;
-import com.greatbee.core.lego.FieldValidation;
-import com.greatbee.core.lego.Input;
-import com.greatbee.core.lego.LegoException;
-import com.greatbee.core.util.SpringContextUtil;
+import com.greatbee.api.bean.server.InputField;
+import com.greatbee.api.lego.FieldValidation;
+import com.greatbee.api.lego.Input;
+import com.greatbee.api.lego.LegoException;
+import com.greatbee.api.util.SpringContextUtil;
 import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Component;
 

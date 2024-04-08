@@ -1,8 +1,9 @@
 package com.greatbee.core.lego;
 
+import com.greatbee.api.lego.Output;
 import com.greatbee.base.util.CollectionUtil;
-import com.greatbee.core.bean.server.APILego;
-import com.greatbee.core.bean.server.OutputField;
+import com.greatbee.api.bean.server.APILego;
+import com.greatbee.api.bean.server.OutputField;
 
 import java.util.*;
 

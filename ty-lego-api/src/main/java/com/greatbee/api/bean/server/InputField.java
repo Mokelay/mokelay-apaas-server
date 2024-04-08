@@ -1,4 +1,4 @@
-package com.greatbee.core.bean.server;
+package com.greatbee.api.bean.server;
 
 import com.greatbee.base.bean.AliasBean;
 import com.greatbee.base.bean.DataList;

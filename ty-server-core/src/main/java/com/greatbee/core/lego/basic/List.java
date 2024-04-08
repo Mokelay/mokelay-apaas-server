@@ -1,5 +1,9 @@
 package com.greatbee.core.lego.basic;
 
+import com.greatbee.api.lego.Input;
+import com.greatbee.api.lego.Lego;
+import com.greatbee.api.lego.LegoException;
+import com.greatbee.api.lego.Output;
 import com.greatbee.base.bean.DBException;
 import com.greatbee.base.bean.DataList;
 import com.greatbee.base.util.CollectionUtil;
@@ -12,7 +16,7 @@ import com.greatbee.core.lego.*;
 import com.greatbee.core.lego.basic.ext.BaseRead;
 import com.greatbee.core.lego.util.LegoUtil;
 import com.greatbee.core.manager.TYDriver;
-import com.greatbee.core.util.SpringContextUtil;
+import com.greatbee.api.util.SpringContextUtil;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

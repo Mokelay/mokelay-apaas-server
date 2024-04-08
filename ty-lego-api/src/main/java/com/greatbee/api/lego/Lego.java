@@ -1,4 +1,4 @@
-package com.greatbee.core.lego;
+package com.greatbee.api.lego;
 
 /**
  * 乐高积木
@@ -9,5 +9,5 @@ public interface Lego {
     /**
      * 执行
      */
-    public void execute(Input input,Output output) throws LegoException;
+    public void execute(Input input, Output output) throws LegoException;
 }

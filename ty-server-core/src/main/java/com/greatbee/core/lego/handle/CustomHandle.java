@@ -3,11 +3,11 @@ package com.greatbee.core.lego.handle;
 import com.greatbee.base.util.ArrayUtil;
 import com.greatbee.base.util.DataUtil;
 import com.greatbee.base.util.StringUtil;
-import com.greatbee.core.bean.server.OutputField;
-import com.greatbee.core.lego.FieldHandle;
-import com.greatbee.core.lego.LegoException;
-import com.greatbee.core.lego.Output;
-import com.greatbee.core.util.SpringContextUtil;
+import com.greatbee.api.bean.server.OutputField;
+import com.greatbee.api.lego.FieldHandle;
+import com.greatbee.api.lego.LegoException;
+import com.greatbee.api.lego.Output;
+import com.greatbee.api.util.SpringContextUtil;
 import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Component;
 

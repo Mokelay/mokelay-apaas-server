@@ -7,7 +7,7 @@ import com.greatbee.base.bean.DBException;
 import com.greatbee.base.util.DataUtil;
 import com.greatbee.base.util.MD5Util;
 import com.greatbee.base.util.StringUtil;
-import com.greatbee.core.lego.LegoException;
+import com.greatbee.api.lego.LegoException;
 import com.greatbee.core.util.HttpClientUtil;
 import org.apache.log4j.Logger;
 import org.dom4j.Document;

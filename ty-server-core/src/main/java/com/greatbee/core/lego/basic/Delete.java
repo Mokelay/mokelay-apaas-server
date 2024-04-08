@@ -1,18 +1,23 @@
 package com.greatbee.core.lego.basic;
 
+import com.greatbee.api.bean.constant.IOFT;
+import com.greatbee.api.lego.Input;
+import com.greatbee.api.lego.Lego;
+import com.greatbee.api.lego.LegoException;
+import com.greatbee.api.lego.Output;
 import com.greatbee.base.bean.DBException;
 import com.greatbee.core.ExceptionCode;
 import com.greatbee.core.bean.constant.*;
 import com.greatbee.core.bean.oi.DS;
 import com.greatbee.core.bean.oi.Field;
 import com.greatbee.core.bean.oi.OI;
-import com.greatbee.core.bean.server.InputField;
+import com.greatbee.api.bean.server.InputField;
 import com.greatbee.core.lego.*;
 import com.greatbee.core.lego.util.LegoUtil;
 import com.greatbee.core.lego.util.LogUtil;
 import com.greatbee.core.manager.TYDriver;
 import com.greatbee.core.db.DataManager;
-import com.greatbee.core.util.SpringContextUtil;
+import com.greatbee.api.util.SpringContextUtil;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;

@@ -4,7 +4,7 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONException;
 import com.alibaba.fastjson.JSONObject;
 import com.greatbee.base.bean.DBException;
-import com.greatbee.core.lego.LegoException;
+import com.greatbee.api.lego.LegoException;
 import com.greatbee.core.lego.utils.VendorUtil;
 import com.greatbee.core.lego.wx.model.WxMessage;
 import com.greatbee.core.util.HttpClientUtil;

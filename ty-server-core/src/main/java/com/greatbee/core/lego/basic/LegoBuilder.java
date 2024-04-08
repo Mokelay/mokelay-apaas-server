@@ -1,8 +1,12 @@
 package com.greatbee.core.lego.basic;
 
+import com.greatbee.api.lego.Input;
+import com.greatbee.api.lego.Lego;
+import com.greatbee.api.lego.LegoException;
+import com.greatbee.api.lego.Output;
 import com.greatbee.base.util.DataUtil;
 import com.greatbee.core.lego.*;
-import com.greatbee.core.util.SpringContextUtil;
+import com.greatbee.api.util.SpringContextUtil;
 import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Component;
 

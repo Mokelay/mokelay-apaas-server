@@ -1,5 +1,6 @@
 package com.greatbee.core.util;
 
+import com.greatbee.api.util.SpringContextUtil;
 import com.greatbee.base.bean.DBException;
 import org.springframework.data.redis.core.RedisTemplate;
 

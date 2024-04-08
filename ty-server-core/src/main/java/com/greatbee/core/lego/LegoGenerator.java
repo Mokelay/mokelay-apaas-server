@@ -1,5 +1,7 @@
 package com.greatbee.core.lego;
 
+import com.greatbee.api.lego.LegoException;
+
 /**
  * 乐高自动生成器
  * <p/>
