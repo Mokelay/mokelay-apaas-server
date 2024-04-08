@@ -1,10 +1,10 @@
-package com.greatbee.product.util;
+package com.mokelay.product.util;
 
 import com.greatbee.base.bean.DBException;
 import com.greatbee.core.bean.task.TaskLog;
 import com.greatbee.core.manager.TYDriver;
-import com.greatbee.product.Response;
-import com.greatbee.product.TYUtil;
+import com.mokelay.product.MokelayUtil;
+import com.mokelay.product.Response;
 import org.quartz.Job;
 import org.quartz.JobExecutionContext;
 import org.quartz.JobExecutionException;
@@ -30,7 +30,7 @@ public class TaskExecute implements Job {
         taskLog.setCreateDate(new Date(begin));
         taskLog.setBegin(new Date(begin));
 
-        Response response = TYUtil.executeAPIAlias(apiAlias, tyDriver, null, null,true);
+        Response response = MokelayUtil.executeAPIAlias(apiAlias, tyDriver, null, null,true);
 
         long end = System.currentTimeMillis();
         taskLog.setFinish(new Date(end));

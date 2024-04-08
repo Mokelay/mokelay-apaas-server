@@ -1,8 +1,8 @@
 package com.mokelay;
 
 
-import com.greatbee.product.Response;
-import com.greatbee.product.TYController;
+import com.mokelay.product.Response;
+import com.mokelay.product.MokelayAPI;
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -20,7 +20,7 @@ import javax.servlet.http.HttpServletResponse;
  */
 @Controller
 @RequestMapping("/config")
-public class Index extends TYController {
+public class Index extends MokelayAPI {
     private static final Logger logger = Logger.getLogger(Index.class);
 
     @RequestMapping(value = "/{apiAlias}", method = {RequestMethod.POST, RequestMethod.GET})

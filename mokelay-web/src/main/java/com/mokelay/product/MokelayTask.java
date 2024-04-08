@@ -1,10 +1,10 @@
-package com.greatbee.product;
+package com.mokelay.product;
 
 import com.greatbee.base.bean.DBException;
 import com.greatbee.base.util.CollectionUtil;
 import com.greatbee.core.bean.task.Task;
 import com.greatbee.core.manager.TYDriver;
-import com.greatbee.product.util.TaskExecute;
+import com.mokelay.product.util.TaskExecute;
 import org.apache.log4j.Logger;
 import org.quartz.*;
 import org.quartz.impl.StdSchedulerFactory;
@@ -24,8 +24,8 @@ import java.util.List;
  * Date: 2017/11/29
  */
 @Service("tyTask")
-public class TYTask {
-    private static final Logger logger = Logger.getLogger(TYTask.class);
+public class MokelayTask {
+    private static final Logger logger = Logger.getLogger(MokelayTask.class);
 
     @Autowired
     private TYDriver tyDriver;

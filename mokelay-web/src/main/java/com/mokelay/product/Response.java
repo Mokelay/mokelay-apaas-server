@@ -1,4 +1,4 @@
-package com.greatbee.product;
+package com.mokelay.product;
 
 import java.util.HashMap;
 import java.util.Map;
