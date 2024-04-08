@@ -1,4 +1,4 @@
-package com.greatbee.procut;
+package com.greatbee.product;
 
 import java.util.HashMap;
 import java.util.Map;

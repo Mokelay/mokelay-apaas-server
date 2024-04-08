@@ -1,4 +1,4 @@
-package com.greatbee.procut;
+package com.greatbee.product;
 
 import com.greatbee.db.ExceptionCode;
 import com.greatbee.core.manager.TYDriver;

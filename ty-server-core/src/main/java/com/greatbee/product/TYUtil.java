@@ -1,4 +1,4 @@
-package com.greatbee.procut;
+package com.greatbee.product;
 
 import com.greatbee.api.lego.Input;
 import com.greatbee.api.lego.Lego;

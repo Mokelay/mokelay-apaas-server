@@ -1,10 +1,10 @@
-package com.greatbee.procut;
+package com.greatbee.product;
 
 import com.greatbee.base.bean.DBException;
 import com.greatbee.base.util.CollectionUtil;
 import com.greatbee.core.bean.task.Task;
 import com.greatbee.core.manager.TYDriver;
-import com.greatbee.procut.util.TaskExecute;
+import com.greatbee.product.util.TaskExecute;
 import org.apache.log4j.Logger;
 import org.quartz.*;
 import org.quartz.impl.StdSchedulerFactory;

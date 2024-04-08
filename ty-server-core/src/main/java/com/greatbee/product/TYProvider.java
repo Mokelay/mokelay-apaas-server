@@ -1,4 +1,4 @@
-package com.greatbee.procut;
+package com.greatbee.product;
 
 /**
  * TY DUBBO Provider

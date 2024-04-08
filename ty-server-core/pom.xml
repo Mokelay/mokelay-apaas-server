@@ -91,9 +91,9 @@
                         <!-- 以下两个包因为大部分是Spring管理的Bean，不对包类的类名进行混淆，但对类中的属性和方法混淆-->
                         <option>-keep class com.greatbee.core.lego.** {*;}</option>
                         <option>-keep class com.greatbee.core.manager.** { &lt;methods&gt;; }</option>
-                        <option>-keep class com.greatbee.procut.Response { &lt;methods&gt;; }</option>
-                        <option>-keep class com.greatbee.procut.TYTask</option>
-                        <option>-keep class com.greatbee.procut.TYController { &lt;methods&gt;; }</option>
+                        <option>-keep class com.greatbee.product.Response { &lt;methods&gt;; }</option>
+                        <option>-keep class com.greatbee.product.TYTask</option>
+                        <option>-keep class com.greatbee.product.TYController { &lt;methods&gt;; }</option>
                         <option>-keep class com.greatbee.core.utils.SessionUtil {*;}</option>
                         <!-- 外部引用用到的工具方法不能混淆-->
                         <option>-keep class com.greatbee.core.manager.utils.** { &lt;methods&gt;; }</option>

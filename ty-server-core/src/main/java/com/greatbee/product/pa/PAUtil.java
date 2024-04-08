@@ -1,4 +1,4 @@
-package com.greatbee.procut.pa;
+package com.greatbee.product.pa;
 
 import javax.servlet.http.HttpServletRequest;
 

@@ -1,10 +1,10 @@
-package com.greatbee.procut.util;
+package com.greatbee.product.util;
 
 import com.greatbee.base.bean.DBException;
 import com.greatbee.core.bean.task.TaskLog;
 import com.greatbee.core.manager.TYDriver;
-import com.greatbee.procut.Response;
-import com.greatbee.procut.TYUtil;
+import com.greatbee.product.Response;
+import com.greatbee.product.TYUtil;
 import org.quartz.Job;
 import org.quartz.JobExecutionContext;
 import org.quartz.JobExecutionException;
