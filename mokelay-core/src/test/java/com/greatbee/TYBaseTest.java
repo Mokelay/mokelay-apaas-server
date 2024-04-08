@@ -44,5 +44,6 @@ public class TYBaseTest extends TestCase implements TestConfig {
 
         JdbcTemplate jdbcTemplate = new JdbcTemplate(ds);
         jdbcTemplate.execute("select 1");
+//        jdbcTemplate.execute("update ty_ds set name='数据源';");
     }
 }
