@@ -36,19 +36,6 @@
     <bean id="fileStorageManager" class="com.greatbee.core.manager.ext.SimpleFileStorageManager"
           parent="abstractBasicManager"/>
 
-    <!-- userManager-->
-    <bean id="userManager" class="com.greatbee.core.manager.ext.SimpleUserManager"
-          parent="abstractBasicManager"/>
-    <!-- appManager-->
-    <bean id="appManager" class="com.greatbee.core.manager.ext.SimpleAppManager"
-          parent="abstractBasicManager"/>
-    <!-- appRoleManager-->
-    <bean id="appRoleManager" class="com.greatbee.core.manager.ext.SimpleAppRoleManager"
-          parent="abstractBasicManager"/>
-    <!-- userAppRoleManager-->
-    <bean id="userAppRoleManager" class="com.greatbee.core.manager.ext.SimpleUserAppRoleManager"
-          parent="abstractBasicManager"/>
-
     <!-- pageManager-->
     <bean id="pageManager" class="com.greatbee.core.manager.ext.SimplePageManager"
           parent="abstractBasicManager"/>

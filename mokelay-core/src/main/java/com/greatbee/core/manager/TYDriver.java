@@ -12,20 +12,6 @@ import com.greatbee.db.manager.OIManager;
  */
 public interface TYDriver {
     /**
-     * API Lego Manager
-     *
-     * @return
-     */
-    public APILegoManager getApiLegoManager();
-
-    /**
-     * API Manager
-     *
-     * @return
-     */
-    public APIManager getApiManager();
-
-    /**
      * Connector Manager
      *
      * @return
@@ -40,53 +26,11 @@ public interface TYDriver {
     public DSManager getDsManager();
 
     /**
-     * FieldManager
-     *
-     * @return
-     */
-    public FieldManager getFieldManager();
-
-    /**
-     * InputFieldDEscribe Manager
-     *
-     * @return
-     */
-    public InputFieldDescribeManager getInputFieldDescribeManager();
-
-    /**
      * InputFieldManager
      *
      * @return
      */
     public InputFieldManager getInputFieldManager();
-
-    /**
-     * LegoAttribute Manager
-     *
-     * @return
-     */
-    public LegoAttributeManager getLegoAttributeManager();
-
-    /**
-     * Lego Manager
-     *
-     * @return
-     */
-    public LegoManager getLegoManager();
-
-    /**
-     * OIManager
-     *
-     * @return
-     */
-    public OIManager getOiManager();
-
-    /**
-     * OutputFieldDescribe Manager
-     *
-     * @return
-     */
-    public OutputFieldDescribeManager getOutputFieldDescribeManager();
 
     /**
      * OutputFieldManager
@@ -102,20 +46,17 @@ public interface TYDriver {
      */
     public FileStorageManager getFileStorageManager();
 
-    UserManager getUserManager();
-
-    APPManager getAppManager();
-
-    APPRoleManager getAppRoleManager();
-
-    UserAppRoleManager getUserAppRoleManager();
-
-    PageManager getPageManager();
-
+    /**
+     * Log Manager
+     *
+     * @return
+     */
     LogManager getLogManager();
 
-    CodeManager getCodeManager();
-
+    /**
+     * TY Cache Service
+     * @return
+     */
     TYCacheService getTyCacheService();
 
     /**
@@ -131,11 +72,4 @@ public interface TYDriver {
      * @return
      */
     public TaskLogManager getTaskLogManager();
-
-    /**
-     * Auth Type Manager
-     *
-     * @return
-     */
-    public AuthTypeManager getAuthTypeManager();
 }
