@@ -3,7 +3,7 @@ package com.greatbee.db.database.mysql.testcase;
 import com.alibaba.fastjson.JSONArray;
 import com.greatbee.base.bean.DBException;
 import com.greatbee.db.ExceptionCode;
-import com.greatbee.core.bean.constant.DT;
+import com.greatbee.base.bean.constant.DT;
 import com.greatbee.db.bean.oi.Field;
 import com.greatbee.db.bean.view.DSView;
 import com.greatbee.db.bean.view.DiffItem;

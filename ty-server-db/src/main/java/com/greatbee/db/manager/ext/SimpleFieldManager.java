@@ -2,9 +2,9 @@ package com.greatbee.db.manager.ext;
 
 import com.greatbee.base.bean.DBException;
 import com.greatbee.base.manager.ext.AbstractBasicManager;
-import com.greatbee.core.bean.constant.CT;
+import com.greatbee.base.bean.constant.CT;
 import com.greatbee.db.bean.oi.Field;
-import com.greatbee.core.bean.view.Condition;
+import com.greatbee.base.bean.view.Condition;
 import com.greatbee.db.bean.view.MultiCondition;
 import com.greatbee.db.manager.FieldManager;
 

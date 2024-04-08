@@ -4,7 +4,7 @@ import com.greatbee.DBBaseTest;
 import com.greatbee.base.bean.DBException;
 import com.greatbee.db.ExceptionCode;
 import com.greatbee.db.bean.constant.DST;
-import com.greatbee.core.bean.constant.DT;
+import com.greatbee.base.bean.constant.DT;
 import com.greatbee.db.bean.constant.RestApiFieldGroupType;
 import com.greatbee.db.bean.oi.DS;
 import com.greatbee.db.bean.oi.Field;

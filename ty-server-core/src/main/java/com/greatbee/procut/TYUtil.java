@@ -9,7 +9,7 @@ import com.greatbee.base.util.CollectionUtil;
 import com.greatbee.base.util.StringUtil;
 import com.greatbee.db.ExceptionCode;
 import com.greatbee.core.bean.auth.AuthType;
-import com.greatbee.core.bean.constant.DT;
+import com.greatbee.base.bean.constant.DT;
 import com.greatbee.core.bean.constant.ExecuteStatus;
 import com.greatbee.core.bean.constant.FVT;
 import com.greatbee.api.bean.server.APILego;

@@ -5,7 +5,7 @@ import com.greatbee.base.util.CollectionUtil;
 import com.greatbee.db.bean.constant.DBTT;
 import com.greatbee.db.bean.oi.Field;
 import com.greatbee.db.bean.oi.OI;
-import com.greatbee.core.bean.view.Condition;
+import com.greatbee.base.bean.view.Condition;
 import com.greatbee.db.database.base.BaseTransactionTemplate;
 import org.apache.log4j.Logger;
 

@@ -5,7 +5,7 @@ import com.greatbee.base.bean.DataPage;
 import com.greatbee.base.bean.Identified;
 import com.greatbee.base.manager.BasicManager;
 import com.greatbee.base.util.StringUtil;
-import com.greatbee.core.bean.view.Condition;
+import com.greatbee.base.bean.view.Condition;
 import org.hibernate.Criteria;
 import org.hibernate.Query;
 import org.hibernate.Session;

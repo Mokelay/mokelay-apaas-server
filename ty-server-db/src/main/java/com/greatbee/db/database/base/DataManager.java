@@ -8,7 +8,7 @@ import com.greatbee.base.util.CollectionUtil;
 import com.greatbee.db.bean.oi.DS;
 import com.greatbee.db.bean.oi.Field;
 import com.greatbee.db.bean.oi.OI;
-import com.greatbee.core.bean.view.Condition;
+import com.greatbee.base.bean.view.Condition;
 import com.greatbee.db.bean.view.ConnectorTree;
 import com.greatbee.db.bean.view.DSView;
 import com.greatbee.db.database.RelationalDataManager;

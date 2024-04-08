@@ -4,9 +4,9 @@ import com.alibaba.fastjson.JSON;
 import com.greatbee.TYBaseTest;
 import com.greatbee.base.bean.DBException;
 import com.greatbee.base.bean.DataPage;
-import com.greatbee.core.bean.constant.CG;
+import com.greatbee.base.bean.constant.CG;
 import com.greatbee.db.bean.oi.DS;
-import com.greatbee.core.bean.view.Condition;
+import com.greatbee.base.bean.view.Condition;
 import com.greatbee.db.bean.view.MultiCondition;
 import com.greatbee.db.manager.DSManager;
 

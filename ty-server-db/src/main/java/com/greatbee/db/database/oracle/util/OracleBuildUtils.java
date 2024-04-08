@@ -1,5 +1,6 @@
 package com.greatbee.db.database.oracle.util;
 
+import com.greatbee.base.bean.view.Condition;
 import com.greatbee.base.util.CollectionUtil;
 import com.greatbee.base.util.StringUtil;
 import com.greatbee.db.bean.constant.ConT;

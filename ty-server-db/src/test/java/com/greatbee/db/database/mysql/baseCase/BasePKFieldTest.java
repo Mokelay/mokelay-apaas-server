@@ -2,7 +2,7 @@ package com.greatbee.db.database.mysql.baseCase;
 
 import com.greatbee.base.bean.DBException;
 import com.greatbee.db.ExceptionCode;
-import com.greatbee.core.bean.constant.DT;
+import com.greatbee.base.bean.constant.DT;
 import com.greatbee.db.bean.oi.Field;
 import com.greatbee.db.database.mysql.MysqlRelationalDataManagerTest;
 import org.junit.Test;

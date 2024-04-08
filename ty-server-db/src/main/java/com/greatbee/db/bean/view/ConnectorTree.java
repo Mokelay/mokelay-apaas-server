@@ -1,7 +1,7 @@
 package com.greatbee.db.bean.view;
 
 import com.greatbee.base.util.RandomGUIDUtil;
-import com.greatbee.core.bean.view.Condition;
+import com.greatbee.base.bean.view.Condition;
 import com.greatbee.db.bean.constant.ConT;
 import com.greatbee.db.bean.oi.Connector;
 import com.greatbee.db.bean.oi.Field;

@@ -2,7 +2,7 @@ package com.greatbee.base.manager;
 
 import com.greatbee.base.bean.DBException;
 import com.greatbee.base.bean.DataPage;
-import com.greatbee.core.bean.view.Condition;
+import com.greatbee.base.bean.view.Condition;
 
 import java.util.List;
 

@@ -2,9 +2,9 @@ package com.greatbee.db.database.oracle.util;
 
 import com.greatbee.base.util.BooleanUtil;
 import com.greatbee.base.util.StringUtil;
-import com.greatbee.core.bean.constant.CG;
-import com.greatbee.core.bean.constant.CT;
-import com.greatbee.core.bean.view.Condition;
+import com.greatbee.base.bean.constant.CG;
+import com.greatbee.base.bean.constant.CT;
+import com.greatbee.base.bean.view.Condition;
 import org.hibernate.Criteria;
 import org.hibernate.criterion.Criterion;
 import org.hibernate.criterion.Junction;

@@ -1,7 +1,7 @@
 package com.greatbee.db.database.restapi.testcase;
 
 import com.greatbee.base.bean.DBException;
-import com.greatbee.core.bean.constant.DT;
+import com.greatbee.base.bean.constant.DT;
 import com.greatbee.db.bean.constant.RestApiFieldGroupType;
 import com.greatbee.db.bean.oi.Field;
 import com.greatbee.db.bean.oi.OI;

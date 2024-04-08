@@ -4,7 +4,7 @@ import com.greatbee.base.bean.DBException;
 import com.greatbee.base.util.DataUtil;
 import com.greatbee.base.util.StringUtil;
 import com.greatbee.db.ExceptionCode;
-import com.greatbee.core.bean.constant.DT;
+import com.greatbee.base.bean.constant.DT;
 import com.greatbee.db.bean.oi.Field;
 import com.greatbee.db.manager.DSManager;
 import com.greatbee.db.util.DataSourceUtils;

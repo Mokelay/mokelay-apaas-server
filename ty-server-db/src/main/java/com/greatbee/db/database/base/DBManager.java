@@ -5,7 +5,7 @@ import com.greatbee.base.bean.Data;
 import com.greatbee.base.bean.DataList;
 import com.greatbee.base.bean.DataPage;
 import com.greatbee.db.ExceptionCode;
-import com.greatbee.core.bean.constant.DT;
+import com.greatbee.base.bean.constant.DT;
 import com.greatbee.db.handler.DataHandler;
 import com.greatbee.db.handler.QueryHandler;
 import org.apache.log4j.Logger;

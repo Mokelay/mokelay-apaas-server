@@ -1,11 +1,11 @@
-package com.greatbee.core.bean.view;
+package com.greatbee.base.bean.view;
 
 import com.greatbee.base.util.BooleanUtil;
 import com.greatbee.base.util.DataUtil;
 import com.greatbee.base.util.StringUtil;
-import com.greatbee.core.bean.constant.CG;
-import com.greatbee.core.bean.constant.CT;
-import com.greatbee.core.bean.constant.DT;
+import com.greatbee.base.bean.constant.CG;
+import com.greatbee.base.bean.constant.CT;
+import com.greatbee.base.bean.constant.DT;
 import org.hibernate.Criteria;
 import org.hibernate.criterion.Criterion;
 import org.hibernate.criterion.Junction;

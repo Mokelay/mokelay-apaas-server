@@ -1,4 +1,4 @@
-package com.greatbee.core.bean.constant;
+package com.greatbee.base.bean.constant;
 
 /**
  * Condition Type

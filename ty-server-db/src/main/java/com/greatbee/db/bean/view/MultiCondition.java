@@ -1,7 +1,7 @@
 package com.greatbee.db.bean.view;
 
-import com.greatbee.core.bean.constant.CG;
-import com.greatbee.core.bean.view.Condition;
+import com.greatbee.base.bean.constant.CG;
+import com.greatbee.base.bean.view.Condition;
 
 import java.util.ArrayList;
 import java.util.List;

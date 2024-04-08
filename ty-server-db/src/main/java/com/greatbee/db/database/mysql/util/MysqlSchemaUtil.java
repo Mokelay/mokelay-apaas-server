@@ -3,7 +3,7 @@ package com.greatbee.db.database.mysql.util;
 import com.greatbee.base.bean.DBException;
 import com.greatbee.base.util.CollectionUtil;
 import com.greatbee.db.ExceptionCode;
-import com.greatbee.core.bean.constant.DT;
+import com.greatbee.base.bean.constant.DT;
 import com.greatbee.db.bean.oi.DS;
 import com.greatbee.db.bean.oi.Field;
 import com.greatbee.db.bean.oi.OI;
