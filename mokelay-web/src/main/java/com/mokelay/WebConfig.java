@@ -1,4 +1,4 @@
-package com.greatbee.product.config;
+package com.mokelay;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

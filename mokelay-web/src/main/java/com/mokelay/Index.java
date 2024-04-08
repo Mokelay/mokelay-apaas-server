@@ -1,4 +1,4 @@
-package com.greatbee.product.controller;
+package com.mokelay;
 
 
 import com.greatbee.product.Response;
