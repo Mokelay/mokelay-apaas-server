@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+    <!--Hibernate Template base-->
+    <bean id="tyHibernateTemplate" class="org.springframework.orm.hibernate4.HibernateTemplate">
+        <property name="sessionFactory" ref="tySessionFactory"/>
+    </bean>
+
+    <!--Abstract Manager base-->
+    <bean id="abstractBasicManager" class="com.greatbee.base.manager.ext.AbstractBasicManager" abstract="true">
+        <property name="hibernateTemplate" ref="tyHibernateTemplate"/>
+    </bean>
+
+    <!-- DS Manager-->
+    <bean id="dsManager" class="com.greatbee.db.manager.ext.SimpleDSManager" parent="abstractBasicManager"/>
+
+    <!-- OI Manager-->
+    <bean id="oiManager" class="com.greatbee.db.manager.ext.SimpleOIManager" parent="abstractBasicManager"/>
+
+    <!-- Field Manager-->
+    <bean id="fieldManager" class="com.greatbee.db.manager.ext.SimpleFieldManager" parent="abstractBasicManager"/>
+
+    <!-- Connector Manager-->
+    <bean id="connectorManager" class="com.greatbee.db.manager.ext.SimpleConnectorManager"
+          parent="abstractBasicManager"/>
+
+    <!-- Mysql Data Manager-->
+    <bean id="mysqlDataManager" class="com.greatbee.db.database.mysql.manager.MysqlDataManager"/>
+
+    <!-- Oracle Data Manager-->
+    <bean id="oracleDataManager" class="com.greatbee.db.database.oracle.manager.OracleDataManager"/>
+
+    <!-- SQLServer Data Manager-->
+    <bean id="sqlServerDataManager" class="com.greatbee.db.database.sqlserver.manager.SQLServerDataManager"/>
+
+    <!-- Rest API Data Manager-->
+    <bean id="restAPIManager" class="com.greatbee.db.database.rest.RestAPIManager"/>
+</beans>

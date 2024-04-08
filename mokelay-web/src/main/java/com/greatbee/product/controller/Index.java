@@ -1,8 +1,8 @@
 package com.greatbee.product.controller;
 
 
-import com.greatbee.procut.Response;
-import com.greatbee.procut.TYController;
+import com.greatbee.product.Response;
+import com.greatbee.product.TYController;
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;

@@ -1,4 +1,4 @@
-import com.greatbee.core.lego.LegoException;
+import com.greatbee.api.lego.LegoException;
 import com.greatbee.core.lego.util.LegoUtil;
 
 import java.util.ArrayList;
