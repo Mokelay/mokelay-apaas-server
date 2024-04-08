@@ -9,43 +9,20 @@
     <!-- API Lego Manager-->
     <bean id="apiLegoManager" class="com.greatbee.core.manager.ext.SimpleAPILegoManager" parent="abstractBasicManager"/>
 
-    <!-- Lego Manager-->
-    <bean id="legoManager" class="com.greatbee.core.manager.ext.SimpleLegoManager" parent="abstractBasicManager"/>
-
-    <!-- Lego Attribute Manager-->
-    <bean id="legoAttributeManager" class="com.greatbee.core.manager.ext.SimpleLegoAttributeManager"
-          parent="abstractBasicManager"/>
-
     <!-- InputFieldManager-->
     <bean id="inputFieldManager" class="com.greatbee.core.manager.ext.SimpleInputFieldManager"
-          parent="abstractBasicManager"/>
-
-    <!-- InputFieldDescribeManager-->
-    <bean id="inputFieldDescribeManager" class="com.greatbee.core.manager.ext.SimpleInputFieldDescribeManager"
           parent="abstractBasicManager"/>
 
     <!-- OutputFieldManager-->
     <bean id="outputFieldManager" class="com.greatbee.core.manager.ext.SimpleOutputFieldManager"
           parent="abstractBasicManager"/>
 
-    <!-- OutputFieldDescribe Manager-->
-    <bean id="outputFieldDescribeManager" class="com.greatbee.core.manager.ext.SimpleOutputFieldDescribeManager"
-          parent="abstractBasicManager"/>
-
     <!-- FileStorageManager-->
     <bean id="fileStorageManager" class="com.greatbee.core.manager.ext.SimpleFileStorageManager"
           parent="abstractBasicManager"/>
 
-    <!-- pageManager-->
-    <bean id="pageManager" class="com.greatbee.core.manager.ext.SimplePageManager"
-          parent="abstractBasicManager"/>
-
     <!-- LogManager-->
     <bean id="logManager" class="com.greatbee.core.manager.ext.SimpleLogManager"
-          parent="abstractBasicManager"/>
-
-    <!-- CodeManager-->
-    <bean id="codeManager" class="com.greatbee.core.manager.ext.SimpleCodeManager"
           parent="abstractBasicManager"/>
 
     <!-- Task Manager-->
