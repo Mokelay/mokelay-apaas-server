@@ -2,16 +2,8 @@ package com.greatbee.core.db.mysql.testcase;
 
 import com.greatbee.base.bean.DBException;
 import com.greatbee.base.bean.Data;
-import com.greatbee.core.bean.constant.ConT;
-import com.greatbee.core.bean.oi.Connector;
-import com.greatbee.core.bean.view.ConnectorTree;
+import com.greatbee.db.bean.view.ConnectorTree;
 import com.greatbee.core.db.mysql.baseCase.*;
-
-import com.greatbee.core.util.ConnectorTreeUtil;
-import org.junit.Test;
-
-import java.util.ArrayList;
-import java.util.List;
 
 
 /**

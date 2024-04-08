@@ -5,7 +5,7 @@ import com.alibaba.fastjson.JSONObject;
 import com.greatbee.base.bean.Data;
 import com.greatbee.base.util.CollectionUtil;
 import com.greatbee.base.util.StringUtil;
-import com.greatbee.core.ExceptionCode;
+import com.greatbee.db.ExceptionCode;
 import com.greatbee.api.bean.constant.IOFT;
 import com.greatbee.api.bean.server.OutputField;
 import com.greatbee.api.lego.Input;

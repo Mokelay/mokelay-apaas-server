@@ -6,7 +6,7 @@ import com.greatbee.base.bean.DBException;
 import com.greatbee.base.util.StringUtil;
 import com.greatbee.api.lego.LegoException;
 import com.greatbee.core.lego.weidian.bean.Param;
-import com.greatbee.core.util.HttpClientUtil;
+import com.greatbee.db.util.HttpClientUtil;
 import com.greatbee.core.utils.VendorExceptionCode;
 import org.apache.http.HttpEntity;
 import org.apache.http.NameValuePair;

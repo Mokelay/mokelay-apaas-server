@@ -7,7 +7,7 @@ import com.greatbee.base.bean.DBException;
 import com.greatbee.api.lego.LegoException;
 import com.greatbee.core.lego.utils.VendorUtil;
 import com.greatbee.core.lego.wx.model.WxMessage;
-import com.greatbee.core.util.HttpClientUtil;
+import com.greatbee.db.util.HttpClientUtil;
 import com.greatbee.core.utils.HttpFileUtil;
 import com.greatbee.core.utils.VendorExceptionCode;
 import org.apache.log4j.Logger;

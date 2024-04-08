@@ -1,7 +1,7 @@
 package com.greatbee.core.lego.basic;
 
 import com.greatbee.base.util.DataUtil;
-import com.greatbee.core.ExceptionCode;
+import com.greatbee.db.ExceptionCode;
 import com.greatbee.core.bean.view.FileStream;
 import com.greatbee.api.lego.Input;
 import com.greatbee.api.lego.Lego;

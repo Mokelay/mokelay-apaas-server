@@ -2,8 +2,8 @@ package com.greatbee.core.db.mysql.testcase;
 
 import com.alibaba.fastjson.JSONObject;
 import com.greatbee.base.bean.DBException;
-import com.greatbee.core.ExceptionCode;
-import com.greatbee.core.bean.view.DSView;
+import com.greatbee.db.ExceptionCode;
+import com.greatbee.db.bean.view.DSView;
 import com.greatbee.core.db.mysql.MysqlRelationalDataManagerTest;
 import org.junit.Test;
 

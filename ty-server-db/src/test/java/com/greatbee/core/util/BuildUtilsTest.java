@@ -1,6 +1,6 @@
 package com.greatbee.core.util;
 
-import com.greatbee.core.bean.view.ConnectorTree;
+import com.greatbee.db.bean.view.ConnectorTree;
 import junit.framework.TestCase;
 
 /**

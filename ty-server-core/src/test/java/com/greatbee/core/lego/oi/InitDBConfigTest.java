@@ -5,9 +5,9 @@ import com.greatbee.api.lego.Input;
 import com.greatbee.api.lego.Lego;
 import com.greatbee.api.lego.LegoException;
 import com.greatbee.base.bean.DBException;
-import com.greatbee.core.bean.oi.DS;
+import com.greatbee.db.bean.oi.DS;
 import com.greatbee.api.bean.server.InputField;
-import com.greatbee.core.manager.DSManager;
+import com.greatbee.db.manager.DSManager;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.ArrayList;

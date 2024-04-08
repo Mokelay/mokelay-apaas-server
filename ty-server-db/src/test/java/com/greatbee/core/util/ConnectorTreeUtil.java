@@ -1,10 +1,10 @@
 package com.greatbee.core.util;
 
-import com.greatbee.core.bean.constant.ConT;
-import com.greatbee.core.bean.oi.Connector;
-import com.greatbee.core.bean.oi.Field;
-import com.greatbee.core.bean.view.ConnectorTree;
-import com.greatbee.core.bean.view.OIView;
+import com.greatbee.db.bean.constant.ConT;
+import com.greatbee.db.bean.oi.Connector;
+import com.greatbee.db.bean.oi.Field;
+import com.greatbee.db.bean.view.ConnectorTree;
+import com.greatbee.db.bean.view.OIView;
 
 import java.util.List;
 import java.util.Map;

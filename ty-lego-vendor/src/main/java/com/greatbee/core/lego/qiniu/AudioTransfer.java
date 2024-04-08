@@ -4,7 +4,7 @@ import com.google.gson.Gson;
 import com.greatbee.base.bean.DBException;
 import com.greatbee.base.util.RandomGUIDUtil;
 import com.greatbee.base.util.StringUtil;
-import com.greatbee.core.ExceptionCode;
+import com.greatbee.db.ExceptionCode;
 import com.greatbee.core.bean.server.FileStorage;
 import com.greatbee.api.bean.server.InputField;
 import com.greatbee.api.lego.Input;

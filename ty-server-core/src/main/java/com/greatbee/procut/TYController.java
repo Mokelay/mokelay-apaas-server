@@ -1,6 +1,6 @@
 package com.greatbee.procut;
 
-import com.greatbee.core.ExceptionCode;
+import com.greatbee.db.ExceptionCode;
 import com.greatbee.core.manager.TYDriver;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;

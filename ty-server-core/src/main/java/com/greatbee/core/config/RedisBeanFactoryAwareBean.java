@@ -1,7 +1,7 @@
 package com.greatbee.core.config;
 
 import com.greatbee.base.util.DataUtil;
-import com.greatbee.core.util.RedisBuildUtil;
+import com.greatbee.db.util.RedisBuildUtil;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.BeanFactoryAware;

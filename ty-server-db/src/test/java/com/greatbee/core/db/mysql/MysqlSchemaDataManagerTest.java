@@ -1,23 +1,8 @@
 
 package com.greatbee.core.db.mysql;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
-
-import com.greatbee.DBBaseTest;
-import com.greatbee.base.bean.DBException;
-import com.greatbee.core.ExceptionCode;
-import com.greatbee.core.bean.constant.DST;
-import com.greatbee.core.bean.constant.DT;
-import com.greatbee.core.bean.oi.DS;
-import com.greatbee.core.bean.oi.Field;
-import com.greatbee.core.bean.oi.OI;
-import com.greatbee.core.db.SchemaDataManager;
-import com.greatbee.core.manager.DSManager;
-import com.greatbee.core.util.DataSourceUtils;
-
-import org.springframework.beans.factory.annotation.Autowired;
+import com.greatbee.db.ExceptionCode;
+import com.greatbee.db.database.SchemaDataManager;
 
 /**
  * 测试 Mysql Schema Data Manager

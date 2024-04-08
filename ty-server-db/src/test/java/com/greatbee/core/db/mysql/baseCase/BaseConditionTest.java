@@ -1,9 +1,9 @@
 package com.greatbee.core.db.mysql.baseCase;
 
 import com.greatbee.base.bean.DBException;
-import com.greatbee.core.ExceptionCode;
+import com.greatbee.db.ExceptionCode;
 import com.greatbee.core.bean.constant.CT;
-import com.greatbee.core.bean.oi.Field;
+import com.greatbee.db.bean.oi.Field;
 import com.greatbee.core.bean.view.Condition;
 import com.greatbee.core.db.mysql.MysqlRelationalDataManagerTest;
 import org.junit.Test;

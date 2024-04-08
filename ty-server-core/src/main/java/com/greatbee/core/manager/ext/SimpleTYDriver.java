@@ -1,7 +1,10 @@
 package com.greatbee.core.manager.ext;
 
 import com.greatbee.core.manager.*;
-import com.greatbee.core.service.APIContentService;
+import com.greatbee.db.manager.ConnectorManager;
+import com.greatbee.db.manager.DSManager;
+import com.greatbee.db.manager.FieldManager;
+import com.greatbee.db.manager.OIManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

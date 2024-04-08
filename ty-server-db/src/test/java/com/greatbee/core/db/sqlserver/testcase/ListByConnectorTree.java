@@ -3,11 +3,11 @@ package com.greatbee.core.db.sqlserver.testcase;
 import com.alibaba.fastjson.JSONObject;
 import com.greatbee.base.bean.DBException;
 import com.greatbee.base.bean.DataList;
-import com.greatbee.core.bean.constant.ConT;
-import com.greatbee.core.bean.oi.Connector;
-import com.greatbee.core.bean.view.ConnectorTree;
-import com.greatbee.core.bean.view.OIView;
-import com.greatbee.core.db.RelationalDataManager;
+import com.greatbee.db.bean.constant.ConT;
+import com.greatbee.db.bean.oi.Connector;
+import com.greatbee.db.bean.view.ConnectorTree;
+import com.greatbee.db.bean.view.OIView;
+import com.greatbee.db.database.RelationalDataManager;
 import com.greatbee.core.util.ConnectorTreeUtil;
 
 import java.util.ArrayList;

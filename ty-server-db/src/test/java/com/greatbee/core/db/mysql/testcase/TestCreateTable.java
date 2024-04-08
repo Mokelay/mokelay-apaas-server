@@ -6,10 +6,10 @@ import java.util.List;
 
 import com.alibaba.fastjson.JSONObject;
 import com.greatbee.base.bean.DBException;
-import com.greatbee.core.ExceptionCode;
+import com.greatbee.db.ExceptionCode;
 import com.greatbee.core.bean.constant.DT;
-import com.greatbee.core.bean.oi.Field;
-import com.greatbee.core.bean.oi.OI;
+import com.greatbee.db.bean.oi.Field;
+import com.greatbee.db.bean.oi.OI;
 import com.greatbee.core.db.mysql.MysqlSchemaDataManagerTest;
 
 import org.junit.Test;

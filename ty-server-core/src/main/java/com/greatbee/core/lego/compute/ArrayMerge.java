@@ -1,6 +1,6 @@
 package com.greatbee.core.lego.compute;
 
-import com.greatbee.core.ExceptionCode;
+import com.greatbee.db.ExceptionCode;
 import com.greatbee.api.lego.Input;
 import com.greatbee.api.lego.Lego;
 import com.greatbee.api.lego.LegoException;

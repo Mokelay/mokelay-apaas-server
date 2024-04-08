@@ -1,6 +1,9 @@
 package com.greatbee.core.manager;
 
-import com.greatbee.core.service.APIContentService;
+import com.greatbee.db.manager.ConnectorManager;
+import com.greatbee.db.manager.DSManager;
+import com.greatbee.db.manager.FieldManager;
+import com.greatbee.db.manager.OIManager;
 
 /**
  * TY Driver

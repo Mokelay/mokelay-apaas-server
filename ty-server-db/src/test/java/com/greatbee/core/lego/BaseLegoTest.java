@@ -1,7 +1,7 @@
 package com.greatbee.core.lego;
 
 import com.greatbee.DBBaseTest;
-import com.greatbee.core.ExceptionCode;
+import com.greatbee.db.ExceptionCode;
 
 /**
  * DB 乐高测试用例基类

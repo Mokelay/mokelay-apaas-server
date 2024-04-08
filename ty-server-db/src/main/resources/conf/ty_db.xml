@@ -3,7 +3,7 @@
         "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
     <!--DS-->
-    <class name="com.greatbee.core.bean.oi.DS" table="ty_ds" lazy="false">
+    <class name="com.greatbee.db.bean.oi.DS" table="ty_ds" lazy="false">
         <id name="id" column="id">
             <generator class="identity"/>
         </id>
@@ -18,7 +18,7 @@
     </class>
 
     <!-- OI-->
-    <class name="com.greatbee.core.bean.oi.OI" table="ty_oi" lazy="false">
+    <class name="com.greatbee.db.bean.oi.OI" table="ty_oi" lazy="false">
         <id name="id" column="id">
             <generator class="identity"/>
         </id>
@@ -30,7 +30,7 @@
     </class>
 
     <!-- Field-->
-    <class name="com.greatbee.core.bean.oi.Field" table="ty_field" lazy="false">
+    <class name="com.greatbee.db.bean.oi.Field" table="ty_field" lazy="false">
         <id name="id" column="id">
             <generator class="identity"/>
         </id>
@@ -49,7 +49,7 @@
     </class>
 
     <!-- Connector-->
-    <class name="com.greatbee.core.bean.oi.Connector" table="ty_connector" lazy="false">
+    <class name="com.greatbee.db.bean.oi.Connector" table="ty_connector" lazy="false">
         <id name="id" column="id">
             <generator class="identity"/>
         </id>

@@ -1,8 +1,7 @@
 package com.greatbee.core.db.restapi.basecase;
 
 import com.greatbee.base.bean.DBException;
-import com.greatbee.core.ExceptionCode;
-import com.greatbee.core.bean.view.ConnectorTree;
+import com.greatbee.db.ExceptionCode;
 import com.greatbee.core.db.restapi.RestAPIManagerTest;
 import org.junit.Test;
 

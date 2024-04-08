@@ -4,13 +4,13 @@ import com.alibaba.fastjson.JSONObject;
 import com.greatbee.base.bean.DBException;
 import com.greatbee.base.util.Charset;
 import com.greatbee.base.util.StringUtil;
-import com.greatbee.core.ExceptionCode;
+import com.greatbee.db.ExceptionCode;
 import com.greatbee.api.bean.server.InputField;
 import com.greatbee.api.lego.Input;
 import com.greatbee.api.lego.Lego;
 import com.greatbee.api.lego.LegoException;
 import com.greatbee.core.lego.util.LegoUtil;
-import com.greatbee.core.util.HttpClientUtil;
+import com.greatbee.db.util.HttpClientUtil;
 import org.apache.log4j.Logger;
 
 import java.io.UnsupportedEncodingException;

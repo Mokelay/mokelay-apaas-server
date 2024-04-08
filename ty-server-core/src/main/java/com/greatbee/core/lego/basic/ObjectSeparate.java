@@ -1,7 +1,7 @@
 package com.greatbee.core.lego.basic;
 
 import com.greatbee.base.bean.DataList;
-import com.greatbee.core.ExceptionCode;
+import com.greatbee.db.ExceptionCode;
 import com.greatbee.api.bean.constant.IOFT;
 import com.greatbee.api.bean.server.OutputField;
 import com.greatbee.api.lego.Input;

@@ -1,6 +1,6 @@
 package com.greatbee.core.lego.validator;
 
-import com.greatbee.core.ExceptionCode;
+import com.greatbee.db.ExceptionCode;
 import com.greatbee.api.bean.server.InputField;
 import com.greatbee.api.lego.FieldValidation;
 import com.greatbee.api.lego.Input;

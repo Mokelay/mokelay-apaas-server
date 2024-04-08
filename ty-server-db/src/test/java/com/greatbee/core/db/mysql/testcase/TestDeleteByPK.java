@@ -1,7 +1,7 @@
 package com.greatbee.core.db.mysql.testcase;
 
 import com.greatbee.base.bean.DBException;
-import com.greatbee.core.bean.oi.Field;
+import com.greatbee.db.bean.oi.Field;
 import com.greatbee.core.db.mysql.baseCase.BasePKFieldTest;
 
 /**

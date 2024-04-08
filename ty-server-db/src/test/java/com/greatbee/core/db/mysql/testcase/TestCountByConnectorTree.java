@@ -1,7 +1,7 @@
 package com.greatbee.core.db.mysql.testcase;
 
 import com.greatbee.base.bean.DBException;
-import com.greatbee.core.bean.view.ConnectorTree;
+import com.greatbee.db.bean.view.ConnectorTree;
 import com.greatbee.core.db.mysql.baseCase.BaseConnectorTreeTest;
 import org.junit.Assert;
 

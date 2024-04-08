@@ -1,19 +1,11 @@
 
 package com.greatbee.core.db.mysql;
 
-import com.greatbee.DBBaseTest;
-import com.greatbee.base.bean.DBException;
-import com.greatbee.core.ExceptionCode;
-import com.greatbee.core.bean.constant.DST;
+import com.greatbee.db.ExceptionCode;
 import com.greatbee.core.bean.constant.DT;
-import com.greatbee.core.bean.oi.DS;
-import com.greatbee.core.bean.oi.Field;
-import com.greatbee.core.bean.oi.OI;
-import com.greatbee.core.bean.view.OIView;
-import com.greatbee.core.db.RelationalDataManager;
-import com.greatbee.core.db.SchemaDataManager;
-import com.greatbee.core.manager.DSManager;
-import com.greatbee.core.util.DataSourceUtils;
+import com.greatbee.db.bean.oi.Field;
+import com.greatbee.db.bean.view.OIView;
+import com.greatbee.db.database.RelationalDataManager;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

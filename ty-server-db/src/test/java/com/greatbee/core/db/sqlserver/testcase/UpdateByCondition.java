@@ -3,10 +3,10 @@ package com.greatbee.core.db.sqlserver.testcase;
 import com.greatbee.base.bean.DBException;
 import com.greatbee.base.bean.Data;
 import com.greatbee.core.bean.constant.CT;
-import com.greatbee.core.bean.oi.Field;
+import com.greatbee.db.bean.oi.Field;
 import com.greatbee.core.bean.view.Condition;
-import com.greatbee.core.bean.view.OIView;
-import com.greatbee.core.db.RelationalDataManager;
+import com.greatbee.db.bean.view.OIView;
+import com.greatbee.db.database.RelationalDataManager;
 
 import java.util.ArrayList;
 import java.util.List;

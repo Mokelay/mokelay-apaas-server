@@ -1,8 +1,9 @@
 package com.greatbee.core.manager;
 
 import com.greatbee.TYBaseTest;
-import com.greatbee.core.bean.oi.DS;
-import com.greatbee.core.bean.constant.DST;
+import com.greatbee.db.bean.oi.DS;
+import com.greatbee.db.bean.constant.DST;
+import com.greatbee.db.manager.DSManager;
 
 /**
  * Created by CarlChen on 2017/5/24.

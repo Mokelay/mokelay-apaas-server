@@ -1,7 +1,7 @@
 package com.greatbee.core.util;
 
-import com.greatbee.core.bean.oi.Field;
-import com.greatbee.core.bean.view.OIView;
+import com.greatbee.db.bean.oi.Field;
+import com.greatbee.db.bean.view.OIView;
 
 import java.util.HashMap;
 import java.util.List;

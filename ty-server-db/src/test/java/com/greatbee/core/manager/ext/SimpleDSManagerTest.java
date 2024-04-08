@@ -5,10 +5,10 @@ import com.greatbee.TYBaseTest;
 import com.greatbee.base.bean.DBException;
 import com.greatbee.base.bean.DataPage;
 import com.greatbee.core.bean.constant.CG;
-import com.greatbee.core.bean.oi.DS;
+import com.greatbee.db.bean.oi.DS;
 import com.greatbee.core.bean.view.Condition;
-import com.greatbee.core.bean.view.MultiCondition;
-import com.greatbee.core.manager.DSManager;
+import com.greatbee.db.bean.view.MultiCondition;
+import com.greatbee.db.manager.DSManager;
 
 import java.util.ArrayList;
 import java.util.List;

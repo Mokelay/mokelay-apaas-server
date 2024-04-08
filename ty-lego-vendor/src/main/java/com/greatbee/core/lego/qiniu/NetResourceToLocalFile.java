@@ -2,7 +2,7 @@ package com.greatbee.core.lego.qiniu;
 
 import com.alibaba.fastjson.JSONObject;
 import com.greatbee.base.util.StringUtil;
-import com.greatbee.core.ExceptionCode;
+import com.greatbee.db.ExceptionCode;
 import com.greatbee.api.lego.Input;
 import com.greatbee.api.lego.Lego;
 import com.greatbee.api.lego.LegoException;

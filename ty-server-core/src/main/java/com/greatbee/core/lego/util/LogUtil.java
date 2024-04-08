@@ -1,7 +1,7 @@
 package com.greatbee.core.lego.util;
 
 import com.alibaba.fastjson.JSONArray;
-import com.greatbee.core.bean.oi.OI;
+import com.greatbee.db.bean.oi.OI;
 import com.greatbee.api.bean.server.APILego;
 import com.greatbee.api.bean.server.InputField;
 import com.greatbee.api.bean.server.OutputField;

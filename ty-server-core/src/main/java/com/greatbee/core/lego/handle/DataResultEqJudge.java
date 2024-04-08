@@ -2,7 +2,7 @@ package com.greatbee.core.lego.handle;
 
 import com.greatbee.base.util.DataUtil;
 import com.greatbee.base.util.StringUtil;
-import com.greatbee.core.ExceptionCode;
+import com.greatbee.db.ExceptionCode;
 import com.greatbee.api.bean.server.OutputField;
 import com.greatbee.api.lego.FieldHandle;
 import com.greatbee.api.lego.LegoException;

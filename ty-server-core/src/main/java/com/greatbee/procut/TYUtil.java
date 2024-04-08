@@ -7,7 +7,7 @@ import com.greatbee.api.lego.Output;
 import com.greatbee.base.bean.DBException;
 import com.greatbee.base.util.CollectionUtil;
 import com.greatbee.base.util.StringUtil;
-import com.greatbee.core.ExceptionCode;
+import com.greatbee.db.ExceptionCode;
 import com.greatbee.core.bean.auth.AuthType;
 import com.greatbee.core.bean.constant.DT;
 import com.greatbee.core.bean.constant.ExecuteStatus;

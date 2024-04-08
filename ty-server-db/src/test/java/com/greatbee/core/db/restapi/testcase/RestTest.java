@@ -2,10 +2,10 @@ package com.greatbee.core.db.restapi.testcase;
 
 import com.greatbee.base.bean.DBException;
 import com.greatbee.core.bean.constant.DT;
-import com.greatbee.core.bean.constant.RestApiFieldGroupType;
-import com.greatbee.core.bean.oi.Field;
-import com.greatbee.core.bean.oi.OI;
-import com.greatbee.core.bean.view.RestApiResponse;
+import com.greatbee.db.bean.constant.RestApiFieldGroupType;
+import com.greatbee.db.bean.oi.Field;
+import com.greatbee.db.bean.oi.OI;
+import com.greatbee.db.bean.view.RestApiResponse;
 import com.greatbee.core.db.restapi.basecase.BaseConnectTest;
 import com.greatbee.api.util.SpringContextUtil;
 import org.springframework.context.ApplicationContext;
@@ -37,7 +37,7 @@ public class RestTest extends BaseConnectTest {
 
 
             ApplicationContext wac = SpringContextUtil.getApplicationContext();
-            Class c = Class.forName("com.greatbee.core.db.UnstructuredDataManager");
+            Class c = Class.forName("com.greatbee.db.database.UnstructuredDataManager");
             Object restAPIManager = wac.getBean("restAPIManager");
             Method entryPoint = c.getMethod("connect", OI.class, List.class);
             RestApiResponse restApiResponse = (RestApiResponse) entryPoint.invoke(restAPIManager, oi, fields);

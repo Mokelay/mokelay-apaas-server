@@ -1,10 +1,10 @@
 package com.greatbee.core.lego.basic;
 
 import com.greatbee.base.bean.DBException;
-import com.greatbee.core.ExceptionCode;
-import com.greatbee.core.bean.constant.DBMT;
-import com.greatbee.core.bean.view.ConnectorTree;
-import com.greatbee.core.db.RelationalDataManager;
+import com.greatbee.db.ExceptionCode;
+import com.greatbee.db.bean.constant.DBMT;
+import com.greatbee.db.bean.view.ConnectorTree;
+import com.greatbee.db.database.RelationalDataManager;
 import com.greatbee.api.lego.Input;
 import com.greatbee.api.lego.Lego;
 import com.greatbee.api.lego.LegoException;

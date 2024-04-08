@@ -2,17 +2,17 @@ package com.greatbee.core.db.restapi;
 
 import com.greatbee.DBBaseTest;
 import com.greatbee.base.bean.DBException;
-import com.greatbee.core.ExceptionCode;
-import com.greatbee.core.bean.constant.DST;
+import com.greatbee.db.ExceptionCode;
+import com.greatbee.db.bean.constant.DST;
 import com.greatbee.core.bean.constant.DT;
-import com.greatbee.core.bean.constant.RestApiFieldGroupType;
-import com.greatbee.core.bean.oi.DS;
-import com.greatbee.core.bean.oi.Field;
-import com.greatbee.core.bean.oi.OI;
-import com.greatbee.core.db.rest.RestAPIManager;
+import com.greatbee.db.bean.constant.RestApiFieldGroupType;
+import com.greatbee.db.bean.oi.DS;
+import com.greatbee.db.bean.oi.Field;
+import com.greatbee.db.bean.oi.OI;
+import com.greatbee.db.database.rest.RestAPIManager;
 import com.greatbee.core.db.restapi.testcase.URMSLoginTest;
-import com.greatbee.core.manager.DSManager;
-import com.greatbee.core.util.DataSourceUtils;
+import com.greatbee.db.manager.DSManager;
+import com.greatbee.db.util.DataSourceUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.sql.Connection;

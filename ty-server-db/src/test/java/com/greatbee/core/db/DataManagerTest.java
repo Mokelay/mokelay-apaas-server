@@ -3,12 +3,12 @@ package com.greatbee.core.db;
 import com.alibaba.fastjson.JSONObject;
 import com.greatbee.DBBaseTest;
 import com.greatbee.base.bean.DBException;
-import com.greatbee.core.ExceptionCode;
-import com.greatbee.core.bean.oi.DS;
-import com.greatbee.core.bean.view.DSView;
-import com.greatbee.core.db.RelationalDataManager;
-import com.greatbee.core.manager.DSManager;
-import com.greatbee.core.util.DataSourceUtils;
+import com.greatbee.db.ExceptionCode;
+import com.greatbee.db.bean.oi.DS;
+import com.greatbee.db.bean.view.DSView;
+import com.greatbee.db.manager.DSManager;
+import com.greatbee.db.util.DataSourceUtils;
+import com.greatbee.db.database.RelationalDataManager;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

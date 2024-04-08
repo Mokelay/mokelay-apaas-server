@@ -2,10 +2,10 @@ package com.greatbee.core.db.restapi.testcase;
 
 import com.greatbee.base.bean.DBException;
 import com.greatbee.core.bean.constant.DT;
-import com.greatbee.core.bean.constant.RestApiFieldGroupType;
-import com.greatbee.core.bean.oi.Field;
-import com.greatbee.core.bean.oi.OI;
-import com.greatbee.core.bean.view.RestApiResponse;
+import com.greatbee.db.bean.constant.RestApiFieldGroupType;
+import com.greatbee.db.bean.oi.Field;
+import com.greatbee.db.bean.oi.OI;
+import com.greatbee.db.bean.view.RestApiResponse;
 import com.greatbee.core.db.restapi.basecase.BaseConnectTest;
 
 import java.util.ArrayList;
