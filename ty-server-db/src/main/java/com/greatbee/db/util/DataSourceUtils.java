@@ -26,7 +26,7 @@ public class DataSourceUtils {
 
     public static final String Sqlserver_Driver = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
 
-    private static final String DB_CONFIG_PATH = "db/";
+    private static final String DB_CONFIG_PATH = "database/";
 
     private static final String DB_CONFIG_URL = "db.connection";
     private static final String DB_CONFIG_USERNAME = "db.connection.username";
