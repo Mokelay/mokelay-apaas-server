@@ -1,4 +1,4 @@
-package com.greatbee.product;
+package com.mokelay.product;
 
 import com.greatbee.api.lego.Input;
 import com.greatbee.api.lego.Lego;
@@ -40,9 +40,9 @@ import java.util.*;
  * Author: CarlChen
  * Date: 2017/12/13
  */
-public class TYUtil implements ExceptionCode {
+public class MokelayUtil implements ExceptionCode {
 
-    private static final Logger logger = Logger.getLogger(TYUtil.class);
+    private static final Logger logger = Logger.getLogger(MokelayUtil.class);
 
     /**
      * 执行API ALias
@@ -55,7 +55,7 @@ public class TYUtil implements ExceptionCode {
      */
     public static Response executeAPIAlias(String apiAlias, TYDriver tyDriver, HttpServletRequest request, HttpServletResponse response, boolean filterMethodCheck) {
 
-        TYTime tyTime = new TYTime(apiAlias);
+        M_Time mTime = new M_Time(apiAlias);
         Response tyResponse = new Response();
 
         APIView apiView;
@@ -68,21 +68,21 @@ public class TYUtil implements ExceptionCode {
             tyResponse.setOk(false);
             tyResponse.setCode(e.getCode());
             tyResponse.setMessage(e.getMessage());
-            tyTime.finish();
+            mTime.finish();
             return tyResponse;
         }
         if (apiView == null || apiView.getApi() == null || !apiView.getApi().isEnable()) {
             tyResponse.setOk(false);
             tyResponse.setCode(ERROR_API_NOT_VALID);
             tyResponse.setMessage("API不可用");
-            tyTime.finish();
+            mTime.finish();
             return tyResponse;
         }
         if (CollectionUtil.isInvalid(apiView.getApiLegoViews())) {
             tyResponse.setOk(false);
             tyResponse.setCode(ERROR_API_NO_LEGO);
             tyResponse.setMessage("没有可以执行的乐高");
-            tyTime.finish();
+            mTime.finish();
             return tyResponse;
         }
 
@@ -94,7 +94,7 @@ public class TYUtil implements ExceptionCode {
                 tyResponse.setOk(false);
                 tyResponse.setCode(ERROR_API_METHOD_NOT_MATCH);
                 tyResponse.setMessage("提交方式不匹配");
-                tyTime.finish();
+                mTime.finish();
                 return tyResponse;
             }
         }
@@ -106,13 +106,13 @@ public class TYUtil implements ExceptionCode {
                 AuthType authType = authTypes.get(i);
                 if (authType != null && StringUtil.isValid(authType.getJudgeAPIAlias())) {
                     String judgeAPIAlias = authType.getJudgeAPIAlias();
-                    Response authResponse = TYUtil.executeAPIAlias(judgeAPIAlias, tyDriver, request, response, true);
+                    Response authResponse = MokelayUtil.executeAPIAlias(judgeAPIAlias, tyDriver, request, response, true);
                     if (authResponse == null || (!authResponse.isOk())) {
                         //没有通过权限认证
                         tyResponse.setOk(false);
                         tyResponse.setCode(authType.getNoAuthErrorCode());
                         tyResponse.setMessage("没有权限访问");
-                        tyTime.finish();
+                        mTime.finish();
                         return tyResponse;
                     }
                 }
@@ -132,7 +132,7 @@ public class TYUtil implements ExceptionCode {
                     //如果当前节点被禁用，则直接跳过
                     continue;
                 }
-                tyTime.beginAPILego(apiLego);
+                mTime.beginAPILego(apiLego);
 
                 //处理Input字段的值
                 List<InputField> inputFields = apiLegoView.getInputFields();
@@ -195,7 +195,7 @@ public class TYUtil implements ExceptionCode {
                                 tyResponse.setOk(false);
                                 tyResponse.setCode(ERROR_API_CONFIG_NO_TPL);
                                 tyResponse.setMessage("接口配置错误");
-                                tyTime.finish();
+                                mTime.finish();
                                 return tyResponse;
                             }
                             List<OutputField> outputFields = null;
@@ -214,7 +214,7 @@ public class TYUtil implements ExceptionCode {
                                 tyResponse.setOk(false);
                                 tyResponse.setCode(e.getCode());
                                 tyResponse.setMessage(e.getMessage());
-                                tyTime.finish();
+                                mTime.finish();
                                 return tyResponse;
                             }
                         }
@@ -254,7 +254,7 @@ public class TYUtil implements ExceptionCode {
                         //Output加入上下文
                         context.addContext(apiLego, output);
 
-                        tyTime.endAPILego(apiLego);
+                        mTime.endAPILego(apiLego);
                     } catch (LegoException e) {
 
 
@@ -285,7 +285,7 @@ public class TYUtil implements ExceptionCode {
                                 //添加返回数据到response
                                 context.addContext(apiLego, output);
                             }
-                            tyTime.endAPILego(apiLego);
+                            mTime.endAPILego(apiLego);
                             break;
                         } else if (ExecuteStatus.Error.equals(es)) {
                             e.printStackTrace();
@@ -294,14 +294,14 @@ public class TYUtil implements ExceptionCode {
                             tyResponse.setOk(false);
                             tyResponse.setCode(e.getCode());
                             tyResponse.setMessage(e.getMessage());
-                            tyTime.endAPILego(apiLego);
-                            tyTime.finish();
+                            mTime.endAPILego(apiLego);
+                            mTime.finish();
                             return tyResponse;
                         } else if (ExecuteStatus.Continue.equals(es)) {
                             logger.info("流程继续:" + es);
                             //添加返回数据到response   流程继续的情况，基本只会在validate中使用，这个时候apiLego是不希望将output设置到context的
 //                            context.addContext(apiLego, output);
-                            tyTime.endAPILego(apiLego);
+                            mTime.endAPILego(apiLego);
                         }
                     }
                 } else {
@@ -309,8 +309,8 @@ public class TYUtil implements ExceptionCode {
                     tyResponse.setOk(false);
                     tyResponse.setCode(ERROR_API_LEGO_CODE_NOT_FOUND);
                     tyResponse.setMessage("Lego执行器没有找到");
-                    tyTime.endAPILego(apiLego);
-                    tyTime.finish();
+                    mTime.endAPILego(apiLego);
+                    mTime.finish();
                     return tyResponse;
                 }
             }
@@ -323,12 +323,12 @@ public class TYUtil implements ExceptionCode {
                     Object fieldValue = field.getFieldValue();
                     if (fieldValue instanceof FileStream && response != null) {
                         ((FileStream) fieldValue).download(response);
-                        tyTime.finish();
+                        mTime.finish();
                         return null;
                     } else if (fieldValue instanceof RedirectConfig && response != null) {
                         try {
                             response.sendRedirect(((RedirectConfig) fieldValue).getUrl());
-                            tyTime.finish();
+                            mTime.finish();
                             return null;
                         } catch (IOException e) {
                             e.printStackTrace();
@@ -341,14 +341,14 @@ public class TYUtil implements ExceptionCode {
                 }
             }
         }
-        tyTime.finish();
+        mTime.finish();
         return tyResponse;
     }
 }
 
 
-class TYTime {
-    private static final Logger logger = Logger.getLogger(TYTime.class);
+class M_Time {
+    private static final Logger logger = Logger.getLogger(M_Time.class);
 
     private String apiAlias;
     private long begin;
@@ -356,7 +356,7 @@ class TYTime {
     private Map<String, long[]> apiLegoTime = new LinkedHashMap<String, long[]>();
 
     //初始化
-    public TYTime(String apiAlias) {
+    public M_Time(String apiAlias) {
         this.apiAlias = apiAlias;
         this.begin = System.currentTimeMillis();
     }

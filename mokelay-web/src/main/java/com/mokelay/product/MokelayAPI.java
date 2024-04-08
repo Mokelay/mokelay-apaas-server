@@ -1,4 +1,4 @@
-package com.greatbee.product;
+package com.mokelay.product;
 
 import com.greatbee.db.ExceptionCode;
 import com.greatbee.core.manager.TYDriver;
@@ -16,9 +16,9 @@ import javax.servlet.http.HttpServletResponse;
  * Date: 2017/9/15
  */
 @Controller
-public class TYController implements ExceptionCode {
+public class MokelayAPI implements ExceptionCode {
 
-    private static final Logger logger = Logger.getLogger(TYController.class);
+    private static final Logger logger = Logger.getLogger(MokelayAPI.class);
 
     @Autowired
     private TYDriver tyDriver;
@@ -32,7 +32,7 @@ public class TYController implements ExceptionCode {
      * @return
      */
     protected Response execute(HttpServletRequest request, HttpServletResponse response, String apiAlias) {
-        return TYUtil.executeAPIAlias(apiAlias,tyDriver,request,response,false);
+        return MokelayUtil.executeAPIAlias(apiAlias,tyDriver,request,response,false);
     }
 
 

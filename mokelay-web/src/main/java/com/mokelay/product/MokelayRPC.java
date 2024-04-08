@@ -1,12 +1,13 @@
-package com.greatbee.product;
+package com.mokelay.product;
 
 /**
- * TY DUBBO Provider
+ * Mokelay RPC
+ * DUBBO Provider
  * <p/>
  * Author: CarlChen
  * Date: 2017/11/21
  */
-public class TYProvider {
+public class MokelayRPC {
     public Response execute(String api, String[] request) {
         return null;
     }
