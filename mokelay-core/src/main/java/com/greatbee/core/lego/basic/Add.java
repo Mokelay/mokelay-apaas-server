@@ -140,6 +140,10 @@ public class Add implements Lego, LegoGenerator, ExceptionCode {
 
     @Override
     public void generate(int apiLegoId, String oiAlias) throws LegoException {
+        /*
+        2024-04-09 废弃数据库存储
+        TODO 后续升级为JSON存储 ,见ty_model_to_api_and_page的实现方式
+
         //添加InputFields
         //添加OututFields
         try {
@@ -180,6 +184,6 @@ public class Add implements Lego, LegoGenerator, ExceptionCode {
             throw new LegoException(e, ERROR_LEGO_GENERATE);
         }
 
-
+         */
     }
 }

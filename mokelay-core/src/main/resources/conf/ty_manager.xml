@@ -6,17 +6,6 @@
     <!-- API Manager-->
     <bean id="apiManager" class="com.greatbee.core.manager.ext.SimpleAPIManager" parent="abstractBasicManager"/>
 
-    <!-- API Lego Manager-->
-    <bean id="apiLegoManager" class="com.greatbee.core.manager.ext.SimpleAPILegoManager" parent="abstractBasicManager"/>
-
-    <!-- InputFieldManager-->
-    <bean id="inputFieldManager" class="com.greatbee.core.manager.ext.SimpleInputFieldManager"
-          parent="abstractBasicManager"/>
-
-    <!-- OutputFieldManager-->
-    <bean id="outputFieldManager" class="com.greatbee.core.manager.ext.SimpleOutputFieldManager"
-          parent="abstractBasicManager"/>
-
     <!-- FileStorageManager-->
     <bean id="fileStorageManager" class="com.greatbee.core.manager.ext.SimpleFileStorageManager"
           parent="abstractBasicManager"/>

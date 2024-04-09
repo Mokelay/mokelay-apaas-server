@@ -21,69 +21,6 @@
         <property name="content" column="content" type="string"/>
     </class>
 
-    <!-- APILego-->
-    <class name="com.greatbee.api.bean.server.APILego" table="ty_api_lego" lazy="false">
-        <id name="id" column="id">
-            <generator class="identity"/>
-        </id>
-        <property name="apiAlias" column="`apiAlias`" type="string"/>
-        <property name="legoAlias" column="legoAlias" type="string"/>
-        <property name="oiAlias" column="oiAlias" type="string"/>
-        <property name="index" column="`index`" type="integer"/>
-        <property name="attributes" column="attributes" type="string"/>
-        <property name="description" column="description" type="string"/>
-        <property name="uuid" column="uuid" type="string"/>
-    </class>
-
-    <!-- InputField-->
-    <class name="com.greatbee.api.bean.server.InputField" table="ty_input_field" lazy="false">
-        <id name="id" column="id">
-            <generator class="identity"/>
-        </id>
-        <property name="name" column="`name`" type="string"/>
-        <property name="description" column="description" type="string"/>
-        <property name="apiLegoId" column="`apiLegoId`" type="integer"/>
-        <property name="fieldName" column="fieldName" type="string"/>
-        <property name="constant" column="constant" type="string"/>
-        <property name="ct" column="ct" type="string"/>
-        <property name="ift" column="ift" type="string"/>
-        <property name="fvt" column="fvt" type="string"/>
-        <property name="fromApiLegoId" column="fromApiLegoId" type="integer"/>
-        <property name="fromApiLegoUuid" column="fromApiLegoUuid" type="string"/>
-        <property name="alias" column="alias" type="string"/>
-        <property name="attributes" column="attributes" type="string"/>
-        <property name="validate" column="validate" type="string"/>
-        <property name="connectorPath" column="connectorPath" type="string"/>
-        <property name="dt" column="dt" type="string"/>
-        <property name="inputFieldDescribeId" column="inputFieldDescribeId" type="integer"/>
-        <property name="requestParamName" column="requestParamName" type="string"/>
-        <property name="sessionParamName" column="sessionParamName" type="string"/>
-        <property name="fromApiLegoOutputFieldAlias" column="fromApiLegoOutputFieldAlias" type="string"/>
-        <property name="fieldTpl" column="fieldTpl" type="string"/>
-        <property name="uuid" column="uuid" type="string"/>
-        <property name="apiLegoUuid" column="apiLegoUuid" type="string"/>
-    </class>
-
-    <!-- OutputField-->
-    <class name="com.greatbee.api.bean.server.OutputField" table="ty_output_field" lazy="false">
-        <id name="id" column="id">
-            <generator class="identity"/>
-        </id>
-        <property name="name" column="`name`" type="string"/>
-        <property name="description" column="description" type="string"/>
-        <property name="apiLegoId" column="apiLegoId" type="integer"/>
-        <property name="fieldName" column="`fieldName`" type="string"/>
-        <property name="fieldValue" column="`fieldValue`" type="string"/>
-        <property name="oft" column="`oft`" type="string"/>
-        <property name="response" column="`response`" type="boolean"/>
-        <property name="handle" column="`handle`" type="string"/>
-        <property name="alias" column="alias" type="string"/>
-        <property name="dt" column="dt" type="string"/>
-        <property name="uuid" column="uuid" type="string"/>
-        <property name="apiLegoUuid" column="apiLegoUuid" type="string"/>
-        <property name="outputFieldDescribeId" column="outputFieldDescribeId" type="integer"/>
-    </class>
-
     <!-- OutputFieldDescribe-->
     <class name="com.greatbee.core.bean.server.FileStorage" table="ty_file_storage" lazy="false">
         <id name="id" column="id">

@@ -7,8 +7,6 @@ import com.greatbee.db.bean.oi.DS;
 import com.greatbee.db.bean.oi.Field;
 import com.greatbee.db.bean.oi.OI;
 import com.greatbee.core.bean.server.API;
-import com.greatbee.api.bean.server.APILego;
-import com.greatbee.api.bean.server.InputField;
 import com.greatbee.api.bean.server.OutputField;
 import com.greatbee.core.lego.util.BuildConnectorTreeUtils;
 import com.greatbee.db.manager.ConnectorManager;
@@ -31,8 +29,8 @@ import java.util.List;
  */
 @Component("tyCacheService")
 public class TYCacheService {
-    @Autowired
-    private APILegoManager apiLegoManager;
+//    @Autowired
+//    private APILegoManager apiLegoManager;
     @Autowired
     private APIManager apiManager;
     @Autowired
@@ -40,11 +38,7 @@ public class TYCacheService {
     @Autowired
     private FieldManager fieldManager;
     @Autowired
-    private InputFieldManager inputFieldManager;
-    @Autowired
     private OIManager oiManager;
-    @Autowired
-    private OutputFieldManager outputFieldManager;
     @Autowired
     private DSManager dsManager;
     @Autowired
@@ -70,10 +64,10 @@ public class TYCacheService {
         return;
     }
 
-    @Cacheable(value = "apiLego")
-    public List<APILego> getAPILegoList(String apiAlias) throws DBException{
-        return apiLegoManager.getAPILegoList(apiAlias);
-    }
+//    @Cacheable(value = "apiLego")
+//    public List<APILego> getAPILegoList(String apiAlias) throws DBException{
+//        return apiLegoManager.getAPILegoList(apiAlias);
+//    }
 
     @Cacheable(value = "api")
     public API getAPIByAlias(String alias) throws DBException{
@@ -90,19 +84,14 @@ public class TYCacheService {
         return fieldManager.getFields(oiAlias);
     }
 
-    @Cacheable(value = "inputField")
-    public List<InputField> getInputFields(String apiLegoUuid) throws DBException{
-        return inputFieldManager.getInputFields(apiLegoUuid);
-    }
+//    @Cacheable(value = "inputField")
+//    public List<InputField> getInputFields(String apiLegoUuid) throws DBException{
+//        return inputFieldManager.getInputFields(apiLegoUuid);
+//    }
 
     @Cacheable(value = "oi")
     public OI getOIByAlias(String alias) throws DBException{
         return oiManager.getOIByAlias(alias);
-    }
-
-    @Cacheable(value = "outputField")
-    public List<OutputField> getOutputFields(String apiLegoUuid) throws DBException{
-        return outputFieldManager.getOutputFields(apiLegoUuid);
     }
 
     @Cacheable(value = "ds")

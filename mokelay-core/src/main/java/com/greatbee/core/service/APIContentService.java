@@ -67,6 +67,9 @@ public class APIContentService {
         }
 
         //组装乐高
+        //2024-04-09 统一走JSON模式，数据库里脏数据需要清理
+        apiView.setApiLegoViews(_buildJSONAPILego(api.getContent()));
+        /*
         String version = api.getVersion();
         if (StringUtil.isValid(version) && API.VERSION_2.equalsIgnoreCase(version)) {
             //如果是2.0，则走JSON配置
@@ -74,17 +77,21 @@ public class APIContentService {
         } else {
             apiView.setApiLegoViews(_buildDBAPILego(tyCacheService, api));
         }
+         */
         return apiView;
     }
 
     /**
      * 先从缓存中读取，再从数据库中读取
      *
+     * 2024-04-09：DB 组装API废弃，全面采用JSON配置
+     *
      * @param tyCacheService
      * @param api
      * @return
      * @throws DBException
      */
+    /*
     private static List<APILegoView> _buildDBAPILego(TYCacheService tyCacheService, API api) throws DBException {
         List<APILegoView> apiLegoViews = new ArrayList<APILegoView>();
 
@@ -115,6 +122,7 @@ public class APIContentService {
         });
         return apiLegoViews;
     }
+     */
 
     /**
      * 通过JSON数据组装APILegoView

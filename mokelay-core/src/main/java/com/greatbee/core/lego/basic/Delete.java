@@ -92,6 +92,10 @@ public class Delete implements Lego,LegoGenerator,ExceptionCode {
 
     @Override
     public void generate(int apiLegoId, String oiAlias) throws LegoException {
+        /*
+        2024-04-09 废弃数据库存储
+        TODO 后续升级为JSON存储 ,见ty_model_to_api_and_page的实现方式
+
         try {
             java.util.List<Field> fields = tyDriver.getTyCacheService().getFields(oiAlias);
             //添加inputfields
@@ -118,6 +122,7 @@ public class Delete implements Lego,LegoGenerator,ExceptionCode {
             logger.error(e.getMessage(), e);
             throw new LegoException(e, ERROR_LEGO_GENERATE);
         }
+         */
     }
 
 }

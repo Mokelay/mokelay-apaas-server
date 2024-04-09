@@ -26,20 +26,6 @@ public interface TYDriver {
     public DSManager getDsManager();
 
     /**
-     * InputFieldManager
-     *
-     * @return
-     */
-    public InputFieldManager getInputFieldManager();
-
-    /**
-     * OutputFieldManager
-     *
-     * @return
-     */
-    public OutputFieldManager getOutputFieldManager();
-
-    /**
      * FileStorageManager Manager
      *
      * @return
