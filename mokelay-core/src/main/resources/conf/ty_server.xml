@@ -14,9 +14,6 @@
     <!-- TY DB Server-->
     <import resource="classpath:conf/ty_db_server.xml"/>
 
-    <!--TY ManagerConfig-->
-    <import resource="classpath:conf/ty_manager.xml"/>
-
     <!-- redis-->
     <import resource="classpath:conf/ty_redis.xml"/>
 

@@ -27,6 +27,26 @@
     <bean id="connectorManager" class="com.greatbee.db.manager.ext.SimpleConnectorManager"
           parent="abstractBasicManager"/>
 
+    <!-- API Manager-->
+    <bean id="apiManager" class="com.greatbee.core.manager.ext.SimpleAPIManager" parent="abstractBasicManager"/>
+
+    <!-- FileStorageManager-->
+    <bean id="fileStorageManager" class="com.greatbee.core.manager.ext.SimpleFileStorageManager"
+          parent="abstractBasicManager"/>
+
+    <!-- LogManager-->
+    <bean id="logManager" class="com.greatbee.core.manager.ext.SimpleLogManager"
+          parent="abstractBasicManager"/>
+
+    <!-- Task Manager-->
+    <bean id="taskManager" class="com.greatbee.core.manager.ext.SimpleTaskManager" parent="abstractBasicManager"/>
+    <!-- Task Log Manager-->
+    <bean id="taskLogManager" class="com.greatbee.core.manager.ext.SimpleTaskLogManager" parent="abstractBasicManager"/>
+
+    <!-- Auth Type Manager-->
+    <bean id="authTypeManager" class="com.greatbee.core.manager.ext.SimpleAuthTypeManager"
+          parent="abstractBasicManager"/>
+
     <!-- Mysql Data Manager-->
     <bean id="mysqlDataManager" class="com.greatbee.db.database.mysql.manager.MysqlDataManager"/>
 
