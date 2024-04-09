@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.greatbee.base.bean.DBException;
 import com.greatbee.base.util.StringUtil;
+import com.greatbee.core.lego.system.TYPPC;
 import com.greatbee.db.ExceptionCode;
 import com.greatbee.core.bean.server.FileStorage;
 import com.greatbee.api.lego.Input;
@@ -59,8 +60,6 @@ public class FastdfsFileSave implements Lego, ExceptionCode {
     private static final String Output_Key_File_Fast_Size = "size";//图片大小
     private static final String Output_Key_Upload_File_Time = "uploadTime";//上传时间
 
-    @Value("${fileUploadUrl}")
-    private String fileUploadUrl;
     @Autowired
     RestTemplate restTemplate;
 
@@ -103,7 +102,7 @@ public class FastdfsFileSave implements Lego, ExceptionCode {
                 headers.setContentType(MediaType.MULTIPART_FORM_DATA);
                 HttpEntity entity = new HttpEntity(param, headers);
 
-                String result = restTemplate.postForObject(fileUploadUrl + "/file/public/upload/e", entity, String.class);
+                String result = restTemplate.postForObject(TYPPC.getTYProp("file_upload_url") + "/file/public/upload/e", entity, String.class);
                 logger.info("result===>" + result);
 
                 String url = "";

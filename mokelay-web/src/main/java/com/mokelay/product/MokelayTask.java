@@ -1,15 +1,16 @@
 package com.mokelay.product;
 
 import com.greatbee.base.bean.DBException;
+import com.greatbee.base.util.BooleanUtil;
 import com.greatbee.base.util.CollectionUtil;
 import com.greatbee.core.bean.task.Task;
+import com.greatbee.core.lego.system.TYPPC;
 import com.greatbee.core.manager.TYDriver;
 import com.mokelay.product.util.TaskExecute;
 import org.apache.log4j.Logger;
 import org.quartz.*;
 import org.quartz.impl.StdSchedulerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
@@ -29,12 +30,10 @@ public class MokelayTask {
 
     @Autowired
     private TYDriver tyDriver;
-    @Value("${ty.job.enable}")
-    private boolean jobEnable;
 
     @PostConstruct
     public void buildTask() {
-        if (jobEnable) {
+        if (BooleanUtil.toBool(TYPPC.getTYProp("ty.job.enable"))) {
             System.out.println("Begin to build task....");
 
             List<Task> tasks = null;
