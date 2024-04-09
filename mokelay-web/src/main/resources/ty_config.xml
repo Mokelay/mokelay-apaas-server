@@ -45,8 +45,6 @@
             <list>
                 <!--TY DB-->
                 <value>conf/ty_db.xml</value>
-                <!-- TY DB Core-->
-                <value>conf/ty_db_core.xml</value>
             </list>
         </property>
         <property name="hibernateProperties">

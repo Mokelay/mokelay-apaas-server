@@ -20,10 +20,6 @@ public class SimpleTYDriver implements TYDriver {
     @Autowired
     private DSManager dsManager;
     @Autowired
-    private OutputFieldManager outputFieldManager;
-    @Autowired
-    private InputFieldManager inputFieldManager;
-    @Autowired
     private FileStorageManager fileStorageManager;
     @Autowired
     private LogManager logManager;
@@ -46,19 +42,10 @@ public class SimpleTYDriver implements TYDriver {
     }
 
     @Override
-    public OutputFieldManager getOutputFieldManager() {
-        return outputFieldManager;
-    }
-
-    @Override
     public FileStorageManager getFileStorageManager() {
         return fileStorageManager;
     }
 
-    @Override
-    public InputFieldManager getInputFieldManager() {
-        return inputFieldManager;
-    }
 
     @Override
     public LogManager getLogManager() {

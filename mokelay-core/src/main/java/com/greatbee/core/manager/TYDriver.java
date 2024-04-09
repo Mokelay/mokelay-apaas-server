@@ -2,8 +2,6 @@ package com.greatbee.core.manager;
 
 import com.greatbee.db.manager.ConnectorManager;
 import com.greatbee.db.manager.DSManager;
-import com.greatbee.db.manager.FieldManager;
-import com.greatbee.db.manager.OIManager;
 
 /**
  * TY Driver
@@ -24,20 +22,6 @@ public interface TYDriver {
      * @return
      */
     public DSManager getDsManager();
-
-    /**
-     * InputFieldManager
-     *
-     * @return
-     */
-    public InputFieldManager getInputFieldManager();
-
-    /**
-     * OutputFieldManager
-     *
-     * @return
-     */
-    public OutputFieldManager getOutputFieldManager();
 
     /**
      * FileStorageManager Manager

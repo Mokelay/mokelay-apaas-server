@@ -135,6 +135,9 @@ public class BaseRead implements ExceptionCode {
      * @param isList
      * @throws DBException
      */
+    /*
+    2024-04-09 废弃数据库存储
+    TODO 后续升级为JSON存储 ,见ty_model_to_api_and_page的实现方式
     protected void buildListAndPageGenerate(TYDriver tyDriver, List<Field> fields, int apiLegoId, boolean isList) throws DBException {
         for(Field field:fields){
             if(field.isPk()){
@@ -257,7 +260,7 @@ public class BaseRead implements ExceptionCode {
             tyDriver.getOutputFieldManager().add(of);
         }
 
-
     }
+     */
 
 }
