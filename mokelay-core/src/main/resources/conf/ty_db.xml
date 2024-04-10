@@ -112,20 +112,6 @@
         <property name="apiAlias" column="apiAlias" type="string"/>
     </class>
 
-    <!-- Task Log-->
-    <class name="com.greatbee.core.bean.task.TaskLog" table="ty_task_log" lazy="false">
-        <id name="id" column="id">
-            <generator class="identity"/>
-        </id>
-        <property name="createDate" column="createDate" type="java.util.Date"/>
-        <property name="taskId" column="taskId" type="integer"/>
-        <property name="result" column="result" type="string"/>
-        <property name="timeConsuming" column="timeConsuming" type="long"/>
-        <property name="begin" column="begin" type="java.util.Date"/>
-        <property name="finish" column="finish" type="java.util.Date"/>
-        <property name="remark" column="remark" type="string"/>
-    </class>
-
     <!-- Auth Type-->
     <class name="com.greatbee.core.bean.auth.AuthType" table="ty_auth_type" lazy="false">
         <id name="id" column="id">

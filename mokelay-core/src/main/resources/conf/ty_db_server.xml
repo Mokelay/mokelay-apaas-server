@@ -36,8 +36,6 @@
 
     <!-- Task Manager-->
     <bean id="taskManager" class="com.greatbee.core.manager.ext.SimpleTaskManager" parent="abstractBasicManager"/>
-    <!-- Task Log Manager-->
-    <bean id="taskLogManager" class="com.greatbee.core.manager.ext.SimpleTaskLogManager" parent="abstractBasicManager"/>
 
     <!-- Auth Type Manager-->
     <bean id="authTypeManager" class="com.greatbee.core.manager.ext.SimpleAuthTypeManager"

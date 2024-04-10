@@ -46,10 +46,12 @@ public class TaskExecute implements Job {
             remark.append("Code: ").append(response.getCode()).append(",Message:").append(response.getMessage());
             taskLog.setRemark(remark.toString());
         }
-        try {
-            tyDriver.getTaskLogManager().add(taskLog);
-        } catch (DBException e) {
-            e.printStackTrace();
-        }
+
+        //TODO Task Log的记录需要可配置，方案待定 2024-04-10
+//        try {
+//            tyDriver.getTaskLogManager().add(taskLog);
+//        } catch (DBException e) {
+//            e.printStackTrace();
+//        }
     }
 }

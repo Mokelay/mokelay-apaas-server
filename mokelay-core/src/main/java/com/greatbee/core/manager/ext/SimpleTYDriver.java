@@ -25,8 +25,6 @@ public class SimpleTYDriver implements TYDriver {
     private TYCacheService tyCacheService;
     @Autowired
     private TaskManager taskManager;
-    @Autowired
-    private TaskLogManager taskLogManager;
 
 
     @Override
@@ -52,10 +50,5 @@ public class SimpleTYDriver implements TYDriver {
     @Override
     public TaskManager getTaskManager() {
         return taskManager;
-    }
-
-    @Override
-    public TaskLogManager getTaskLogManager() {
-        return taskLogManager;
     }
 }

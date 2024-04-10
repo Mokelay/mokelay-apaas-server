@@ -42,11 +42,4 @@ public interface TYDriver {
      * @return
      */
     public TaskManager getTaskManager();
-
-    /**
-     * Task Log Manager
-     *
-     * @return
-     */
-    public TaskLogManager getTaskLogManager();
 }
