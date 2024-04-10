@@ -29,8 +29,6 @@ import java.util.List;
  */
 @Component("tyCacheService")
 public class TYCacheService {
-//    @Autowired
-//    private APILegoManager apiLegoManager;
     @Autowired
     private APIManager apiManager;
     @Autowired
