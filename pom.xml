@@ -6,17 +6,14 @@
 
     <groupId>com.mokelay</groupId>
     <artifactId>mokelay-apaas-server</artifactId>
-    <packaging>pom</packaging>
     <version>2.0.1</version>
     <modules>
-<!--        <module>ty-server-base</module>-->
-<!--        <module>ty-lego-api</module>-->
-<!--        <module>ty-server-db</module>-->
-<!--        <module>ty-server-core</module>-->
-<!--        <module>ty-lego-vendor</module>-->
         <module>mokelay-core</module>
         <module>mokelay-web</module>
     </modules>
+    <packaging>pom</packaging>
+
+    <name>mokelay-apaas-server</name>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -53,18 +50,259 @@
     </licenses>
 
     <scm>
-        <url>https://github.com/Great-Bee/TY</url>
-        <connection>git@github.com:Great-Bee/TY.git</connection>
-        <developerConnection>http://www.greatbee.com</developerConnection>
+        <url>https://github.com/Mokelay/mokelay-apaas-server</url>
+        <connection>git@github.com:Mokelay/mokelay-apaas-server.git</connection>
+        <developerConnection>http://www.mokelay.com</developerConnection>
     </scm>
 
     <developers>
         <developer>
             <name>CarlChen</name>
-            <email>carl@greatbee.com.com</email>
-            <url>http://www.greatbee.com</url>
+            <email>iamcarlchen@gmail.com</email>
+            <url>http://www.mokelay.com</url>
         </developer>
     </developers>
 
+<!--    <dependencyManagement>-->
+        <dependencies>
+            <dependency>
+                <groupId>javax.servlet</groupId>
+                <artifactId>javax.servlet-api</artifactId>
+                <version>3.1.0</version>
+                <scope>provided</scope>
+            </dependency>
 
+            <!--   Begin Database     -->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>8.0.12</version>
+            </dependency>
+            <dependency>
+                <groupId>com.microsoft.sqlserver</groupId>
+                <artifactId>mssql-jdbc</artifactId>
+                <version>6.2.2.jre8</version>
+            </dependency>
+            <!--暂时不支持Oracle-->
+            <!-- oracle -->
+            <!--        <dependency>-->
+            <!--            <groupId>com.oracle</groupId>-->
+            <!--            <artifactId>ojdbc11</artifactId>-->
+            <!--            <version>11.0.0</version>-->
+            <!--        </dependency>-->
+            <!--   End Database     -->
+
+            <!-- log -->
+            <!--TODO Update-->
+            <dependency>
+                <groupId>log4j</groupId>
+                <artifactId>log4j</artifactId>
+                <version>1.2.17</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>1.7.21</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-log4j12</artifactId>
+                <version>1.7.7</version>
+            </dependency>
+
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>4.12</version>
+            </dependency>
+
+            <!-- TODO Update-->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>1.2.22</version>
+            </dependency>
+
+            <!--http-->
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpclient</artifactId>
+                <version>4.5.14</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpcore</artifactId>
+                <version>4.4.9</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpmime</artifactId>
+                <version>4.5.2</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-httpclient</groupId>
+                <artifactId>commons-httpclient</artifactId>
+                <version>3.1</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.im4java</groupId>
+                <artifactId>im4java</artifactId>
+                <version>1.4.0</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-logging</groupId>
+                <artifactId>commons-logging</artifactId>
+                <version>1.2</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-io</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>2.5</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-net</groupId>
+                <artifactId>commons-net</artifactId>
+                <version>3.5</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-pool2</artifactId>
+                <version>2.4.2</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-dbcp2</artifactId>
+                <version>2.2.0</version>
+            </dependency>
+
+            <!-- Spring Begin-->
+            <!-- TODO Update -->
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-aop</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-beans</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-context</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-core</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-web</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-webmvc</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-jdbc</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-orm</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <!-- Spring End-->
+
+            <dependency>
+                <groupId>org.aspectj</groupId>
+                <artifactId>aspectjrt</artifactId>
+                <version>1.6.1</version>
+            </dependency>
+            <dependency>
+                <groupId>org.aspectj</groupId>
+                <artifactId>aspectjweaver</artifactId>
+                <version>1.6.1</version>
+            </dependency>
+
+            <!-- 导入，导出工具-->
+            <!-- TODO Update -->
+            <dependency>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi</artifactId>
+                <version>3.14</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi-ooxml</artifactId>
+                <version>3.14</version>
+            </dependency>
+            <!-- 导入，导出工具  end-->
+
+            <dependency>
+                <groupId>commons-fileupload</groupId>
+                <artifactId>commons-fileupload</artifactId>
+                <version>1.3.2</version>
+            </dependency>
+
+            <!--TODO Update-->
+            <dependency>
+                <groupId>org.hibernate</groupId>
+                <artifactId>hibernate-core</artifactId>
+                <version>4.3.11.Final</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.quartz-scheduler</groupId>
+                <artifactId>quartz</artifactId>
+                <version>2.3.2</version>
+            </dependency>
+
+            <!-- jdbc-->
+            <dependency>
+                <groupId>org.apache.tomcat</groupId>
+                <artifactId>tomcat-jdbc</artifactId>
+                <version>8.5.23</version>
+            </dependency>
+
+            <!-- freemarker-->
+            <dependency>
+                <groupId>org.freemarker</groupId>
+                <artifactId>freemarker</artifactId>
+                <version>2.3.32</version>
+            </dependency>
+
+            <!-- 七牛云  音视转码，图片压缩等功能-->
+            <dependency>
+                <groupId>com.qiniu</groupId>
+                <artifactId>qiniu-java-sdk</artifactId>
+                <version>7.2.12</version>
+            </dependency>
+            <!-- redis -->
+            <dependency>
+                <groupId>redis.clients</groupId>
+                <artifactId>jedis</artifactId>
+                <version>2.7.3</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.data</groupId>
+                <artifactId>spring-data-redis</artifactId>
+                <version>1.6.4.RELEASE</version>
+            </dependency>
+            <!-- redis -->
+
+            <!--引入根据File 判断文件ContentType工具类-->
+            <dependency>
+                <groupId>net.sf.jmimemagic</groupId>
+                <artifactId>jmimemagic</artifactId>
+                <version>0.1.5</version>
+            </dependency>
+        </dependencies>
+<!--    </dependencyManagement>-->
 </project>
