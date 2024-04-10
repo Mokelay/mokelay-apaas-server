@@ -1,5 +1,5 @@
-import com.greatbee.api.lego.LegoException;
-import com.greatbee.core.lego.util.LegoUtil;
+import com.mokelay.api.lego.LegoException;
+import com.mokelay.core.lego.util.LegoUtil;
 
 import java.util.ArrayList;
 import java.util.HashMap;

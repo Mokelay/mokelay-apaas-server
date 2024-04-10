@@ -10,46 +10,46 @@
     </bean>
 
     <!--Abstract Manager base-->
-    <bean id="abstractBasicManager" class="com.greatbee.base.manager.ext.AbstractBasicManager" abstract="true">
+    <bean id="abstractBasicManager" class="com.mokelay.base.manager.ext.AbstractBasicManager" abstract="true">
         <property name="hibernateTemplate" ref="tyHibernateTemplate"/>
     </bean>
 
     <!-- DS Manager-->
-    <bean id="dsManager" class="com.greatbee.db.manager.ext.SimpleDSManager" parent="abstractBasicManager"/>
+    <bean id="dsManager" class="com.mokelay.db.manager.ext.SimpleDSManager" parent="abstractBasicManager"/>
 
     <!-- OI Manager-->
-    <bean id="oiManager" class="com.greatbee.db.manager.ext.SimpleOIManager" parent="abstractBasicManager"/>
+    <bean id="oiManager" class="com.mokelay.db.manager.ext.SimpleOIManager" parent="abstractBasicManager"/>
 
     <!-- Field Manager-->
-    <bean id="fieldManager" class="com.greatbee.db.manager.ext.SimpleFieldManager" parent="abstractBasicManager"/>
+    <bean id="fieldManager" class="com.mokelay.db.manager.ext.SimpleFieldManager" parent="abstractBasicManager"/>
 
     <!-- Connector Manager-->
-    <bean id="connectorManager" class="com.greatbee.db.manager.ext.SimpleConnectorManager"
+    <bean id="connectorManager" class="com.mokelay.db.manager.ext.SimpleConnectorManager"
           parent="abstractBasicManager"/>
 
     <!-- API Manager-->
-    <bean id="apiManager" class="com.greatbee.core.manager.ext.SimpleAPIManager" parent="abstractBasicManager"/>
+    <bean id="apiManager" class="com.mokelay.core.manager.ext.SimpleAPIManager" parent="abstractBasicManager"/>
 
     <!-- FileStorageManager-->
-    <bean id="fileStorageManager" class="com.greatbee.core.manager.ext.SimpleFileStorageManager"
+    <bean id="fileStorageManager" class="com.mokelay.core.manager.ext.SimpleFileStorageManager"
           parent="abstractBasicManager"/>
 
     <!-- Task Manager-->
-    <bean id="taskManager" class="com.greatbee.core.manager.ext.SimpleTaskManager" parent="abstractBasicManager"/>
+    <bean id="taskManager" class="com.mokelay.core.manager.ext.SimpleTaskManager" parent="abstractBasicManager"/>
 
     <!-- Auth Type Manager-->
-    <bean id="authTypeManager" class="com.greatbee.core.manager.ext.SimpleAuthTypeManager"
+    <bean id="authTypeManager" class="com.mokelay.core.manager.ext.SimpleAuthTypeManager"
           parent="abstractBasicManager"/>
 
     <!-- Mysql Data Manager-->
-    <bean id="mysqlDataManager" class="com.greatbee.db.database.mysql.manager.MysqlDataManager"/>
+    <bean id="mysqlDataManager" class="com.mokelay.db.database.mysql.manager.MysqlDataManager"/>
 
     <!-- Oracle Data Manager-->
-    <bean id="oracleDataManager" class="com.greatbee.db.database.oracle.manager.OracleDataManager"/>
+    <bean id="oracleDataManager" class="com.mokelay.db.database.oracle.manager.OracleDataManager"/>
 
     <!-- SQLServer Data Manager-->
-    <bean id="sqlServerDataManager" class="com.greatbee.db.database.sqlserver.manager.SQLServerDataManager"/>
+    <bean id="sqlServerDataManager" class="com.mokelay.db.database.sqlserver.manager.SQLServerDataManager"/>
 
     <!-- Rest API Data Manager-->
-    <bean id="restAPIManager" class="com.greatbee.db.database.rest.RestAPIManager"/>
+    <bean id="restAPIManager" class="com.mokelay.db.database.rest.RestAPIManager"/>
 </beans>

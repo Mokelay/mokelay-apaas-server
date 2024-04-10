@@ -1,0 +1,57 @@
+package com.mokelay.db.database.restapi.testcase;
+
+import com.mokelay.base.bean.DBException;
+import com.mokelay.base.bean.constant.DT;
+import com.mokelay.db.bean.constant.RestApiFieldGroupType;
+import com.mokelay.db.bean.oi.Field;
+import com.mokelay.db.bean.oi.OI;
+import com.mokelay.db.bean.view.RestApiResponse;
+import com.mokelay.db.database.restapi.basecase.BaseConnectTest;
+import com.mokelay.api.util.SpringContextUtil;
+import org.springframework.context.ApplicationContext;
+
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * test post
+ * Created by usagizhang on 18/3/28.
+ */
+public class RestTest extends BaseConnectTest {
+    public RestTest() throws DBException {
+        super();
+    }
+
+    @Override
+    protected void runTest() throws DBException {
+        try {
+            OI oi = this.initOI("test_rest_urms", "/employee/login/ad", "urms_login");
+            List<Field> fields = new ArrayList<Field>();
+            fields.add(initField(DT.String, 128, RestApiFieldGroupType.Post, "appId", "808f1db7"));
+            fields.add(initField(DT.String, 128, RestApiFieldGroupType.Post, "appSecret", "f6e914c40c850b2c76c5001066c799424167bedc"));
+            fields.add(initField(DT.String, 128, RestApiFieldGroupType.Post, "username", "xuechao.zhang"));
+            fields.add(initField(DT.String, 128, RestApiFieldGroupType.Post, "password", "z75eOjnx2yeW2sFu0WBXAQ=="));
+            fields.add(initField(DT.String, 128, RestApiFieldGroupType.Method, "post", "post"));
+
+
+            ApplicationContext wac = SpringContextUtil.getApplicationContext();
+            Class c = Class.forName("com.mokelay.db.database.UnstructuredDataManager");
+            Object restAPIManager = wac.getBean("restAPIManager");
+            Method entryPoint = c.getMethod("connect", OI.class, List.class);
+            RestApiResponse restApiResponse = (RestApiResponse) entryPoint.invoke(restAPIManager, oi, fields);
+            printJSONObject(restApiResponse);
+
+
+        } catch (NoSuchMethodException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (InvocationTargetException e) {
+            e.printStackTrace();
+        }
+    }
+}
