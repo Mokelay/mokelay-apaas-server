@@ -18,7 +18,6 @@ import com.greatbee.api.lego.Input;
 import com.greatbee.api.lego.Lego;
 import com.greatbee.api.lego.LegoException;
 import com.greatbee.api.lego.Output;
-import com.greatbee.core.lego.util.LogUtil;
 import com.greatbee.core.manager.TYDriver;
 import com.greatbee.db.database.DataManager;
 import com.greatbee.api.util.SpringContextUtil;
@@ -233,7 +232,7 @@ public class BatchSave implements Lego, ExceptionCode {
         }
 
         //添加日志
-        LogUtil.saveLog(tyDriver, input, output, oi, "batchSave");
+        //LogUtil.saveLog(tyDriver, input, output, oi, "batchSave");
 
     }
 

@@ -22,8 +22,6 @@ public class SimpleTYDriver implements TYDriver {
     @Autowired
     private FileStorageManager fileStorageManager;
     @Autowired
-    private LogManager logManager;
-    @Autowired
     private TYCacheService tyCacheService;
     @Autowired
     private TaskManager taskManager;
@@ -44,12 +42,6 @@ public class SimpleTYDriver implements TYDriver {
     @Override
     public FileStorageManager getFileStorageManager() {
         return fileStorageManager;
-    }
-
-
-    @Override
-    public LogManager getLogManager() {
-        return logManager;
     }
 
     @Override

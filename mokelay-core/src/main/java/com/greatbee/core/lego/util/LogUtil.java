@@ -5,7 +5,6 @@ import com.greatbee.db.bean.oi.OI;
 import com.greatbee.api.bean.server.APILego;
 import com.greatbee.api.bean.server.InputField;
 import com.greatbee.api.bean.server.OutputField;
-import com.greatbee.core.bean.user.Log;
 import com.greatbee.api.lego.Input;
 import com.greatbee.api.lego.Output;
 import com.greatbee.core.manager.TYDriver;
@@ -29,6 +28,8 @@ public class LogUtil {
     /**
      * 保存日志
      *
+     * TODO 去掉核心库对Log数据库的依赖，写操作的日志记录不在lego执行过程中记录，方案待定 2024-04-10
+     *
      * @param tyDriver
      * @param input
      * @param output
@@ -36,6 +37,7 @@ public class LogUtil {
      * @param lego
      */
     public static void saveLog(TYDriver tyDriver, Input input, Output output, OI oi, String lego) {
+        /*
         try {
             if (oi == null || !oi.getDsAlias().equalsIgnoreCase("db_ty")) {
                 //只记录ty库的操作记录
@@ -72,6 +74,7 @@ public class LogUtil {
         } catch (Exception e) {
             logger.error("saveLog invalid", e);
         }
+         */
     }
 
 }

@@ -34,10 +34,6 @@
     <bean id="fileStorageManager" class="com.greatbee.core.manager.ext.SimpleFileStorageManager"
           parent="abstractBasicManager"/>
 
-    <!-- LogManager-->
-    <bean id="logManager" class="com.greatbee.core.manager.ext.SimpleLogManager"
-          parent="abstractBasicManager"/>
-
     <!-- Task Manager-->
     <bean id="taskManager" class="com.greatbee.core.manager.ext.SimpleTaskManager" parent="abstractBasicManager"/>
     <!-- Task Log Manager-->

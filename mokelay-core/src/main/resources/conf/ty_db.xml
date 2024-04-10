@@ -97,22 +97,6 @@
         <property name="uploadType" column="`uploadType`" type="string"/>
     </class>
 
-    <!-- Log-->
-    <class name="com.greatbee.core.bean.user.Log" table="ty_log" lazy="false">
-        <id name="id" column="id">
-            <generator class="identity"/>
-        </id>
-        <property name="createDate" column="createDate" type="java.util.Date"/>
-        <property name="operateUserAlias" column="operateUserAlias" type="string"/>
-        <property name="operateUserName" column="operateUserName" type="string"/>
-        <property name="operateApi" column="operateApi" type="string"/>
-        <property name="operateLego" column="operateLego" type="string"/>
-        <property name="input" column="input" type="string"/>
-        <property name="output" column="output" type="string"/>
-        <property name="content" column="content" type="string"/>
-        <property name="operateOi" column="operateOi" type="string"/>
-    </class>
-
     <!-- Task-->
     <class name="com.greatbee.core.bean.task.Task" table="ty_task" lazy="false">
         <id name="id" column="id">

@@ -16,7 +16,6 @@ import com.greatbee.db.bean.oi.OI;
 import com.greatbee.api.bean.server.InputField;
 import com.greatbee.core.lego.*;
 import com.greatbee.core.lego.util.LegoUtil;
-import com.greatbee.core.lego.util.LogUtil;
 import com.greatbee.core.manager.TYDriver;
 import com.greatbee.db.database.DataManager;
 import com.greatbee.api.util.SpringContextUtil;
@@ -86,7 +85,7 @@ public class Delete implements Lego,LegoGenerator,ExceptionCode {
         }
 
         //添加日志
-        LogUtil.saveLog(tyDriver, input, output, oi, "delete");
+        //LogUtil.saveLog(tyDriver, input, output, oi, "delete");
 
     }
 

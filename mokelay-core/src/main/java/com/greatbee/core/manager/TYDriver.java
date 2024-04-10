@@ -31,13 +31,6 @@ public interface TYDriver {
     public FileStorageManager getFileStorageManager();
 
     /**
-     * Log Manager
-     *
-     * @return
-     */
-    LogManager getLogManager();
-
-    /**
      * TY Cache Service
      * @return
      */
