@@ -20,13 +20,6 @@ public class DBBaseTest extends AbstractJUnit4SpringContextTests {
     protected ApplicationContext context;
 
     /**
-     * @return
-     */
-    public String getServerConfigName() {
-        return "test_server.xml";
-    }
-
-    /**
      * Set Up
      */
     public void setUp(String configName) {

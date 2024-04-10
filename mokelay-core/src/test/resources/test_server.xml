@@ -7,45 +7,24 @@
        http://www.springframework.org/schema/beans/spring-beans-2.5.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd">
 
     <!--Properties Configuration-->
-    <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
-        <property name="location" value="classpath:test_config.properties"/>
-    </bean>
-
-    <!-- Datasource-->
-    <bean id="tyDS" class="org.apache.commons.dbcp2.BasicDataSource" destroy-method="close">
-        <property name="driverClassName" value="${db.connection.driver_class}"/>
-        <property name="url" value="${db.connection.url}"/>
-        <property name="username" value="${db.connection.username}"/>
-        <property name="password" value="${db.connection.password}"/>
-    </bean>
-
-    <!--Hibernate Session Factory-->
-    <bean id="tySessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
-        <property name="dataSource" ref="tyDS"/>
-        <property name="mappingResources">
+    <bean id="propertyConfigurer" class="com.mokelay.core.lego.system.TYPPC">
+        <property name="fileEncoding" value="UTF-8"/>
+        <property name="order" value="2"/>
+        <property name="ignoreUnresolvablePlaceholders" value="true"/>
+        <property name="locations">
             <list>
-                <!--TY DB-->
-                <value>conf/ty_db.xml</value>
+                <value>classpath:test_config.properties</value>
+                <value>classpath:db/db_ty.properties</value>
             </list>
         </property>
-        <property name="hibernateProperties">
-            <props>
-                <prop key="hibernate.generate_statistics">${db.hibernate.generate_statistics}</prop>
-                <prop key="hibernate.dialect">${db.hibernate.dialect}</prop>
-                <prop key="hibernate.show_sql">${db.hibernate.show_sql}</prop>
-                <!--<prop key="hibernate.hbm2ddl.auto">${db.hibernate.hbm2ddl_auto}</prop>-->
-                <prop key="hibernate.cache.use_query_cache">false</prop>
-                <prop key="hibernate.cache.use_second_level_cache">false</prop>
-                <!--<prop key="hibernate.cache.provider_class">${db.hibernate.cache.provider_class}</prop>-->
-            </props>
-        </property>
     </bean>
-
-    <!--TY Server-->
-    <import resource="classpath:conf/ty_server.xml"/>
 
     <!-- 使用annotation 自动注册bean,并保证@Required,@Autowired的属性被注入 -->
     <context:component-scan base-package="com.mokelay"/>
     <context:annotation-config/>
-    <aop:aspectj-autoproxy proxy-target-class="true"/>
+
+    <!-- 这里可以配置第三方项目数据库-->
+
+    <!--引入ty配置  TY Server-->
+    <import resource="classpath:conf/ty_server.xml"/>
 </beans>

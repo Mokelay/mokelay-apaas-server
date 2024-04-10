@@ -82,7 +82,7 @@
         <property name="content" column="content" type="string"/>
     </class>
 
-    <!-- OutputFieldDescribe-->
+    <!-- FileStorage-->
     <class name="com.mokelay.core.bean.server.FileStorage" table="ty_file_storage" lazy="false">
         <id name="id" column="id">
             <generator class="identity"/>
