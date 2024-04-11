@@ -59,7 +59,7 @@ public class FastdfsFileSave implements Lego, ExceptionCode {
     private static final String Output_Key_File_Fast_Size = "size";//图片大小
     private static final String Output_Key_Upload_File_Time = "uploadTime";//上传时间
 
-    @Autowired
+//    @Autowired
     RestTemplate restTemplate;
 
     @Override

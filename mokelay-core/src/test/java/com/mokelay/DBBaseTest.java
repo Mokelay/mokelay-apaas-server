@@ -14,17 +14,10 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
  * Author: CarlChen
  * Date: 2017/11/21
  */
-@RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = "classpath:test_server.xml")
-public class DBBaseTest extends AbstractJUnit4SpringContextTests {
-    protected ApplicationContext context;
-
-    /**
-     * Set Up
-     */
-    public void setUp(String configName) {
-        context = new ClassPathXmlApplicationContext(configName);
-    }
+//@RunWith(SpringJUnit4ClassRunner.class)
+//@ContextConfiguration(locations = "classpath:test_server.xml")
+public class DBBaseTest extends TYBaseTest {
+//    protected ApplicationContext context;
 
     /**
      * Test Context
@@ -42,6 +35,4 @@ public class DBBaseTest extends AbstractJUnit4SpringContextTests {
     protected void printJSONObject(Object o) {
         System.out.println(JSONObject.toJSONString(o));
     }
-
-
 }

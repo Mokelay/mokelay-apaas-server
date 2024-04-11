@@ -29,11 +29,15 @@ public abstract class DataManagerTest extends DBBaseTest implements ExceptionCod
 
     }
 
-    public void setUp() throws DBException {
-        super.setUp("test_server.xml");
+    public void setUp() {
+        super.setUp();
         dsManager = (DSManager) context.getBean("dsManager");
         dataManager = this.getDataManager();
-        this.initConn();
+        try {
+            this.initConn();
+        } catch (DBException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     public void initConn() throws DBException {

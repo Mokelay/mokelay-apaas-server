@@ -33,7 +33,7 @@ public class MysqlDataManagerTest extends DBBaseTest implements ExceptionCode {
     protected DST dst = DST.Mysql;
 
     public void setUp() {
-        super.setUp("test_server.xml");
+        super.setUp();
         // super.setUp("ty_db_server.xml");
         //加载manager
         dsManager = (DSManager) context.getBean("dsManager");
