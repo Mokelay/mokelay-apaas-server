@@ -67,6 +67,6 @@
 
 
     <!-- 上面的配置在 RedisBeanFactoryAwareBean 代码中实现-->
-    <bean id="redisBeanFactoryAwareBean" class="com.greatbee.core.config.RedisBeanFactoryAwareBean"/>
+    <bean id="redisBeanFactoryAwareBean" class="com.mokelay.core.config.RedisBeanFactoryAwareBean"/>
 
 </beans>

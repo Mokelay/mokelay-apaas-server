@@ -1,8 +1,7 @@
 package com.mokelay.product.util;
 
-import com.greatbee.base.bean.DBException;
-import com.greatbee.core.bean.task.TaskLog;
-import com.greatbee.core.manager.TYDriver;
+import com.mokelay.core.bean.task.TaskLog;
+import com.mokelay.core.manager.TYDriver;
 import com.mokelay.product.MokelayUtil;
 import com.mokelay.product.Response;
 import org.quartz.Job;
@@ -46,10 +45,12 @@ public class TaskExecute implements Job {
             remark.append("Code: ").append(response.getCode()).append(",Message:").append(response.getMessage());
             taskLog.setRemark(remark.toString());
         }
-        try {
-            tyDriver.getTaskLogManager().add(taskLog);
-        } catch (DBException e) {
-            e.printStackTrace();
-        }
+
+        //TODO Task Log的记录需要可配置，方案待定 2024-04-10
+//        try {
+//            tyDriver.getTaskLogManager().add(taskLog);
+//        } catch (DBException e) {
+//            e.printStackTrace();
+//        }
     }
 }

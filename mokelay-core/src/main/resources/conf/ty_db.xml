@@ -4,7 +4,7 @@
         "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
     <!--DS-->
-    <class name="com.greatbee.db.bean.oi.DS" table="ty_ds" lazy="false">
+    <class name="com.mokelay.db.bean.oi.DS" table="ty_ds" lazy="false">
         <id name="id" column="id">
             <generator class="identity"/>
         </id>
@@ -19,7 +19,7 @@
     </class>
 
     <!-- OI-->
-    <class name="com.greatbee.db.bean.oi.OI" table="ty_oi" lazy="false">
+    <class name="com.mokelay.db.bean.oi.OI" table="ty_oi" lazy="false">
         <id name="id" column="id">
             <generator class="identity"/>
         </id>
@@ -31,7 +31,7 @@
     </class>
 
     <!-- Field-->
-    <class name="com.greatbee.db.bean.oi.Field" table="ty_field" lazy="false">
+    <class name="com.mokelay.db.bean.oi.Field" table="ty_field" lazy="false">
         <id name="id" column="id">
             <generator class="identity"/>
         </id>
@@ -50,7 +50,7 @@
     </class>
 
     <!-- Connector-->
-    <class name="com.greatbee.db.bean.oi.Connector" table="ty_connector" lazy="false">
+    <class name="com.mokelay.db.bean.oi.Connector" table="ty_connector" lazy="false">
         <id name="id" column="id">
             <generator class="identity"/>
         </id>
@@ -64,7 +64,7 @@
     </class>
 
     <!-- API-->
-    <class name="com.greatbee.core.bean.server.API" table="ty_api" lazy="false">
+    <class name="com.mokelay.core.bean.server.API" table="ty_api" lazy="false">
         <id name="id" column="id">
             <generator class="identity"/>
         </id>
@@ -82,8 +82,8 @@
         <property name="content" column="content" type="string"/>
     </class>
 
-    <!-- OutputFieldDescribe-->
-    <class name="com.greatbee.core.bean.server.FileStorage" table="ty_file_storage" lazy="false">
+    <!-- FileStorage-->
+    <class name="com.mokelay.core.bean.server.FileStorage" table="ty_file_storage" lazy="false">
         <id name="id" column="id">
             <generator class="identity"/>
         </id>
@@ -97,24 +97,8 @@
         <property name="uploadType" column="`uploadType`" type="string"/>
     </class>
 
-    <!-- Log-->
-    <class name="com.greatbee.core.bean.user.Log" table="ty_log" lazy="false">
-        <id name="id" column="id">
-            <generator class="identity"/>
-        </id>
-        <property name="createDate" column="createDate" type="java.util.Date"/>
-        <property name="operateUserAlias" column="operateUserAlias" type="string"/>
-        <property name="operateUserName" column="operateUserName" type="string"/>
-        <property name="operateApi" column="operateApi" type="string"/>
-        <property name="operateLego" column="operateLego" type="string"/>
-        <property name="input" column="input" type="string"/>
-        <property name="output" column="output" type="string"/>
-        <property name="content" column="content" type="string"/>
-        <property name="operateOi" column="operateOi" type="string"/>
-    </class>
-
     <!-- Task-->
-    <class name="com.greatbee.core.bean.task.Task" table="ty_task" lazy="false">
+    <class name="com.mokelay.core.bean.task.Task" table="ty_task" lazy="false">
         <id name="id" column="id">
             <generator class="identity"/>
         </id>
@@ -128,22 +112,8 @@
         <property name="apiAlias" column="apiAlias" type="string"/>
     </class>
 
-    <!-- Task Log-->
-    <class name="com.greatbee.core.bean.task.TaskLog" table="ty_task_log" lazy="false">
-        <id name="id" column="id">
-            <generator class="identity"/>
-        </id>
-        <property name="createDate" column="createDate" type="java.util.Date"/>
-        <property name="taskId" column="taskId" type="integer"/>
-        <property name="result" column="result" type="string"/>
-        <property name="timeConsuming" column="timeConsuming" type="long"/>
-        <property name="begin" column="begin" type="java.util.Date"/>
-        <property name="finish" column="finish" type="java.util.Date"/>
-        <property name="remark" column="remark" type="string"/>
-    </class>
-
     <!-- Auth Type-->
-    <class name="com.greatbee.core.bean.auth.AuthType" table="ty_auth_type" lazy="false">
+    <class name="com.mokelay.core.bean.auth.AuthType" table="ty_auth_type" lazy="false">
         <id name="id" column="id">
             <generator class="identity"/>
         </id>
