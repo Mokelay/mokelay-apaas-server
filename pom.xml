@@ -63,7 +63,6 @@
         </developer>
     </developers>
 
-<!--    <dependencyManagement>-->
         <dependencies>
             <dependency>
                 <groupId>javax.servlet</groupId>
@@ -76,8 +75,9 @@
             <dependency>
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
-                <version>8.0.12</version>
+                <version>8.0.33</version>
             </dependency>
+
             <dependency>
                 <groupId>com.microsoft.sqlserver</groupId>
                 <artifactId>mssql-jdbc</artifactId>
@@ -113,7 +113,7 @@
             <dependency>
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
-                <version>4.12</version>
+                <version>4.13.2</version>
             </dependency>
 
             <!-- TODO Update-->
@@ -304,5 +304,4 @@
                 <version>0.1.5</version>
             </dependency>
         </dependencies>
-<!--    </dependencyManagement>-->
 </project>
