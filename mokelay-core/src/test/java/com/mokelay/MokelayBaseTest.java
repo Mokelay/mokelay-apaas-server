@@ -1,15 +1,13 @@
 package com.mokelay;
 
 import junit.framework.TestCase;
-import org.apache.tomcat.jdbc.pool.DataSource;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.springframework.jdbc.core.JdbcTemplate;
 
 /**
  * Created by CarlChen on 2017/5/24.
  */
-public class TYBaseTest extends TestCase implements TestConfig {
+public class MokelayBaseTest extends TestCase implements TestConfig {
     protected ApplicationContext context;
 
     /**

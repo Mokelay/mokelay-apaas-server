@@ -1,14 +1,9 @@
 package com.mokelay;
 
 import com.alibaba.fastjson.JSONObject;
-import org.junit.runner.RunWith;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 // import org.junit.Test;
-import org.springframework.test.context.ContextConfiguration;
-import org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
 
 /**
  * Author: CarlChen
@@ -16,7 +11,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
  */
 //@RunWith(SpringJUnit4ClassRunner.class)
 //@ContextConfiguration(locations = "classpath:test_server.xml")
-public class DBBaseTest extends TYBaseTest {
+public class DBBaseTest extends MokelayBaseTest {
 //    protected ApplicationContext context;
 
     /**
