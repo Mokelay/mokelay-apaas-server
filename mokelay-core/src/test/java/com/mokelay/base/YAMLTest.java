@@ -38,7 +38,7 @@ public class YAMLTest extends MokelayBaseTest {
         options.setDefaultFlowStyle(DumperOptions.FlowStyle.BLOCK); // 使用块风格
         options.setPrettyFlow(true); // 生成更易读的YAML
 
-        String folder = TYPPC.getTYProp("mokelay.config.dsl.folder");
+        String folder = TYPPC.getTYProp("mokelay.config.dsl");
 //        System.out.println(folder);
         // 创建Yaml实例
         Yaml yaml = new Yaml(options);
@@ -62,7 +62,7 @@ public class YAMLTest extends MokelayBaseTest {
         Yaml yaml = new Yaml(new Constructor(Map.class));
 
         try {
-            String folder = TYPPC.getTYProp("mokelay.config.dsl.folder");
+            String folder = TYPPC.getTYProp("mokelay.config.dsl");
             // 读取YAML文件
             InputStream inputStream = new FileInputStream(folder + "/output.yaml");
 
