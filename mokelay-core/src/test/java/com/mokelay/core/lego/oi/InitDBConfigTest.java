@@ -1,6 +1,6 @@
 package com.mokelay.core.lego.oi;
 
-import com.mokelay.TYBaseTest;
+import com.mokelay.MokelayBaseTest;
 import com.mokelay.api.lego.Input;
 import com.mokelay.api.lego.Lego;
 import com.mokelay.api.lego.LegoException;
@@ -16,7 +16,7 @@ import java.util.List;
 /**
  * Created by xiaobc on 17/7/10.
  */
-public class InitDBConfigTest extends TYBaseTest {
+public class InitDBConfigTest extends MokelayBaseTest {
 
     private static final String INPUT_DS_ALIAS_NAME = "ds_alias";
 

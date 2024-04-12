@@ -1,13 +1,13 @@
 package com.mokelay.db.manager;
 
-import com.mokelay.TYBaseTest;
+import com.mokelay.MokelayBaseTest;
 import com.mokelay.db.bean.oi.DS;
 import com.mokelay.db.bean.constant.DST;
 
 /**
  * Created by CarlChen on 2017/5/24.
  */
-public class DSManagerTest extends TYBaseTest {
+public class DSManagerTest extends MokelayBaseTest {
     private DSManager dsManager;
 
     public void setUp() {

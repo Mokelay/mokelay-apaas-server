@@ -17,9 +17,6 @@ public class BaseLegoTest extends DBBaseTest implements ExceptionCode {
      * 初始化
      */
     public void setUp() {
-        super.setUp("test_server.xml");
+        super.setUp();
     }
-
-
-
 }

@@ -1,7 +1,7 @@
 package com.mokelay.db.manager.ext;
 
 import com.alibaba.fastjson.JSON;
-import com.mokelay.TYBaseTest;
+import com.mokelay.MokelayBaseTest;
 import com.mokelay.base.bean.DBException;
 import com.mokelay.base.bean.DataPage;
 import com.mokelay.base.bean.constant.CG;
@@ -17,7 +17,7 @@ import java.util.Random;
 /**
  * Created by xiaobc on 17/7/24.
  */
-public class SimpleDSManagerTest extends TYBaseTest {
+public class SimpleDSManagerTest extends MokelayBaseTest {
 
     private DSManager dsManager;
 

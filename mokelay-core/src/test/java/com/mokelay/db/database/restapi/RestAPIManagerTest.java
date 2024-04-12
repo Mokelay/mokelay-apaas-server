@@ -36,7 +36,7 @@ public class RestAPIManagerTest extends DBBaseTest implements ExceptionCode {
 
 
     public void setUp() {
-        super.setUp("test_server.xml");
+        super.setUp();
         // super.setUp("ty_db_server.xml");
         //加载manager
         dsManager = (DSManager) context.getBean("dsManager");
