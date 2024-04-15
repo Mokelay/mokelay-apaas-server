@@ -235,7 +235,9 @@ public class MysqlDataManager extends DataManager implements RelationalDataManag
 
         logger.info("查询对象SQL：" + sql.toString());
         ps = conn.prepareStatement(sql.toString());//返回主键
-        int index = Condition.buildConditionSqlPs(1, ps, condition);//前面没有？参数，所以从1开始,条件后面也可以再添加参数，索引从index开始
+        if (condition!=null) {
+            int index = Condition.buildConditionSqlPs(1, ps, condition);//前面没有？参数，所以从1开始,条件后面也可以再添加参数，索引从index开始
+        }
         return ps;
     }
 
@@ -302,7 +304,9 @@ public class MysqlDataManager extends DataManager implements RelationalDataManag
 
         logger.info("查询对象SQL：" + sql.toString());
         ps = conn.prepareStatement(sql.toString());//返回主键
-        int index = Condition.buildConditionSqlPs(1, ps, condition);//前面没有？参数，所以从1开始,条件后面也可以再添加参数，索引从index开始
+        if (condition!=null) {
+            int index = Condition.buildConditionSqlPs(1, ps, condition);//前面没有？参数，所以从1开始,条件后面也可以再添加参数，索引从index开始
+        }
         return ps;
     }
 
