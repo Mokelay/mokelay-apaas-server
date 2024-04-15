@@ -1,0 +1,86 @@
+id: 60
+name: 自定义SQL查询
+description: 自定义SQL查询乐高
+alias: selectCustomSQL
+supportDST: '["mysql"]'
+icon: ty-lg_read
+generateSupport: false
+useNum: 20
+createDate: '2018-06-22 01:44:41'
+createrId: 2
+createrName: 肖兵成
+owerId: 2
+owerName: 肖兵成
+type: db
+'inputFieldDescribe ':
+- id: 125
+  name: SQL模板
+  description: 支持freemarker模板
+  legoAlias: selectCustomSQL
+  fieldName: sql_tpl
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 126
+  name: 总数SQL模板(针对分页)
+  description: null
+  legoAlias: selectCustomSQL
+  fieldName: count_sql_tpl
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 127
+  name: 返回数据类型(data/list/page)
+  description: 返回数据类型(data/list/page),默认list
+  legoAlias: selectCustomSQL
+  fieldName: return_type
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 128
+  name: 数据源别名
+  description: ds别名，操作的哪个数据源
+  legoAlias: selectCustomSQL
+  fieldName: ds_alias
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 129
+  name: 第几页(针对分页)
+  description: 针对分页
+  legoAlias: selectCustomSQL
+  fieldName: page
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 130
+  name: 每页记录数(针对分页)
+  description: 每页记录数(针对分页)
+  legoAlias: selectCustomSQL
+  fieldName: pageSize
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 131
+  name: 条件字段组
+  description: null
+  legoAlias: selectCustomSQL
+  fieldName: null
+  multiple: true
+  ift: condition
+  fromOIFields: true
+outputFieldDescribe:
+- id: 97
+  name: 返回数据
+  description: 根据return_type 返回不同的数据，data:返回Data对象；list：返回DataList对象；page：返回DataPage对象
+  legoAlias: selectCustomSQL
+  fieldName: data
+  oft: common
+  multiple: false
+- id: 98
+  name: 读取字段组
+  description: null
+  legoAlias: selectCustomSQL
+  fieldName: null
+  oft: read
+  multiple: true

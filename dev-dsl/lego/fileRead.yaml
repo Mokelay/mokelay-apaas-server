@@ -1,0 +1,39 @@
+id: 12
+name: 文件下载
+description: 文件下载
+alias: fileRead
+supportDST: '["local_storage"]'
+icon: ty-lg_fileread
+generateSupport: false
+useNum: 13
+createDate: ''
+createrId: 2
+createrName: 肖兵成
+owerId: 2
+owerName: 肖兵成
+type: lego
+'inputFieldDescribe ':
+- id: 18
+  name: 序列化文件名
+  description: ''
+  legoAlias: fileRead
+  fieldName: file_serialize_name
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 98
+  name: 下载文件名
+  description: null
+  legoAlias: fileRead
+  fieldName: file_name
+  multiple: false
+  ift: common
+  fromOIFields: false
+outputFieldDescribe:
+- id: 24
+  name: 下载的文件对象
+  description: ''
+  legoAlias: fileRead
+  fieldName: file_stream
+  oft: common
+  multiple: false

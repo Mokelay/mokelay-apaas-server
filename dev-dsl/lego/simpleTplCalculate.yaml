@@ -1,0 +1,31 @@
+id: 105
+name: 简单模板表达式
+description: ${param1} - ${param2}/${param3}  支持三元表达式
+alias: simpleTplCalculate
+supportDST: null
+icon: null
+generateSupport: false
+useNum: 0
+createDate: '2018-11-01 00:01:01'
+createrId: 2
+createrName: 肖兵成
+owerId: 2
+owerName: 肖兵成
+type: lego
+'inputFieldDescribe ':
+- id: 284
+  name: 模板
+  description: ${param1} - ${param2}/${param3} 支持三元表达式
+  legoAlias: simpleTplCalculate
+  fieldName: tpl
+  multiple: false
+  ift: common
+  fromOIFields: false
+outputFieldDescribe:
+- id: 155
+  name: 转换结果
+  description: null
+  legoAlias: simpleTplCalculate
+  fieldName: data
+  oft: common
+  multiple: false

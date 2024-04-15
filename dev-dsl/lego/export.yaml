@@ -1,0 +1,102 @@
+id: 10
+name: 导出
+description: 导出
+alias: export
+supportDST: '["mysql"]'
+icon: ty-lg_export
+generateSupport: false
+useNum: 11
+createDate: ''
+createrId: 2
+createrName: 肖兵成
+owerId: 2
+owerName: 肖兵成
+type: db
+'inputFieldDescribe ':
+- id: 14
+  name: 导出的路径oi别名
+  description: ''
+  legoAlias: export
+  fieldName: export_oi
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 15
+  name: 读取字段组
+  description: ''
+  legoAlias: export
+  fieldName: ''
+  multiple: true
+  ift: read
+  fromOIFields: true
+- id: 46
+  name: 添加字段组
+  description: null
+  legoAlias: export
+  fieldName: null
+  multiple: true
+  ift: condition
+  fromOIFields: true
+- id: 47
+  name: 排序字段
+  description: ''
+  legoAlias: export
+  fieldName: order_field
+  multiple: false
+  ift: common
+  fromOIFields: true
+- id: 48
+  name: 排序
+  description: null
+  legoAlias: export
+  fieldName: order
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 49
+  name: 群组字段
+  description: null
+  legoAlias: export
+  fieldName: group_field
+  multiple: false
+  ift: common
+  fromOIFields: true
+- id: 93
+  name: 关键字搜索
+  description: null
+  legoAlias: export
+  fieldName: keywords
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 94
+  name: 全局搜索字段(单表)
+  description: 全局搜索字段(单表)
+  legoAlias: export
+  fieldName: global_search_fields
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 290
+  name: 导出文件类型
+  description: 导出文件类型
+  legoAlias: export
+  fieldName: export_file_type
+  multiple: false
+  ift: common
+  fromOIFields: false
+outputFieldDescribe:
+- id: 19
+  name: 文件对象
+  description: 包括文件的所有信息
+  legoAlias: export
+  fieldName: file_storage
+  oft: common
+  multiple: false
+- id: 20
+  name: 导出的序列化文件名
+  description: ''
+  legoAlias: export
+  fieldName: export_serializ_name
+  oft: common
+  multiple: false

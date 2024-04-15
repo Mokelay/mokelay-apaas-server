@@ -1,0 +1,39 @@
+id: 88
+name: HTML转成pdf文件流
+description: 字符串转成pdf文件流，后面再用oss上传，会返回下载地址
+alias: htmlToPdf
+supportDST: ''
+icon: ty-html-pdf
+generateSupport: false
+useNum: 0
+createDate: '2018-08-07 00:42:12'
+createrId: 2
+createrName: 肖兵成
+owerId: 2
+owerName: 肖兵成
+type: storage
+'inputFieldDescribe ':
+- id: 219
+  name: html代码段
+  description: null
+  legoAlias: htmlToPdf
+  fieldName: html_string
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 220
+  name: 导出的pdf文件名
+  description: null
+  legoAlias: htmlToPdf
+  fieldName: pdf_name
+  multiple: false
+  ift: common
+  fromOIFields: false
+outputFieldDescribe:
+- id: 135
+  name: pdf文件流
+  description: null
+  legoAlias: htmlToPdf
+  fieldName: pdf_file_stream
+  oft: common
+  multiple: false

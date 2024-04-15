@@ -1,0 +1,53 @@
+id: 35
+name: 添加&更新
+description: 添加和根据主键id更新
+alias: save
+supportDST: '["mysql"]'
+icon: ty-lg_save
+generateSupport: false
+useNum: 23
+createDate: ''
+createrId: 2
+createrName: 肖兵成
+owerId: 2
+owerName: 肖兵成
+type: db
+'inputFieldDescribe ':
+- id: 82
+  name: 创建字段组
+  description: ''
+  legoAlias: save
+  fieldName: ''
+  multiple: true
+  ift: create
+  fromOIFields: false
+- id: 83
+  name: 更新字段组
+  description: null
+  legoAlias: save
+  fieldName: null
+  multiple: true
+  ift: update
+  fromOIFields: false
+outputFieldDescribe:
+- id: 65
+  name: 新增唯一值
+  description: null
+  legoAlias: save
+  fieldName: unique_value
+  oft: common
+  multiple: false
+- id: 66
+  name: 创建输出字段组
+  description: null
+  legoAlias: save
+  fieldName: null
+  oft: create
+  multiple: true
+- id: 67
+  name: 更新输出字段组
+  description: ''
+  legoAlias: save
+  fieldName: ''
+  oft: update
+  multiple: true

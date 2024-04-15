@@ -1,0 +1,24 @@
+id: 32
+name: 读取Redis缓存
+description: 读取Redis缓存
+alias: readRedis
+supportDST: '["redis"]'
+icon: ty-lg_readredis
+generateSupport: false
+useNum: 5
+createDate: ''
+createrId: 2
+createrName: 肖兵成
+owerId: 2
+owerName: 肖兵成
+type: lego
+'inputFieldDescribe ': [
+  ]
+outputFieldDescribe:
+- id: 50
+  name: 读取数据
+  description: null
+  legoAlias: readRedis
+  fieldName: data
+  oft: common
+  multiple: false

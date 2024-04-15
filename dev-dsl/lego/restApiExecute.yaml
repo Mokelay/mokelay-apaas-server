@@ -1,0 +1,45 @@
+id: 51
+name: RestAPI
+description: RestAPI执行模块
+alias: restApiExecute
+supportDST: '["rest_api"]'
+icon: ty-bd_bb_select
+generateSupport: false
+useNum: 11
+createDate: '2018-03-30 18:42:00'
+createrId: 11729
+createrName: 张学超
+owerId: 11729
+owerName: 张学超
+type: db
+'inputFieldDescribe ':
+- id: 122
+  name: 非结构字段
+  description: null
+  legoAlias: restApiExecute
+  fieldName: unstructured
+  multiple: true
+  ift: unstructured
+  fromOIFields: false
+outputFieldDescribe:
+- id: 74
+  name: 执行结果
+  description: null
+  legoAlias: restApiExecute
+  fieldName: response
+  oft: common
+  multiple: false
+- id: 75
+  name: response_json
+  description: null
+  legoAlias: restApiExecute
+  fieldName: response_json
+  oft: common
+  multiple: false
+- id: 87
+  name: 非结构字段
+  description: null
+  legoAlias: restApiExecute
+  fieldName: unstructured
+  oft: unstructured
+  multiple: true

@@ -1,0 +1,38 @@
+id: 80
+name: 七牛数据处理回调
+description: null
+alias: qiniuPersistentNotify
+supportDST: null
+icon: ty-qiniu
+generateSupport: false
+useNum: 1
+createDate: '2018-07-18 04:42:13'
+createrId: 2
+createrName: 肖兵成
+owerId: 2
+owerName: 肖兵成
+type: storage
+'inputFieldDescribe ':
+- id: 196
+  name: 七牛下载域名
+  description: null
+  legoAlias: qiniuPersistentNotify
+  fieldName: qiniu_download_url
+  multiple: false
+  ift: common
+  fromOIFields: false
+outputFieldDescribe:
+- id: 122
+  name: 七牛资源地址
+  description: null
+  legoAlias: qiniuPersistentNotify
+  fieldName: net_file_url
+  oft: common
+  multiple: false
+- id: 123
+  name: 目标文件名
+  description: null
+  legoAlias: qiniuPersistentNotify
+  fieldName: fileName
+  oft: common
+  multiple: false

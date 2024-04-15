@@ -1,0 +1,41 @@
+id: 38
+name: 乐高构建器
+description: 一键功能lego
+alias: legoBuilder
+supportDST: '["mysql"]'
+icon: ty-lg_legobuilder
+generateSupport: false
+useNum: 4
+createDate: ''
+createrId: 2
+createrName: 肖兵成
+owerId: 2
+owerName: 肖兵成
+type: db
+'inputFieldDescribe ':
+- id: 95
+  name: 生成的apiLegoId
+  description: null
+  legoAlias: legoBuilder
+  fieldName: apiLegoId
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 96
+  name: OI别名
+  description: null
+  legoAlias: legoBuilder
+  fieldName: oiAlias
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 97
+  name: Lego别名
+  description: null
+  legoAlias: legoBuilder
+  fieldName: legoGenerator
+  multiple: false
+  ift: common
+  fromOIFields: false
+outputFieldDescribe: [
+  ]

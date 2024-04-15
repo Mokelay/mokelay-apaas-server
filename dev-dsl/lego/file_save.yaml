@@ -1,0 +1,66 @@
+id: 9
+name: 上传
+description: 上传文件
+alias: file_save
+supportDST: '["local_storage"]'
+icon: ty-lg_file_save
+generateSupport: false
+useNum: 10
+createDate: ''
+createrId: 2
+createrName: 肖兵成
+owerId: 2
+owerName: 肖兵成
+type: lego
+'inputFieldDescribe ':
+- id: 13
+  name: 文件流
+  description: ''
+  legoAlias: file_save
+  fieldName: file_stream
+  multiple: false
+  ift: common
+  fromOIFields: false
+outputFieldDescribe:
+- id: 15
+  name: 序列化文件名
+  description: ''
+  legoAlias: file_save
+  fieldName: file_serialize_name
+  oft: common
+  multiple: false
+- id: 16
+  name: 原始文件名
+  description: ''
+  legoAlias: file_save
+  fieldName: file_original_name
+  oft: common
+  multiple: false
+- id: 17
+  name: 文件大小
+  description: ''
+  legoAlias: file_save
+  fieldName: file_size
+  oft: common
+  multiple: false
+- id: 18
+  name: 文件类型
+  description: ''
+  legoAlias: file_save
+  fieldName: file_type
+  oft: common
+  multiple: false
+- id: 42
+  name: 文件内容类型
+  description: null
+  legoAlias: file_save
+  fieldName: file_content_type
+  oft: common
+  multiple: false
+- id: 43
+  name: 文件存储对象
+  description: null
+  legoAlias: file_save
+  fieldName: file_storage
+  oft: common
+  multiple: false

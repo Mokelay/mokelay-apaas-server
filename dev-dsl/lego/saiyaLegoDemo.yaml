@@ -1,0 +1,46 @@
+id: 58
+name: demo
+description: demo
+alias: saiyaLegoDemo
+supportDST: '["static"]'
+icon: ty-yy_demo
+generateSupport: false
+useNum: 1
+createDate: '2018-05-26 00:29:38'
+createrId: 11729
+createrName: 张学超
+owerId: 11729
+owerName: 张学超
+type: business
+'inputFieldDescribe ':
+- id: 123
+  name: s1
+  description: null
+  legoAlias: saiyaLegoDemo
+  fieldName: s1
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 124
+  name: s2
+  description: null
+  legoAlias: saiyaLegoDemo
+  fieldName: s2
+  multiple: false
+  ift: common
+  fromOIFields: false
+outputFieldDescribe:
+- id: 90
+  name: out_s1
+  description: null
+  legoAlias: saiyaLegoDemo
+  fieldName: out_s1
+  oft: common
+  multiple: false
+- id: 91
+  name: out_s2
+  description: null
+  legoAlias: saiyaLegoDemo
+  fieldName: out_s2
+  oft: common
+  multiple: false

@@ -1,0 +1,102 @@
+id: 104
+name: 福佑WS接口调用
+description: null
+alias: fyWsInvoke
+supportDST: '["rest_api"]'
+icon: null
+generateSupport: false
+useNum: 0
+createDate: '2018-10-26 23:29:39'
+createrId: 2
+createrName: 肖兵成
+owerId: 2
+owerName: 肖兵成
+type: cloud
+'inputFieldDescribe ':
+- id: 275
+  name: WSDL地址
+  description: null
+  legoAlias: fyWsInvoke
+  fieldName: wsdlUrl
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 276
+  name: 命名空间
+  description: null
+  legoAlias: fyWsInvoke
+  fieldName: targetNamespace
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 277
+  name: soap请求地址
+  description: null
+  legoAlias: fyWsInvoke
+  fieldName: soapAction
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 278
+  name: WSDL方法
+  description: null
+  legoAlias: fyWsInvoke
+  fieldName: wsdlMethod
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 279
+  name: 客户静态3DES秘钥
+  description: null
+  legoAlias: fyWsInvoke
+  fieldName: static3DesKey
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 280
+  name: 对方RSA公钥
+  description: null
+  legoAlias: fyWsInvoke
+  fieldName: rsaPublicKey
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 281
+  name: 我方RSA秘钥
+  description: null
+  legoAlias: fyWsInvoke
+  fieldName: myRsaPrivateKey
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 282
+  name: 请求参数
+  description: null
+  legoAlias: fyWsInvoke
+  fieldName: reqData
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 283
+  name: 客户编码
+  description: null
+  legoAlias: fyWsInvoke
+  fieldName: customerCode
+  multiple: false
+  ift: common
+  fromOIFields: false
+outputFieldDescribe:
+- id: 153
+  name: 返回数据
+  description: null
+  legoAlias: fyWsInvoke
+  fieldName: resData
+  oft: common
+  multiple: false
+- id: 154
+  name: 内存字段组
+  description: null
+  legoAlias: fyWsInvoke
+  fieldName: null
+  oft: memory
+  multiple: true

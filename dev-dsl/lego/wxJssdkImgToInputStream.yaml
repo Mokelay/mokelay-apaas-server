@@ -1,0 +1,47 @@
+id: 77
+name: jssdk媒体文件转成文件流
+description: null
+alias: wxJssdkImgToInputStream
+supportDST: null
+icon: ty-bd__transfer
+generateSupport: false
+useNum: 2
+createDate: '2018-06-29 01:43:49'
+createrId: 2
+createrName: 肖兵成
+owerId: 2
+owerName: 肖兵成
+type: business
+'inputFieldDescribe ':
+- id: 178
+  name: 微信媒体ID
+  description: null
+  legoAlias: wxJssdkImgToInputStream
+  fieldName: media_id
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 179
+  name: 微信APPId
+  description: null
+  legoAlias: wxJssdkImgToInputStream
+  fieldName: openAppId
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 180
+  name: 微信secret
+  description: null
+  legoAlias: wxJssdkImgToInputStream
+  fieldName: openSecret
+  multiple: false
+  ift: common
+  fromOIFields: false
+outputFieldDescribe:
+- id: 116
+  name: 文件流
+  description: 文件对象，下面接oss上传或者文件保存
+  legoAlias: wxJssdkImgToInputStream
+  fieldName: wx_file_stream
+  oft: common
+  multiple: false

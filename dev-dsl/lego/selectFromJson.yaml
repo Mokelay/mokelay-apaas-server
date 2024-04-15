@@ -1,0 +1,62 @@
+id: 82
+name: 过滤json数据
+description: 条件过滤json数据
+alias: selectFromJson
+supportDST: null
+icon: ty-sj_json
+generateSupport: false
+useNum: 1
+createDate: '2018-07-25 00:51:52'
+createrId: 2
+createrName: 肖兵成
+owerId: 2
+owerName: 肖兵成
+type: business
+'inputFieldDescribe ':
+- id: 201
+  name: 主json
+  description: null
+  legoAlias: selectFromJson
+  fieldName: index_json
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 202
+  name: 内存字段
+  description: null
+  legoAlias: selectFromJson
+  fieldName: null
+  multiple: true
+  ift: memory
+  fromOIFields: false
+- id: 210
+  name: 是否去重
+  description: 有值表示去重
+  legoAlias: selectFromJson
+  fieldName: removal
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 211
+  name: 去重key
+  description: 以什么字段来判断是否重复
+  legoAlias: selectFromJson
+  fieldName: removalKey
+  multiple: false
+  ift: common
+  fromOIFields: false
+outputFieldDescribe:
+- id: 125
+  name: 返回对象
+  description: null
+  legoAlias: selectFromJson
+  fieldName: result_data
+  oft: common
+  multiple: false
+- id: 126
+  name: 返回字段组
+  description: null
+  legoAlias: selectFromJson
+  fieldName: null
+  oft: memory
+  multiple: true

@@ -1,0 +1,39 @@
+id: 2
+name: 初始化DB
+description: 从数据源读取OI存储
+alias: init_db_config
+supportDST: '["mysql"]'
+icon: ty-lg_init_db_config
+generateSupport: false
+useNum: 1
+createDate: ''
+createrId: 2
+createrName: 肖兵成
+owerId: 2
+owerName: 肖兵成
+type: db
+'inputFieldDescribe ':
+- id: 2
+  name: 数据源
+  description: 需要导入的数据源别名
+  legoAlias: init_db_config
+  fieldName: ds_alias
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 55
+  name: 是否执行
+  description: 是否执行
+  legoAlias: init_db_config
+  fieldName: init_commit
+  multiple: false
+  ift: common
+  fromOIFields: false
+outputFieldDescribe:
+- id: 46
+  name: 同步数据源记录
+  description: 同步数据源记录1
+  legoAlias: init_db_config
+  fieldName: commit_report
+  oft: common
+  multiple: false

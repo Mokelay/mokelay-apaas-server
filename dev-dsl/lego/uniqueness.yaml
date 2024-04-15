@@ -1,0 +1,39 @@
+id: 15
+name: 唯一性lego
+description: 唯一性校验
+alias: uniqueness
+supportDST: '["mysql"]'
+icon: ty-lg_unlqueness
+generateSupport: false
+useNum: 42
+createDate: ''
+createrId: 2
+createrName: 肖兵成
+owerId: 2
+owerName: 肖兵成
+type: db
+'inputFieldDescribe ':
+- id: 22
+  name: 条件字段组
+  description: ''
+  legoAlias: uniqueness
+  fieldName: ''
+  multiple: true
+  ift: condition
+  fromOIFields: false
+- id: 102
+  name: 读取字段
+  description: null
+  legoAlias: uniqueness
+  fieldName: read
+  multiple: true
+  ift: read
+  fromOIFields: true
+outputFieldDescribe:
+- id: 27
+  name: 是否唯一
+  description: true表示数据库中没有记录
+  legoAlias: uniqueness
+  fieldName: is_unique
+  oft: common
+  multiple: false

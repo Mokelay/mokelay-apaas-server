@@ -1,0 +1,102 @@
+id: 29
+name: 树形列表
+description: 树形列表
+alias: listTree
+supportDST: '["mysql"]'
+icon: ty-lg_listtree
+generateSupport: false
+useNum: 8
+createDate: ''
+createrId: 2
+createrName: 肖兵成
+owerId: 2
+owerName: 肖兵成
+type: db
+'inputFieldDescribe ':
+- id: 56
+  name: 条件字段组
+  description: ''
+  legoAlias: listTree
+  fieldName: ''
+  multiple: true
+  ift: condition
+  fromOIFields: false
+- id: 57
+  name: 读取字段组
+  description: ''
+  legoAlias: listTree
+  fieldName: ''
+  multiple: true
+  ift: read
+  fromOIFields: false
+- id: 58
+  name: 排序字段
+  description: 设定排序字段
+  legoAlias: listTree
+  fieldName: order_field
+  multiple: false
+  ift: common
+  fromOIFields: true
+- id: 59
+  name: 排序
+  description: 排序类型，升序还是降序
+  legoAlias: listTree
+  fieldName: order
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 60
+  name: 群组字段
+  description: 群组字段
+  legoAlias: listTree
+  fieldName: group_field
+  multiple: false
+  ift: common
+  fromOIFields: true
+- id: 61
+  name: 关键字搜索
+  description: null
+  legoAlias: listTree
+  fieldName: keywords
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 62
+  name: 全局搜索字段(单表)
+  description: 全局搜索字段(单表)
+  legoAlias: listTree
+  fieldName: global_search_fields
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 63
+  name: 子列表连接器别名
+  description: 子列表连接器别名
+  legoAlias: listTree
+  fieldName: connectorAlias
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 197
+  name: 子集别名(多个逗号隔开)
+  description: null
+  legoAlias: listTree
+  fieldName: childKeys
+  multiple: false
+  ift: common
+  fromOIFields: false
+outputFieldDescribe:
+- id: 47
+  name: 列表数据
+  description: ''
+  legoAlias: listTree
+  fieldName: tree_list
+  oft: common
+  multiple: false
+- id: 48
+  name: 读取字段组
+  description: ''
+  legoAlias: listTree
+  fieldName: ''
+  oft: read
+  multiple: true

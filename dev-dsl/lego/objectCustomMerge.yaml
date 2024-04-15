@@ -1,0 +1,53 @@
+id: 81
+name: 自定义对象合并
+description: 支持list套list，对象戴套list等
+alias: objectCustomMerge
+supportDST: null
+icon: ty-dxhebing
+generateSupport: false
+useNum: 2
+createDate: '2018-07-23 18:40:24'
+createrId: 2
+createrName: 肖兵成
+owerId: 2
+owerName: 肖兵成
+type: business
+'inputFieldDescribe ':
+- id: 198
+  name: 主对象
+  description: null
+  legoAlias: objectCustomMerge
+  fieldName: index_data
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 199
+  name: 合并规则(json_string)
+  description: |-
+    [{
+             index_data:'uuid',//父级的条件字段
+             sub1:'apiLegoUuid',//子集的条件字段
+             key:'inputFields',//子集的 key
+             isJson:false // true :sub 转换成json string
+         }]
+  legoAlias: objectCustomMerge
+  fieldName: mergeRule
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 200
+  name: 内存字段组
+  description: null
+  legoAlias: objectCustomMerge
+  fieldName: mem
+  multiple: true
+  ift: memory
+  fromOIFields: false
+outputFieldDescribe:
+- id: 124
+  name: 合并对象
+  description: null
+  legoAlias: objectCustomMerge
+  fieldName: merge_data
+  oft: common
+  multiple: false

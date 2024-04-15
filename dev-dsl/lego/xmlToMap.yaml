@@ -1,0 +1,38 @@
+id: 102
+name: XML转Data
+description: XML字符串转Data对象(map)
+alias: xmlToMap
+supportDST: null
+icon: null
+generateSupport: false
+useNum: 0
+createDate: '2018-10-25 01:11:15'
+createrId: 2
+createrName: 肖兵成
+owerId: 2
+owerName: 肖兵成
+type: lego
+'inputFieldDescribe ':
+- id: 273
+  name: XML字符串
+  description: null
+  legoAlias: xmlToMap
+  fieldName: xmlString
+  multiple: false
+  ift: common
+  fromOIFields: false
+outputFieldDescribe:
+- id: 149
+  name: 转换数据
+  description: null
+  legoAlias: xmlToMap
+  fieldName: xmlData
+  oft: common
+  multiple: false
+- id: 150
+  name: 内存字段组
+  description: 可以单独返回 转换数据字段
+  legoAlias: xmlToMap
+  fieldName: null
+  oft: memory
+  multiple: true

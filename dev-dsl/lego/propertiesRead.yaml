@@ -1,0 +1,31 @@
+id: 83
+name: 配置属性读取
+description: null
+alias: propertiesRead
+supportDST: null
+icon: ty-lg_read
+generateSupport: false
+useNum: 0
+createDate: '2018-07-29 08:16:56'
+createrId: 11785
+createrName: 陈征
+owerId: 11785
+owerName: 陈征
+type: lego
+'inputFieldDescribe ':
+- id: 203
+  name: 属性名
+  description: null
+  legoAlias: propertiesRead
+  fieldName: properties_name
+  multiple: false
+  ift: common
+  fromOIFields: false
+outputFieldDescribe:
+- id: 127
+  name: 属性值
+  description: null
+  legoAlias: propertiesRead
+  fieldName: properties_value
+  oft: common
+  multiple: false

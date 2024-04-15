@@ -1,0 +1,38 @@
+id: 3
+name: 添加
+description: 添加
+alias: add
+supportDST: '["mysql"]'
+icon: ty-lg_add
+generateSupport: true
+useNum: 250
+createDate: ''
+createrId: 2
+createrName: 肖兵成
+owerId: 2
+owerName: 肖兵成
+type: db
+'inputFieldDescribe ':
+- id: 26
+  name: 创建字段组
+  description: ''
+  legoAlias: add
+  fieldName: ''
+  multiple: true
+  ift: create
+  fromOIFields: false
+outputFieldDescribe:
+- id: 33
+  name: 添加唯一值
+  description: ''
+  legoAlias: add
+  fieldName: unique_value
+  oft: common
+  multiple: false
+- id: 39
+  name: 输出字段组
+  description: 来自添加的字段组
+  legoAlias: add
+  fieldName: null
+  oft: create
+  multiple: true

@@ -1,0 +1,31 @@
+id: 30
+name: 读取session
+description: 读取session  从session中获取数据
+alias: sessionRead
+supportDST: '["mysql"]'
+icon: ty-lg_readsession
+generateSupport: false
+useNum: 195
+createDate: ''
+createrId: 2
+createrName: 肖兵成
+owerId: 2
+owerName: 肖兵成
+type: lego
+'inputFieldDescribe ':
+- id: 100
+  name: 数据格式(json/object)
+  description: json/object 默认json
+  legoAlias: sessionRead
+  fieldName: formater_type
+  multiple: false
+  ift: common
+  fromOIFields: false
+outputFieldDescribe:
+- id: 49
+  name: 读取数据
+  description: 读取数据
+  legoAlias: sessionRead
+  fieldName: data
+  oft: common
+  multiple: false

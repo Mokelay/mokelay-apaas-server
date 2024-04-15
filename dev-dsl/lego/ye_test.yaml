@@ -1,0 +1,18 @@
+id: 95
+name: 试一下乐高
+description: yz乐高描述
+alias: ye_test
+supportDST: '["static","mysql"]'
+icon: null
+generateSupport: false
+useNum: 0
+createDate: '2018-09-10 19:13:52'
+createrId: 12167
+createrName: 明源001
+owerId: 12167
+owerName: 明源001
+type: cloud
+'inputFieldDescribe ': [
+  ]
+outputFieldDescribe: [
+  ]

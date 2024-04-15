@@ -1,0 +1,86 @@
+id: 11
+name: 导入
+description: 导入
+alias: import
+supportDST: '["mysql"]'
+icon: ty-lg_import
+generateSupport: false
+useNum: 4
+createDate: ''
+createrId: 2
+createrName: 肖兵成
+owerId: 2
+owerName: 肖兵成
+type: db
+'inputFieldDescribe ':
+- id: 11
+  name: 上传文件名
+  description: 上传文件名
+  legoAlias: import
+  fieldName: file_serialize_name
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 16
+  name: 最大上传记录数
+  description: ''
+  legoAlias: import
+  fieldName: max_import_num
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 17
+  name: 导入的字段组
+  description: ''
+  legoAlias: import
+  fieldName: ''
+  multiple: true
+  ift: create
+  fromOIFields: true
+- id: 286
+  name: 开始导入行数
+  description: 默认第二行开始。参数必填
+  legoAlias: import
+  fieldName: start_data_line
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 287
+  name: 去重类型(更新update,终端interrupt,跳过skip)
+  description: |
+    更新update,终端interrupt,跳过skip。默认是添加 add
+  legoAlias: import
+  fieldName: removalType
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 288
+  name: 去重判断字段(多个字段逗号隔开)
+  description: null
+  legoAlias: import
+  fieldName: removalFieldNames
+  multiple: false
+  ift: common
+  fromOIFields: false
+outputFieldDescribe:
+- id: 21
+  name: 导入总记录数
+  description: ''
+  legoAlias: import
+  fieldName: import_total
+  oft: common
+  multiple: false
+- id: 22
+  name: 导入成功记录数
+  description: ''
+  legoAlias: import
+  fieldName: import_success
+  oft: common
+  multiple: false
+- id: 23
+  name: 导入失败记录数
+  description: ''
+  legoAlias: import
+  fieldName: import_fail
+  oft: common
+  multiple: false

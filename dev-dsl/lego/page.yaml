@@ -1,0 +1,102 @@
+id: 6
+name: 分页组件
+description: 分页组件
+alias: page
+supportDST: '["mysql"]'
+icon: ty-lg_page
+generateSupport: true
+useNum: 211
+createDate: ''
+createrId: 2
+createrName: 肖兵成
+owerId: 2
+owerName: 肖兵成
+type: db
+'inputFieldDescribe ':
+- id: 3
+  name: 请求页码
+  description: 请求的页数
+  legoAlias: page
+  fieldName: page
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 4
+  name: 每页条数
+  description: 每页多少条记录
+  legoAlias: page
+  fieldName: pageSize
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 5
+  name: 读取字段组
+  description: 分页列表字段
+  legoAlias: page
+  fieldName: ''
+  multiple: true
+  ift: read
+  fromOIFields: true
+- id: 6
+  name: 条件字段组
+  description: 读取条件字段
+  legoAlias: page
+  fieldName: ''
+  multiple: true
+  ift: condition
+  fromOIFields: true
+- id: 7
+  name: 排序字段
+  description: 排序字段
+  legoAlias: page
+  fieldName: order_field
+  multiple: false
+  ift: common
+  fromOIFields: true
+- id: 8
+  name: 排序
+  description: 排序方式
+  legoAlias: page
+  fieldName: order
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 9
+  name: 群组字段
+  description: 分组字段
+  legoAlias: page
+  fieldName: group_field
+  multiple: false
+  ift: common
+  fromOIFields: true
+- id: 53
+  name: 关键字搜索
+  description: 关键字搜索
+  legoAlias: page
+  fieldName: keywords
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 54
+  name: 全局搜索字段(单表)
+  description: 全局搜索字段(单表)
+  legoAlias: page
+  fieldName: global_search_fields
+  multiple: false
+  ift: common
+  fromOIFields: false
+outputFieldDescribe:
+- id: 2
+  name: page_data
+  description: page数据
+  legoAlias: page
+  fieldName: page_data
+  oft: common
+  multiple: false
+- id: 35
+  name: 读取字段组
+  description: ''
+  legoAlias: page
+  fieldName: ''
+  oft: read
+  multiple: true

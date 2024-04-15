@@ -1,0 +1,39 @@
+id: 4
+name: 更新
+description: 更新
+alias: update
+supportDST: '["mysql"]'
+icon: ty-lg_update
+generateSupport: true
+useNum: 257
+createDate: ''
+createrId: 2
+createrName: 肖兵成
+owerId: 2
+owerName: 肖兵成
+type: db
+'inputFieldDescribe ':
+- id: 27
+  name: 条件字段组
+  description: ''
+  legoAlias: update
+  fieldName: ''
+  multiple: true
+  ift: condition
+  fromOIFields: false
+- id: 28
+  name: 更新字段组
+  description: ''
+  legoAlias: update
+  fieldName: ''
+  multiple: true
+  ift: update
+  fromOIFields: false
+outputFieldDescribe:
+- id: 40
+  name: 更新后字段组
+  description: null
+  legoAlias: update
+  fieldName: null
+  oft: update
+  multiple: true

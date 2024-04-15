@@ -1,0 +1,87 @@
+id: 92
+name: 微信支付
+description: 返回js调起微信支付所需的参数
+alias: wxPrePay
+supportDST: null
+icon: ty-icon_jiaona
+generateSupport: false
+useNum: 0
+createDate: '2018-09-07 19:30:52'
+createrId: 2
+createrName: 肖兵成
+owerId: 2
+owerName: 肖兵成
+type: business
+'inputFieldDescribe ':
+- id: 232
+  name: 微信APPID
+  description: null
+  legoAlias: wxPrePay
+  fieldName: appid
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 233
+  name: 商户ID
+  description: null
+  legoAlias: wxPrePay
+  fieldName: mch_id
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 234
+  name: 用户OPENID
+  description: null
+  legoAlias: wxPrePay
+  fieldName: openId
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 235
+  name: 微信API密钥
+  description: null
+  legoAlias: wxPrePay
+  fieldName: wx_api_secret
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 236
+  name: 订单编号
+  description: null
+  legoAlias: wxPrePay
+  fieldName: serialNumber
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 237
+  name: 回调地址
+  description: null
+  legoAlias: wxPrePay
+  fieldName: notify_url
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 238
+  name: 支付金额
+  description: null
+  legoAlias: wxPrePay
+  fieldName: total_fee
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 239
+  name: 商品描述
+  description: null
+  legoAlias: wxPrePay
+  fieldName: body
+  multiple: false
+  ift: common
+  fromOIFields: false
+outputFieldDescribe:
+- id: 139
+  name: JS微信支付调起参数
+  description: null
+  legoAlias: wxPrePay
+  fieldName: wx_pay_param
+  oft: common
+  multiple: false

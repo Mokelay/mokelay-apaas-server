@@ -1,0 +1,86 @@
+id: 5
+name: 列表
+description: 列表
+alias: list
+supportDST: '["mysql"]'
+icon: ty-lg_list
+generateSupport: true
+useNum: 406
+createDate: ''
+createrId: 2
+createrName: 肖兵成
+owerId: 2
+owerName: 肖兵成
+type: db
+'inputFieldDescribe ':
+- id: 29
+  name: 条件字段组
+  description: ''
+  legoAlias: list
+  fieldName: ''
+  multiple: true
+  ift: condition
+  fromOIFields: false
+- id: 30
+  name: 读取字段组
+  description: ''
+  legoAlias: list
+  fieldName: ''
+  multiple: true
+  ift: read
+  fromOIFields: false
+- id: 31
+  name: 排序字段
+  description: 设定排序字段
+  legoAlias: list
+  fieldName: order_field
+  multiple: false
+  ift: common
+  fromOIFields: true
+- id: 42
+  name: 排序
+  description: 排序类型，升序还是降序
+  legoAlias: list
+  fieldName: order
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 43
+  name: 群组字段
+  description: 群组字段
+  legoAlias: list
+  fieldName: group_field
+  multiple: false
+  ift: common
+  fromOIFields: true
+- id: 51
+  name: 关键字搜索
+  description: null
+  legoAlias: list
+  fieldName: keywords
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 52
+  name: 全局搜索字段(单表)
+  description: 全局搜索字段(单表)
+  legoAlias: list
+  fieldName: global_search_fields
+  multiple: false
+  ift: common
+  fromOIFields: false
+outputFieldDescribe:
+- id: 31
+  name: 列表数据
+  description: ''
+  legoAlias: list
+  fieldName: data_list
+  oft: common
+  multiple: false
+- id: 34
+  name: 读取字段组
+  description: ''
+  legoAlias: list
+  fieldName: ''
+  oft: read
+  multiple: true

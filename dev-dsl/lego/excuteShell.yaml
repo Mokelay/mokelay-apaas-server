@@ -1,0 +1,39 @@
+id: 90
+name: 执行脚本
+description: null
+alias: excuteShell
+supportDST: null
+icon: ty-lg_schemaexcute
+generateSupport: false
+useNum: 0
+createDate: '2018-08-28 21:51:49'
+createrId: 2
+createrName: 肖兵成
+owerId: 2
+owerName: 肖兵成
+type: lego
+'inputFieldDescribe ':
+- id: 221
+  name: 执行命令
+  description: null
+  legoAlias: excuteShell
+  fieldName: cmd
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 222
+  name: 命令执行的目录
+  description: 默认是临时上传文件的目录 或者根目录/
+  legoAlias: excuteShell
+  fieldName: dir
+  multiple: false
+  ift: common
+  fromOIFields: false
+outputFieldDescribe:
+- id: 136
+  name: 执行结果
+  description: null
+  legoAlias: excuteShell
+  fieldName: result
+  oft: common
+  multiple: false

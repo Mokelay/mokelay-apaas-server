@@ -1,0 +1,18 @@
+id: 14
+name: 存session
+description: 存session
+alias: sessionStore
+supportDST: '["mysql"]'
+icon: ty-lg_sessionstore
+generateSupport: false
+useNum: 18
+createDate: ''
+createrId: 2
+createrName: 肖兵成
+owerId: 2
+owerName: 肖兵成
+type: lego
+'inputFieldDescribe ': [
+  ]
+outputFieldDescribe: [
+  ]

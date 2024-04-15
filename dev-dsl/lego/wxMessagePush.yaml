@@ -1,0 +1,97 @@
+id: 96
+name: 微信推送
+description: 微信消息推送
+alias: wxMessagePush
+supportDST: null
+icon: null
+generateSupport: false
+useNum: 0
+createDate: '2018-09-11 03:35:49'
+createrId: 2
+createrName: 肖兵成
+owerId: 2
+owerName: 肖兵成
+type: business
+'inputFieldDescribe ':
+- id: 240
+  name: 微信appID
+  description: null
+  legoAlias: wxMessagePush
+  fieldName: appid
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 241
+  name: 微信公众号密钥
+  description: null
+  legoAlias: wxMessagePush
+  fieldName: wx_api_secret
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 242
+  name: 微信用户openId列表
+  description: 可以是list、dataList、String
+  legoAlias: wxMessagePush
+  fieldName: wx_open_id_list
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 243
+  name: 消息数组
+  description: 类似batchSave乐高，如果非结构化字段有value值了，则不会从json中获取字段值，否则从json中获取字段值
+  legoAlias: wxMessagePush
+  fieldName: list_Param
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 244
+  name: 封面图地址
+  description: 网络地址
+  legoAlias: wxMessagePush
+  fieldName: imageUrl
+  multiple: false
+  ift: unstructured
+  fromOIFields: false
+- id: 245
+  name: 文章作者
+  description: null
+  legoAlias: wxMessagePush
+  fieldName: author
+  multiple: false
+  ift: unstructured
+  fromOIFields: false
+- id: 246
+  name: 文章标题
+  description: null
+  legoAlias: wxMessagePush
+  fieldName: title
+  multiple: false
+  ift: unstructured
+  fromOIFields: false
+- id: 247
+  name: 阅读详情跳转地址
+  description: 可以不填，支持appstore
+  legoAlias: wxMessagePush
+  fieldName: contentSourceUrl
+  multiple: false
+  ift: unstructured
+  fromOIFields: false
+- id: 248
+  name: 文章内容
+  description: null
+  legoAlias: wxMessagePush
+  fieldName: content
+  multiple: false
+  ift: unstructured
+  fromOIFields: false
+- id: 249
+  name: 显示封面
+  description: 0 不显示  1显示
+  legoAlias: wxMessagePush
+  fieldName: showCoverPic
+  multiple: false
+  ift: unstructured
+  fromOIFields: false
+outputFieldDescribe: [
+  ]

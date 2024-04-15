@@ -1,0 +1,18 @@
+id: 94
+name: 微信回调结束
+description: 微信支付回调接口最后必须配置这个lego，结束微信轮训回调
+alias: wxPayNotifyEnd
+supportDST: null
+icon: null
+generateSupport: false
+useNum: 0
+createDate: '2018-09-09 23:00:57'
+createrId: 2
+createrName: 肖兵成
+owerId: 2
+owerName: 肖兵成
+type: business
+'inputFieldDescribe ': [
+  ]
+outputFieldDescribe: [
+  ]

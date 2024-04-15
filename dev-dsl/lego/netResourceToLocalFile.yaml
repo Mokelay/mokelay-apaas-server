@@ -1,0 +1,46 @@
+id: 79
+name: 网络资源转存本地
+description: 主要用于返回文件流上传到oss 或其他存储服务器
+alias: netResourceToLocalFile
+supportDST: null
+icon: ty-ziyuanzc
+generateSupport: false
+useNum: 2
+createDate: '2018-07-17 18:54:44'
+createrId: 2
+createrName: 肖兵成
+owerId: 2
+owerName: 肖兵成
+type: storage
+'inputFieldDescribe ':
+- id: 189
+  name: 网络资源地址
+  description: null
+  legoAlias: netResourceToLocalFile
+  fieldName: resourceUrl
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 190
+  name: 文件名
+  description: null
+  legoAlias: netResourceToLocalFile
+  fieldName: fileName
+  multiple: false
+  ift: common
+  fromOIFields: false
+outputFieldDescribe:
+- id: 119
+  name: 返回文件流
+  description: 后面用oss上传
+  legoAlias: netResourceToLocalFile
+  fieldName: net_file_stream
+  oft: common
+  multiple: false
+- id: 120
+  name: 返回文件contentType
+  description: null
+  legoAlias: netResourceToLocalFile
+  fieldName: contentType
+  oft: common
+  multiple: false

@@ -1,0 +1,47 @@
+id: 46
+name: 数据源差异化检查
+description: schemaDiff
+alias: schemaDiff
+supportDST: '["mysql","oracle"]'
+icon: ty-lg_schemadiff
+generateSupport: false
+useNum: 3
+createDate: '2018-03-09 18:07:58'
+createrId: 11729
+createrName: 张学超
+owerId: 11729
+owerName: 张学超
+type: db
+'inputFieldDescribe ':
+- id: 105
+  name: ds
+  description: 需要比对执行的DSView对象
+  legoAlias: schemaDiff
+  fieldName: ds
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 106
+  name: oi_list
+  description: null
+  legoAlias: schemaDiff
+  fieldName: oi_list
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 107
+  name: field_list
+  description: null
+  legoAlias: schemaDiff
+  fieldName: field_list
+  multiple: false
+  ift: common
+  fromOIFields: false
+outputFieldDescribe:
+- id: 71
+  name: 差异列表
+  description: DiffItem的列表
+  legoAlias: schemaDiff
+  fieldName: diffItemList
+  oft: common
+  multiple: false
