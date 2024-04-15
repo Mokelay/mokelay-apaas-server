@@ -1,0 +1,18 @@
+id: 40
+name: 清除Cache缓存
+description: 主要用于清除TY内置Cache缓存
+alias: clearCache
+supportDST: '["mysql"]'
+icon: ty-lg_clearcache
+generateSupport: false
+useNum: 5
+createDate: ''
+createrId: 2
+createrName: 肖兵成
+owerId: 2
+owerName: 肖兵成
+type: lego
+'inputFieldDescribe ': [
+  ]
+outputFieldDescribe: [
+  ]

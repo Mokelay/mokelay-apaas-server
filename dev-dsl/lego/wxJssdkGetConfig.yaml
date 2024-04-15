@@ -1,0 +1,47 @@
+id: 73
+name: WX获取Jssdk_config
+description: wx.config 需要的信息
+alias: wxJssdkGetConfig
+supportDST: null
+icon: ty-lg_read
+generateSupport: false
+useNum: 1
+createDate: '2018-06-27 03:37:33'
+createrId: 2
+createrName: 肖兵成
+owerId: 2
+owerName: 肖兵成
+type: business
+'inputFieldDescribe ':
+- id: 175
+  name: 签名Url
+  description: 签名用的url必须是调用JS接口页面的完整URL,eg:location.href.split('#')[0]
+  legoAlias: wxJssdkGetConfig
+  fieldName: sign_url
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 176
+  name: 微信appId
+  description: null
+  legoAlias: wxJssdkGetConfig
+  fieldName: openAppId
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 177
+  name: 微信公众号secret
+  description: null
+  legoAlias: wxJssdkGetConfig
+  fieldName: openSecret
+  multiple: false
+  ift: common
+  fromOIFields: false
+outputFieldDescribe:
+- id: 115
+  name: 微信配置对象
+  description: null
+  legoAlias: wxJssdkGetConfig
+  fieldName: wx_config
+  oft: common
+  multiple: false

@@ -1,0 +1,47 @@
+id: 89
+name: 乐高测试
+description: ''
+alias: moke-test2
+supportDST: '["mysql","static"]'
+icon: ty-icon_shenqing
+generateSupport: false
+useNum: 0
+createDate: '2018-08-08 22:35:22'
+createrId: 12167
+createrName: 明源001
+owerId: 12167
+owerName: 明源001
+type: cloud
+'inputFieldDescribe ':
+- id: 223
+  name: A
+  description: ''
+  legoAlias: moke-test2
+  fieldName: A1
+  multiple: false
+  ift: read
+  fromOIFields: false
+- id: 224
+  name: null
+  description: null
+  legoAlias: moke-test2
+  fieldName: null
+  multiple: false
+  ift: null
+  fromOIFields: false
+- id: 255
+  name: 说明文档里面说的是组件
+  description: 说明文档里面说乐高是组件
+  legoAlias: moke-test2
+  fieldName: legao
+  multiple: true
+  ift: condition
+  fromOIFields: true
+outputFieldDescribe:
+- id: 137
+  name: null
+  description: null
+  legoAlias: moke-test2
+  fieldName: null
+  oft: null
+  multiple: false

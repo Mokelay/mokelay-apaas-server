@@ -1,0 +1,55 @@
+id: 66
+name: OSS创建存储空间
+description: null
+alias: createOssStorage
+supportDST: null
+icon: ty-storage
+generateSupport: false
+useNum: 1
+createDate: '2018-06-26 02:53:10'
+createrId: 2
+createrName: 肖兵成
+owerId: 2
+owerName: 肖兵成
+type: storage
+'inputFieldDescribe ':
+- id: 145
+  name: 访问域名
+  description: 参考oss访问域名
+  legoAlias: createOssStorage
+  fieldName: endpoint
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 146
+  name: 访问密钥KeyId
+  description: 参考oss
+  legoAlias: createOssStorage
+  fieldName: accessKeyId
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 147
+  name: 访问密钥secret
+  description: 参考oss
+  legoAlias: createOssStorage
+  fieldName: accessKeySecret
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 148
+  name: 存储空间名称
+  description: null
+  legoAlias: createOssStorage
+  fieldName: bucketName
+  multiple: false
+  ift: common
+  fromOIFields: false
+outputFieldDescribe:
+- id: 104
+  name: 存储空间名称
+  description: null
+  legoAlias: createOssStorage
+  fieldName: bucketName
+  oft: common
+  multiple: false

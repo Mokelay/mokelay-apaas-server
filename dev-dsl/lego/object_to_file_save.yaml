@@ -1,0 +1,41 @@
+id: 85
+name: 对象保存文件
+description: null
+alias: object_to_file_save
+supportDST: '["local_storage"]'
+icon: ty-lg_file_save
+generateSupport: false
+useNum: 0
+createDate: '2018-08-01 18:27:43'
+createrId: 11785
+createrName: 陈征
+owerId: 11785
+owerName: 陈征
+type: storage
+'inputFieldDescribe ':
+- id: 212
+  name: 存储对象
+  description: ''
+  legoAlias: object_to_file_save
+  fieldName: object
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 213
+  name: 文件名
+  description: null
+  legoAlias: object_to_file_save
+  fieldName: file_name
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 214
+  name: 批处理
+  description: null
+  legoAlias: object_to_file_save
+  fieldName: batch
+  multiple: false
+  ift: common
+  fromOIFields: false
+outputFieldDescribe: [
+  ]

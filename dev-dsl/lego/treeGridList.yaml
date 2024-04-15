@@ -1,0 +1,102 @@
+id: 36
+name: 树形列表
+description: 树形展示
+alias: treeGridList
+supportDST: '["mysql"]'
+icon: ty-lg_listtreegridlst
+generateSupport: false
+useNum: 2
+createDate: ''
+createrId: 2
+createrName: 肖兵成
+owerId: 2
+owerName: 肖兵成
+type: db
+'inputFieldDescribe ':
+- id: 84
+  name: 条件字段组
+  description: ''
+  legoAlias: treeGridList
+  fieldName: ''
+  multiple: true
+  ift: condition
+  fromOIFields: false
+- id: 85
+  name: 读取字段组
+  description: ''
+  legoAlias: treeGridList
+  fieldName: ''
+  multiple: true
+  ift: read
+  fromOIFields: false
+- id: 86
+  name: 排序字段
+  description: 设定排序字段
+  legoAlias: treeGridList
+  fieldName: order_field
+  multiple: false
+  ift: common
+  fromOIFields: true
+- id: 87
+  name: 排序
+  description: 排序类型，升序还是降序
+  legoAlias: treeGridList
+  fieldName: order
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 88
+  name: 群组字段
+  description: 群组字段
+  legoAlias: treeGridList
+  fieldName: group_field
+  multiple: false
+  ift: common
+  fromOIFields: true
+- id: 89
+  name: 关键字搜索
+  description: null
+  legoAlias: treeGridList
+  fieldName: keywords
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 90
+  name: 全局搜索字段(单表)
+  description: 全局搜索字段(单表)
+  legoAlias: treeGridList
+  fieldName: global_search_fields
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 91
+  name: 主键Key
+  description: 主键Key，默认id
+  legoAlias: treeGridList
+  fieldName: main_key
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 92
+  name: 父级Key
+  description: 父级Key，默认parentId
+  legoAlias: treeGridList
+  fieldName: parent_key
+  multiple: false
+  ift: common
+  fromOIFields: false
+outputFieldDescribe:
+- id: 68
+  name: 列表数据
+  description: ''
+  legoAlias: treeGridList
+  fieldName: data_list
+  oft: common
+  multiple: false
+- id: 69
+  name: 读取字段组
+  description: ''
+  legoAlias: treeGridList
+  fieldName: ''
+  oft: read
+  multiple: true

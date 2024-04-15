@@ -1,0 +1,31 @@
+id: 48
+name: 对象分离
+description: 将map对象或者list<map>对象  转换成单个属性或者属性list
+alias: objectSeparate
+supportDST: '["mysql","static"]'
+icon: ty-lg_objectseparate
+generateSupport: false
+useNum: 8
+createDate: '2018-03-15 00:07:39'
+createrId: 2
+createrName: 肖兵成
+owerId: 2
+owerName: 肖兵成
+type: lego
+'inputFieldDescribe ':
+- id: 108
+  name: 分离对象
+  description: 只能解析map和list<map> 格式
+  legoAlias: objectSeparate
+  fieldName: srcObject
+  multiple: false
+  ift: common
+  fromOIFields: false
+outputFieldDescribe:
+- id: 72
+  name: 内存组
+  description: ''
+  legoAlias: objectSeparate
+  fieldName: test
+  oft: memory
+  multiple: true

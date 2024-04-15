@@ -1,0 +1,52 @@
+id: 59
+name: 用户会话信息读取
+description: 读取红星或TY的登录用户信息
+alias: sessionUserRead
+supportDST: null
+icon: ty-huihuaxx
+generateSupport: false
+useNum: 11
+createDate: '2018-06-04 05:08:56'
+createrId: 3
+createrName: 陈征
+owerId: 3
+owerName: 陈征
+type: business
+'inputFieldDescribe ': [
+  ]
+outputFieldDescribe:
+- id: 92
+  name: 用户唯一ID
+  description: null
+  legoAlias: sessionUserRead
+  fieldName: user_unique_id
+  oft: common
+  multiple: false
+- id: 93
+  name: 用户姓名
+  description: null
+  legoAlias: sessionUserRead
+  fieldName: user_xingming
+  oft: common
+  multiple: false
+- id: 94
+  name: 租户序列号
+  description: null
+  legoAlias: sessionUserRead
+  fieldName: tenant_serial_number
+  oft: common
+  multiple: false
+- id: 95
+  name: 商场ID
+  description: null
+  legoAlias: sessionUserRead
+  fieldName: market_id
+  oft: common
+  multiple: false
+- id: 96
+  name: 商场名称
+  description: null
+  legoAlias: sessionUserRead
+  fieldName: market_desc
+  oft: common
+  multiple: false

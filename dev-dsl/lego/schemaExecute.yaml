@@ -1,0 +1,33 @@
+id: 47
+name: schema执行
+description: schemaExecute
+alias: schemaExecute
+supportDST: '["mysql","oracle"]'
+icon: ty-lg_schemaexcute
+generateSupport: false
+useNum: 4
+createDate: '2018-03-09 18:08:28'
+createrId: 11729
+createrName: 张学超
+owerId: 11729
+owerName: 张学超
+type: db
+'inputFieldDescribe ':
+- id: 103
+  name: 执行类型
+  description: single=单条执行，multiple=多条批量执行
+  legoAlias: schemaExecute
+  fieldName: executeType
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 104
+  name: 执行数据
+  description: executeData=执行的数据，需要传入一个json
+  legoAlias: schemaExecute
+  fieldName: executeData
+  multiple: false
+  ift: common
+  fromOIFields: false
+outputFieldDescribe: [
+  ]

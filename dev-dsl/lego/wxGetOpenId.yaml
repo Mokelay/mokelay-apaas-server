@@ -1,0 +1,54 @@
+id: 63
+name: 获取WxOpenID
+description: 必须是授权url 回调地址才有效，因为需要授权code；或者是小程序前端传过来code
+alias: wxGetOpenId
+supportDST: ''
+icon: ty-yy_demo
+generateSupport: false
+useNum: 0
+createDate: '2018-06-23 02:02:41'
+createrId: 2
+createrName: 肖兵成
+owerId: 2
+owerName: 肖兵成
+type: business
+'inputFieldDescribe ':
+- id: 137
+  name: 微信AppId
+  description: 获取openid接口所需的appId
+  legoAlias: wxGetOpenId
+  fieldName: openAppId
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 138
+  name: 微信secret
+  description: 参考微信授权 获取openId接口所需的secret
+  legoAlias: wxGetOpenId
+  fieldName: openSecret
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 256
+  name: 是否小程序
+  description: null
+  legoAlias: wxGetOpenId
+  fieldName: isMp
+  multiple: false
+  ift: common
+  fromOIFields: false
+outputFieldDescribe:
+- id: 101
+  name: OpenId
+  description: 微信openId
+  legoAlias: wxGetOpenId
+  fieldName: openId
+  oft: common
+  multiple: false
+- id: 145
+  name: Session
+  description: null
+  legoAlias: wxGetOpenId
+  fieldName: si
+  oft: common
+  multiple: false

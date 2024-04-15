@@ -1,0 +1,46 @@
+id: 87
+name: CSV文件读取
+description: 用于csv文件导入
+alias: csvRead
+supportDST: null
+icon: ty-csv
+generateSupport: false
+useNum: 0
+createDate: '2018-08-02 22:46:51'
+createrId: 2
+createrName: 肖兵成
+owerId: 2
+owerName: 肖兵成
+type: business
+'inputFieldDescribe ':
+- id: 217
+  name: csv文件流
+  description: null
+  legoAlias: csvRead
+  fieldName: csv_filestream
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 218
+  name: 表头行数
+  description: 默认是1
+  legoAlias: csvRead
+  fieldName: header_row_num
+  multiple: false
+  ift: common
+  fromOIFields: false
+outputFieldDescribe:
+- id: 133
+  name: 表头数据
+  description: null
+  legoAlias: csvRead
+  fieldName: headers
+  oft: common
+  multiple: false
+- id: 134
+  name: csv文件内容
+  description: null
+  legoAlias: csvRead
+  fieldName: data_list
+  oft: common
+  multiple: false

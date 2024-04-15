@@ -1,0 +1,31 @@
+id: 45
+name: 模板转换
+description: 通过common参数，模板转换成String
+alias: tpl
+supportDST: '["mysql"]'
+icon: ty-lg_tpl
+generateSupport: false
+useNum: 6
+createDate: '2018-03-06 22:03:37'
+createrId: 2
+createrName: 肖兵成
+owerId: 2
+owerName: 肖兵成
+type: lego
+'inputFieldDescribe ':
+- id: 101
+  name: 模板
+  description: null
+  legoAlias: tpl
+  fieldName: tpl
+  multiple: false
+  ift: common
+  fromOIFields: false
+outputFieldDescribe:
+- id: 70
+  name: 模板转换值
+  description: null
+  legoAlias: tpl
+  fieldName: tplData
+  oft: common
+  multiple: false

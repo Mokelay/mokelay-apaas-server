@@ -1,0 +1,39 @@
+id: 64
+name: 获取微信用户信息
+description: 此lego需要在授权url的回调接口使用
+alias: wxGetUserInfo
+supportDST: null
+icon: ty-yy_demo
+generateSupport: false
+useNum: 2
+createDate: '2018-06-23 02:45:06'
+createrId: 2
+createrName: 肖兵成
+owerId: 2
+owerName: 肖兵成
+type: business
+'inputFieldDescribe ':
+- id: 139
+  name: 微信appId
+  description: 参考微信授权所需的appId参数
+  legoAlias: wxGetUserInfo
+  fieldName: openAppId
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 140
+  name: 微信secret
+  description: 参考微信secret
+  legoAlias: wxGetUserInfo
+  fieldName: openSecret
+  multiple: false
+  ift: common
+  fromOIFields: false
+outputFieldDescribe:
+- id: 102
+  name: 微信用户信息
+  description: null
+  legoAlias: wxGetUserInfo
+  fieldName: wxUserInfo
+  oft: common
+  multiple: false

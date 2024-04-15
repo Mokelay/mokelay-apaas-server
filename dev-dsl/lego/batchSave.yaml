@@ -1,0 +1,61 @@
+id: 21
+name: 批量添加
+description: 需要配置create输入字段
+alias: batchSave
+supportDST: '["mysql"]'
+icon: ty-lg_batchsave
+generateSupport: false
+useNum: 35
+createDate: ''
+createrId: 2
+createrName: 肖兵成
+owerId: 2
+owerName: 肖兵成
+type: db
+'inputFieldDescribe ':
+- id: 12
+  name: 批量添加list
+  description: ''
+  legoAlias: batchSave
+  fieldName: list_Param
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 25
+  name: 创建字段组
+  description: ''
+  legoAlias: batchSave
+  fieldName: ''
+  multiple: true
+  ift: create
+  fromOIFields: true
+- id: 50
+  name: 更新字段组
+  description: null
+  legoAlias: batchSave
+  fieldName: null
+  multiple: true
+  ift: update
+  fromOIFields: true
+outputFieldDescribe:
+- id: 14
+  name: 批量添加的主键id列表
+  description: ''
+  legoAlias: batchSave
+  fieldName: list_unique_value
+  oft: common
+  multiple: false
+- id: 44
+  name: 创建字段组
+  description: null
+  legoAlias: batchSave
+  fieldName: null
+  oft: create
+  multiple: true
+- id: 45
+  name: 更新字段组
+  description: null
+  legoAlias: batchSave
+  fieldName: null
+  oft: update
+  multiple: true

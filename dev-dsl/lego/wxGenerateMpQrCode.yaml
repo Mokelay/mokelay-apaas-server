@@ -1,0 +1,63 @@
+id: 97
+name: 生成小程序二维码
+description: 生成小程序二维码，输出图片流
+alias: wxGenerateMpQrCode
+supportDST: null
+icon: null
+generateSupport: false
+useNum: 0
+createDate: '2018-09-13 03:45:40'
+createrId: 2
+createrName: 肖兵成
+owerId: 2
+owerName: 肖兵成
+type: business
+'inputFieldDescribe ':
+- id: 250
+  name: 小程序二维码参数
+  description: null
+  legoAlias: wxGenerateMpQrCode
+  fieldName: scene
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 251
+  name: 小程序二维码页面
+  description: null
+  legoAlias: wxGenerateMpQrCode
+  fieldName: page
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 252
+  name: 小程序二维码背景透明
+  description: null
+  legoAlias: wxGenerateMpQrCode
+  fieldName: hyaline
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 253
+  name: 小程序APPID
+  description: null
+  legoAlias: wxGenerateMpQrCode
+  fieldName: appid
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 254
+  name: 小程序密钥
+  description: null
+  legoAlias: wxGenerateMpQrCode
+  fieldName: appsecret
+  multiple: false
+  ift: common
+  fromOIFields: false
+outputFieldDescribe:
+- id: 144
+  name: 图片流
+  description: null
+  legoAlias: wxGenerateMpQrCode
+  fieldName: file_stream
+  oft: common
+  multiple: false

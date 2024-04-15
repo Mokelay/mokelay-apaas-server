@@ -1,0 +1,39 @@
+id: 49
+name: 对象重组
+description: 将多个属性或者属性list转换成一个对象或者list
+alias: objectRecombine
+supportDST: '["static","mysql"]'
+icon: ty-lg_objectrecombine
+generateSupport: false
+useNum: 42
+createDate: '2018-03-15 01:23:33'
+createrId: 2
+createrName: 肖兵成
+owerId: 2
+owerName: 肖兵成
+type: lego
+'inputFieldDescribe ':
+- id: 109
+  name: 转换类型(data/list)
+  description: data/list   转换成data对象还是list
+  legoAlias: objectRecombine
+  fieldName: dataType
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 110
+  name: 内存组
+  description: null
+  legoAlias: objectRecombine
+  fieldName: null
+  multiple: true
+  ift: memory
+  fromOIFields: false
+outputFieldDescribe:
+- id: 73
+  name: 重组对象
+  description: 可能是data 也可能是list
+  legoAlias: objectRecombine
+  fieldName: data
+  oft: common
+  multiple: false

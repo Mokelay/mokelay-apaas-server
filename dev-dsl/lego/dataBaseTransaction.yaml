@@ -1,0 +1,33 @@
+id: 50
+name: 数据库事务执行
+description: 关系数据库数据库事务执行
+alias: dataBaseTransaction
+supportDST: '["mysql"]'
+icon: ty-shujuyuanguanli
+generateSupport: false
+useNum: 6
+createDate: '2018-03-16 23:28:23'
+createrId: 11729
+createrName: 张学超
+owerId: 11729
+owerName: 张学超
+type: db
+'inputFieldDescribe ':
+- id: 111
+  name: DS数据源的别名
+  description: null
+  legoAlias: dataBaseTransaction
+  fieldName: ds
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 112
+  name: Transaction执行对象集合
+  description: ''
+  legoAlias: dataBaseTransaction
+  fieldName: dataList
+  multiple: false
+  ift: common
+  fromOIFields: false
+outputFieldDescribe: [
+  ]

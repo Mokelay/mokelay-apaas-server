@@ -1,0 +1,45 @@
+id: 86
+name: 级联添加
+description: 级联插入数据库
+alias: cascadeAdd
+supportDST: '["mysql","oracle"]'
+icon: ty-wj_add_ltem_question
+generateSupport: false
+useNum: 0
+createDate: '2018-08-02 00:14:46'
+createrId: 2
+createrName: 肖兵成
+owerId: 2
+owerName: 肖兵成
+type: db
+'inputFieldDescribe ':
+- id: 215
+  name: 主数据源
+  description: |-
+    格式为
+    [
+    [a1,a2,b1,b2,b3,c1,c2],
+    [a1,a2,b1,b2,b3,c1,c2],
+    ...
+    ]
+  legoAlias: cascadeAdd
+  fieldName: index_data
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 216
+  name: 创建字段组
+  description: 反向树形选择字段
+  legoAlias: cascadeAdd
+  fieldName: null
+  multiple: true
+  ift: create
+  fromOIFields: true
+outputFieldDescribe:
+- id: 132
+  name: 级联插入的唯一值列表
+  description: null
+  legoAlias: cascadeAdd
+  fieldName: unique_value_list
+  oft: common
+  multiple: false

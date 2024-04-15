@@ -1,0 +1,39 @@
+id: 100
+name: 自增长序号
+description: 取数据库中某个字段的下一个序号值
+alias: autoIncrementNextValue
+supportDST: '["mysql"]'
+icon: null
+generateSupport: false
+useNum: 0
+createDate: '2018-10-16 05:46:52'
+createrId: 2
+createrName: 肖兵成
+owerId: 2
+owerName: 肖兵成
+type: db
+'inputFieldDescribe ':
+- id: 266
+  name: 自增字段
+  description: 数据库中需要自增的字段
+  legoAlias: autoIncrementNextValue
+  fieldName: indexFieldName
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 267
+  name: 生成字符的长度
+  description: 默认6位，长度不足0来填充
+  legoAlias: autoIncrementNextValue
+  fieldName: length
+  multiple: false
+  ift: common
+  fromOIFields: false
+outputFieldDescribe:
+- id: 147
+  name: 自增Next值
+  description: null
+  legoAlias: autoIncrementNextValue
+  fieldName: nextValue
+  oft: common
+  multiple: false

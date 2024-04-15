@@ -1,0 +1,33 @@
+id: 31
+name: 写入Redis缓存
+description: 写入Redis缓存
+alias: writeRedis
+supportDST: '["redis"]'
+icon: ty-lg_writeredis
+generateSupport: false
+useNum: 4
+createDate: ''
+createrId: 2
+createrName: 肖兵成
+owerId: 2
+owerName: 肖兵成
+type: lego
+'inputFieldDescribe ':
+- id: 64
+  name: 过期时间(s)
+  description: redis的过期时间秒单位
+  legoAlias: writeRedis
+  fieldName: expirDate
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 99
+  name: 缓存字段组
+  description: null
+  legoAlias: writeRedis
+  fieldName: null
+  multiple: true
+  ift: cache
+  fromOIFields: false
+outputFieldDescribe: [
+  ]

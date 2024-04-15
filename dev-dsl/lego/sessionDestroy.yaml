@@ -1,0 +1,18 @@
+id: 18
+name: 清除session
+description: 清除sesson
+alias: sessionDestroy
+supportDST: '["mysql"]'
+icon: ty-lg_sessiondetroy
+generateSupport: false
+useNum: 3
+createDate: ''
+createrId: 2
+createrName: 肖兵成
+owerId: 2
+owerName: 肖兵成
+type: lego
+'inputFieldDescribe ': [
+  ]
+outputFieldDescribe: [
+  ]

@@ -1,0 +1,70 @@
+id: 7
+name: 读取
+description: 读取
+alias: read
+supportDST: '["mysql"]'
+icon: ty-lg_read
+generateSupport: true
+useNum: 396
+createDate: ''
+createrId: 2
+createrName: 肖兵成
+owerId: 2
+owerName: 肖兵成
+type: db
+'inputFieldDescribe ':
+- id: 32
+  name: 排序字段
+  description: ''
+  legoAlias: read
+  fieldName: order_field
+  multiple: false
+  ift: common
+  fromOIFields: true
+- id: 33
+  name: 读取字段组
+  description: ''
+  legoAlias: read
+  fieldName: ''
+  multiple: true
+  ift: read
+  fromOIFields: true
+- id: 34
+  name: 条件字段组
+  description: ''
+  legoAlias: read
+  fieldName: ''
+  multiple: true
+  ift: condition
+  fromOIFields: true
+- id: 44
+  name: 排序
+  description: null
+  legoAlias: read
+  fieldName: order
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 45
+  name: 群组字段
+  description: ''
+  legoAlias: read
+  fieldName: group_field
+  multiple: false
+  ift: common
+  fromOIFields: true
+outputFieldDescribe:
+- id: 32
+  name: data
+  description: ''
+  legoAlias: read
+  fieldName: data
+  oft: common
+  multiple: false
+- id: 41
+  name: 读取字段组
+  description: 读取字段组
+  legoAlias: read
+  fieldName: null
+  oft: read
+  multiple: true

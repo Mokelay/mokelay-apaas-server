@@ -1,0 +1,73 @@
+id: 62
+name: 获取微信授权URL
+description: https://open.weixin.qq.com/connect/oauth2/authorize?appid=APPID&redirect_uri=REDIRECT_URI&response_type=code&scope=SCOPE&state=STATE#wechat_redirect
+alias: wxGetAuthUrl
+supportDST: null
+icon: ty-lg_pagetree
+generateSupport: false
+useNum: 2
+createDate: '2018-06-23 01:58:01'
+createrId: 2
+createrName: 肖兵成
+owerId: 2
+owerName: 肖兵成
+type: business
+'inputFieldDescribe ':
+- id: 133
+  name: lego类型(auth/lego)
+  description: legoType （auth,lego）分为授权(auth) 和 普通乐高(lego)。auth则直接抛错，跳转到微信授权页面
+  legoAlias: wxGetAuthUrl
+  fieldName: legoType
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 134
+  name: 重定向地址(去https://)
+  description: 参考微信授权redirect_url 填写规则
+  legoAlias: wxGetAuthUrl
+  fieldName: redirectUrl
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 135
+  name: 授权方式
+  description: 参考微信授权   默认是 snsapi_base  静默授权
+  legoAlias: wxGetAuthUrl
+  fieldName: scope
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 136
+  name: 附带参数
+  description: null
+  legoAlias: wxGetAuthUrl
+  fieldName: state
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 141
+  name: 微信Appid
+  description: 微信 appid
+  legoAlias: wxGetAuthUrl
+  fieldName: openAppId
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 174
+  name: 微信授权代理地址
+  description: |-
+    参考https://github.com/HADB/GetWeixinCode
+    eg：http://www.abc.com/xxx/wx-auth-agent.html?appid=XXXX&scope=snsapi_base&state=hello-world&redirect_uri=http%3A%2F%2Fwww.xyz.com%2Fhello-world.html
+  legoAlias: wxGetAuthUrl
+  fieldName: wxAuthUseAgent
+  multiple: false
+  ift: common
+  fromOIFields: false
+outputFieldDescribe:
+- id: 100
+  name: 微信授权URL
+  description: 根据前面传的参数生成授权url
+  legoAlias: wxGetAuthUrl
+  fieldName: authUrl
+  oft: common
+  multiple: false

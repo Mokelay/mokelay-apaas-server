@@ -1,0 +1,79 @@
+id: 91
+name: 小蚁签名
+description: 小蚁授权签名
+alias: xiaoYiSign
+supportDST: null
+icon: ty-icon_shenpi
+generateSupport: false
+useNum: 0
+createDate: '2018-09-06 23:22:10'
+createrId: 2
+createrName: 肖兵成
+owerId: 2
+owerName: 肖兵成
+type: lego
+'inputFieldDescribe ':
+- id: 225
+  name: 小蚁平台ID
+  description: null
+  legoAlias: xiaoYiSign
+  fieldName: appId
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 226
+  name: 小蚁企业ID
+  description: null
+  legoAlias: xiaoYiSign
+  fieldName: enterpriseId
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 227
+  name: 小蚁私钥
+  description: null
+  legoAlias: xiaoYiSign
+  fieldName: secret
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 228
+  name: 签名接口路径
+  description: null
+  legoAlias: xiaoYiSign
+  fieldName: apiPath
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 229
+  name: 签名接口方法
+  description: null
+  legoAlias: xiaoYiSign
+  fieldName: apiMethod
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 230
+  name: 请求参数组
+  description: 调用小蚁接口的请求参数json
+  legoAlias: xiaoYiSign
+  fieldName: null
+  multiple: true
+  ift: unstructured
+  fromOIFields: false
+- id: 231
+  name: 当前时间
+  description: null
+  legoAlias: xiaoYiSign
+  fieldName: currentDate
+  multiple: false
+  ift: common
+  fromOIFields: false
+outputFieldDescribe:
+- id: 138
+  name: 小蚁签名
+  description: null
+  legoAlias: xiaoYiSign
+  fieldName: sign
+  oft: common
+  multiple: false

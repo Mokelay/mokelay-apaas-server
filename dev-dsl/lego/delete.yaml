@@ -1,0 +1,25 @@
+id: 8
+name: 删除
+description: 删除
+alias: delete
+supportDST: '["mysql"]'
+icon: ty-lg_delete
+generateSupport: true
+useNum: 151
+createDate: ''
+createrId: 2
+createrName: 肖兵成
+owerId: 2
+owerName: 肖兵成
+type: db
+'inputFieldDescribe ':
+- id: 35
+  name: 条件字段组
+  description: ''
+  legoAlias: delete
+  fieldName: ''
+  multiple: true
+  ift: condition
+  fromOIFields: false
+outputFieldDescribe: [
+  ]

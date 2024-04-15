@@ -1,0 +1,79 @@
+id: 68
+name: OSS文件下载
+description: null
+alias: ossDownloadFile
+supportDST: null
+icon: ty-osswjxiazai
+generateSupport: false
+useNum: 1
+createDate: '2018-06-26 18:28:57'
+createrId: 2
+createrName: 肖兵成
+owerId: 2
+owerName: 肖兵成
+type: storage
+'inputFieldDescribe ':
+- id: 154
+  name: 序列化文件名(ossKey)
+  description: null
+  legoAlias: ossDownloadFile
+  fieldName: file_serialize_name
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 155
+  name: 下载文件名重命名
+  description: null
+  legoAlias: ossDownloadFile
+  fieldName: file_name
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 156
+  name: 访问域名
+  description: null
+  legoAlias: ossDownloadFile
+  fieldName: endpoint
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 157
+  name: 访问密钥KeyId
+  description: null
+  legoAlias: ossDownloadFile
+  fieldName: accessKeyId
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 158
+  name: 访问密钥secret
+  description: null
+  legoAlias: ossDownloadFile
+  fieldName: accessKeySecret
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 159
+  name: 存储空间名称
+  description: null
+  legoAlias: ossDownloadFile
+  fieldName: bucketName
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 285
+  name: 使用FileStorage表
+  description: 可以不设置，默认不使用
+  legoAlias: ossDownloadFile
+  fieldName: useFileStorage
+  multiple: false
+  ift: common
+  fromOIFields: false
+outputFieldDescribe:
+- id: 111
+  name: 文件流(以文件形式返回)
+  description: 需要返回客户端，并且数据类型是文件
+  legoAlias: ossDownloadFile
+  fieldName: file_stream
+  oft: common
+  multiple: false

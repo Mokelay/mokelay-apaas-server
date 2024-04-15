@@ -1,0 +1,31 @@
+id: 98
+name: 获取用户信息
+description: 根据别名获取用户信息，用于不想开放TY库权限获取用户信息
+alias: userInfoByAlias
+supportDST: '["mysql"]'
+icon: null
+generateSupport: false
+useNum: 0
+createDate: '2018-09-30 22:06:49'
+createrId: 2
+createrName: 肖兵成
+owerId: 2
+owerName: 肖兵成
+type: db
+'inputFieldDescribe ':
+- id: 257
+  name: 用户别名
+  description: null
+  legoAlias: userInfoByAlias
+  fieldName: userAlias
+  multiple: false
+  ift: common
+  fromOIFields: false
+outputFieldDescribe:
+- id: 146
+  name: 用户信息
+  description: null
+  legoAlias: userInfoByAlias
+  fieldName: data
+  oft: common
+  multiple: false

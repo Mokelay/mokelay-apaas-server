@@ -1,0 +1,129 @@
+id: 67
+name: OSS上传文件
+description: OSS上传
+alias: ossUploadFile
+supportDST: null
+icon: ty-osscunchu
+generateSupport: false
+useNum: 4
+createDate: '2018-06-26 18:24:57'
+createrId: 2
+createrName: 肖兵成
+owerId: 2
+owerName: 肖兵成
+type: storage
+'inputFieldDescribe ':
+- id: 149
+  name: 文件流
+  description: 文件流
+  legoAlias: ossUploadFile
+  fieldName: file_stream
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 150
+  name: 访问域名
+  description: null
+  legoAlias: ossUploadFile
+  fieldName: endpoint
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 151
+  name: 访问密钥KeyId
+  description: null
+  legoAlias: ossUploadFile
+  fieldName: accessKeyId
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 152
+  name: 访问密钥secret
+  description: null
+  legoAlias: ossUploadFile
+  fieldName: accessKeySecret
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 153
+  name: 存储空间名称
+  description: null
+  legoAlias: ossUploadFile
+  fieldName: bucketName
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 173
+  name: OSS下载地址
+  description: 最后以/结尾
+  legoAlias: ossUploadFile
+  fieldName: oss_download_url
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 192
+  name: 文件类型(可选)
+  description: null
+  legoAlias: ossUploadFile
+  fieldName: contentType
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 194
+  name: 存储的文件名(可选)
+  description: null
+  legoAlias: ossUploadFile
+  fieldName: file_serialize_name
+  multiple: false
+  ift: common
+  fromOIFields: false
+outputFieldDescribe:
+- id: 105
+  name: 序列化文件名(ossKey)
+  description: null
+  legoAlias: ossUploadFile
+  fieldName: file_serialize_name
+  oft: common
+  multiple: false
+- id: 106
+  name: 源文件名
+  description: null
+  legoAlias: ossUploadFile
+  fieldName: file_original_name
+  oft: common
+  multiple: false
+- id: 107
+  name: 文件大小
+  description: null
+  legoAlias: ossUploadFile
+  fieldName: file_size
+  oft: common
+  multiple: false
+- id: 108
+  name: 文件类型
+  description: null
+  legoAlias: ossUploadFile
+  fieldName: file_type
+  oft: common
+  multiple: false
+- id: 109
+  name: 文件内容类型
+  description: null
+  legoAlias: ossUploadFile
+  fieldName: file_content_type
+  oft: common
+  multiple: false
+- id: 110
+  name: 文件对象
+  description: null
+  legoAlias: ossUploadFile
+  fieldName: file_storage
+  oft: common
+  multiple: false
+- id: 114
+  name: 文件url
+  description: 返回能下载文件的url
+  legoAlias: ossUploadFile
+  fieldName: file_url
+  oft: common
+  multiple: false

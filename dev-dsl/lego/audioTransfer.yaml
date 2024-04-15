@@ -1,0 +1,125 @@
+id: 78
+name: 七牛上传_瘦身_转码
+description: 流程，上传到七牛，转换成mp3或其他格式、支持图片瘦身
+alias: audioTransfer
+supportDST: ''
+icon: ty-qiniu
+generateSupport: false
+useNum: 3
+createDate: '2018-07-17 02:58:22'
+createrId: 2
+createrName: 肖兵成
+owerId: 2
+owerName: 肖兵成
+type: storage
+'inputFieldDescribe ':
+- id: 181
+  name: 七牛存储区域
+  description: 华东z0/华北z1/华南z2/北美na0  ，  默认华南
+  legoAlias: audioTransfer
+  fieldName: zone
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 182
+  name: 七牛公钥
+  description: null
+  legoAlias: audioTransfer
+  fieldName: key
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 183
+  name: 七牛私钥
+  description: null
+  legoAlias: audioTransfer
+  fieldName: secret
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 184
+  name: 七牛存储空间
+  description: null
+  legoAlias: audioTransfer
+  fieldName: bucket
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 185
+  name: 七牛专有队列
+  description: 上传时，需要的上传队列
+  legoAlias: audioTransfer
+  fieldName: properQueue
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 186
+  name: 文件流
+  description: null
+  legoAlias: audioTransfer
+  fieldName: file_stream
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 187
+  name: 转码目标类型(不传不转吗)
+  description: ''
+  legoAlias: audioTransfer
+  fieldName: targetType
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 188
+  name: 七牛下载域名
+  description: null
+  legoAlias: audioTransfer
+  fieldName: qiniu_download_url
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 191
+  name: 保存到TY文件库(不填不保存，true保存)
+  description: storage表
+  legoAlias: audioTransfer
+  fieldName: saveStorage
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 193
+  name: 数据处理后的回调接口
+  description: null
+  legoAlias: audioTransfer
+  fieldName: persistentUrl
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 195
+  name: oss下载地址
+  description: 最后生成的文件访问地址
+  legoAlias: audioTransfer
+  fieldName: oss_download_url
+  multiple: false
+  ift: common
+  fromOIFields: false
+outputFieldDescribe:
+- id: 117
+  name: 文件名
+  description: null
+  legoAlias: audioTransfer
+  fieldName: fileName
+  oft: common
+  multiple: false
+- id: 118
+  name: 转码后七牛文件地址
+  description: ''
+  legoAlias: audioTransfer
+  fieldName: filePath
+  oft: common
+  multiple: false
+- id: 121
+  name: oss文件下载地址
+  description: null
+  legoAlias: audioTransfer
+  fieldName: ossfilePath
+  oft: common
+  multiple: false

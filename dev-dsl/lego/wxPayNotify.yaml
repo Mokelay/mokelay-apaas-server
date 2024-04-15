@@ -1,0 +1,45 @@
+id: 93
+name: 微信回调
+description: 微信支付回调lego，返回回调获取的参数
+alias: wxPayNotify
+supportDST: null
+icon: null
+generateSupport: false
+useNum: 0
+createDate: '2018-09-09 22:59:19'
+createrId: 2
+createrName: 肖兵成
+owerId: 2
+owerName: 肖兵成
+type: business
+'inputFieldDescribe ': [
+  ]
+outputFieldDescribe:
+- id: 140
+  name: 订单编号
+  description: null
+  legoAlias: wxPayNotify
+  fieldName: out_trade_no
+  oft: common
+  multiple: false
+- id: 141
+  name: 支付金额
+  description: null
+  legoAlias: wxPayNotify
+  fieldName: total_fee
+  oft: common
+  multiple: false
+- id: 142
+  name: 微信交易号
+  description: null
+  legoAlias: wxPayNotify
+  fieldName: transaction_id
+  oft: common
+  multiple: false
+- id: 143
+  name: 支付状态
+  description: null
+  legoAlias: wxPayNotify
+  fieldName: trade_status
+  oft: common
+  multiple: false

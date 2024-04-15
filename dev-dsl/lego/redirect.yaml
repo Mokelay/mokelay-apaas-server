@@ -1,0 +1,31 @@
+id: 61
+name: 转发
+description: null
+alias: redirect
+supportDST: null
+icon: ty-zhuanfa
+generateSupport: false
+useNum: 3
+createDate: '2018-06-23 00:22:08'
+createrId: 3
+createrName: 陈征
+owerId: 3
+owerName: 陈征
+type: business
+'inputFieldDescribe ':
+- id: 132
+  name: 转发URL
+  description: null
+  legoAlias: redirect
+  fieldName: url
+  multiple: false
+  ift: common
+  fromOIFields: false
+outputFieldDescribe:
+- id: 99
+  name: 转发配置
+  description: null
+  legoAlias: redirect
+  fieldName: redirect_config
+  oft: common
+  multiple: false

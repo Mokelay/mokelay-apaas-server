@@ -1,0 +1,57 @@
+id: 71
+name: OSS文件删除
+description: null
+alias: ossDeleteFile
+supportDST: null
+icon: ty-osswjshanchu
+generateSupport: false
+useNum: 0
+createDate: '2018-06-26 19:14:48'
+createrId: 2
+createrName: 肖兵成
+owerId: 2
+owerName: 肖兵成
+type: storage
+'inputFieldDescribe ':
+- id: 167
+  name: 访问域名
+  description: null
+  legoAlias: ossDeleteFile
+  fieldName: endpoint
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 168
+  name: 访问密钥Keyid
+  description: null
+  legoAlias: ossDeleteFile
+  fieldName: accessKeyId
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 169
+  name: 访问密钥secret
+  description: null
+  legoAlias: ossDeleteFile
+  fieldName: accessKeySecret
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 170
+  name: 存储空间名称
+  description: null
+  legoAlias: ossDeleteFile
+  fieldName: bucketName
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 171
+  name: 序列化文件(ossKey)
+  description: null
+  legoAlias: ossDeleteFile
+  fieldName: file_serialize_name
+  multiple: false
+  ift: common
+  fromOIFields: false
+outputFieldDescribe: [
+  ]

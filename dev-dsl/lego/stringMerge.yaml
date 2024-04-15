@@ -1,0 +1,24 @@
+id: 57
+name: 字符串合并
+description: null
+alias: stringMerge
+supportDST: null
+icon: ty-dxhebing
+generateSupport: false
+useNum: 0
+createDate: '2018-05-07 06:16:10'
+createrId: 3
+createrName: 陈征
+owerId: 3
+owerName: 陈征
+type: lego
+'inputFieldDescribe ': [
+  ]
+outputFieldDescribe:
+- id: 89
+  name: 合并后字符串
+  description: null
+  legoAlias: stringMerge
+  fieldName: string_merge
+  oft: common
+  multiple: false

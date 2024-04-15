@@ -1,0 +1,94 @@
+id: 70
+name: OSS文件列表
+description: 带分页
+alias: listOssFile
+supportDST: null
+icon: ty-osswjliebiao
+generateSupport: false
+useNum: 1
+createDate: '2018-06-26 19:11:19'
+createrId: 2
+createrName: 肖兵成
+owerId: 2
+owerName: 肖兵成
+type: storage
+'inputFieldDescribe ':
+- id: 160
+  name: 授权域名
+  description: null
+  legoAlias: listOssFile
+  fieldName: endpoint
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 161
+  name: 访问密钥KeyId
+  description: null
+  legoAlias: listOssFile
+  fieldName: accessKeyId
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 162
+  name: 访问密钥secret
+  description: null
+  legoAlias: listOssFile
+  fieldName: accessKeySecret
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 163
+  name: 存储空间
+  description: null
+  legoAlias: listOssFile
+  fieldName: bucketName
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 164
+  name: 开始文件名(不传从第一个文件开始)
+  description: ''
+  legoAlias: listOssFile
+  fieldName: nextMarker
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 165
+  name: 每页多少条
+  description: null
+  legoAlias: listOssFile
+  fieldName: pageSize
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 166
+  name: 文件搜索前缀
+  description: null
+  legoAlias: listOssFile
+  fieldName: keyPrefix
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 172
+  name: OSS下载地址(支持模板)
+  description: 方便拼接下载url
+  legoAlias: listOssFile
+  fieldName: oss_download_url
+  multiple: false
+  ift: common
+  fromOIFields: false
+outputFieldDescribe:
+- id: 112
+  name: 文件列表
+  description: null
+  legoAlias: listOssFile
+  fieldName: file_list
+  oft: common
+  multiple: false
+- id: 113
+  name: 下一页开始的文件名
+  description: null
+  legoAlias: listOssFile
+  fieldName: nextMarker
+  oft: common
+  multiple: false

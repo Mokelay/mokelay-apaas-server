@@ -1,0 +1,79 @@
+id: 34
+name: 记录条数
+description: 查询记录总条数
+alias: count
+supportDST: '["mysql"]'
+icon: ty-lg_count
+generateSupport: false
+useNum: 27
+createDate: ''
+createrId: 2
+createrName: 肖兵成
+owerId: 2
+owerName: 肖兵成
+type: db
+'inputFieldDescribe ':
+- id: 75
+  name: 全局搜索字段(单表)
+  description: 全局搜索字段(单表)
+  legoAlias: count
+  fieldName: global_search_fields
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 76
+  name: 关键字搜索
+  description: null
+  legoAlias: count
+  fieldName: keywords
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 77
+  name: 群组字段
+  description: 群组字段
+  legoAlias: count
+  fieldName: group_field
+  multiple: false
+  ift: common
+  fromOIFields: true
+- id: 78
+  name: 排序
+  description: 排序类型，升序还是降序
+  legoAlias: count
+  fieldName: order
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 79
+  name: 排序字段
+  description: 设定排序字段
+  legoAlias: count
+  fieldName: order_field
+  multiple: false
+  ift: common
+  fromOIFields: true
+- id: 80
+  name: 读取字段组
+  description: ''
+  legoAlias: count
+  fieldName: ''
+  multiple: true
+  ift: read
+  fromOIFields: false
+- id: 81
+  name: 条件字段组
+  description: ''
+  legoAlias: count
+  fieldName: ''
+  multiple: true
+  ift: condition
+  fromOIFields: false
+outputFieldDescribe:
+- id: 64
+  name: 记录条数
+  description: 记录数
+  legoAlias: count
+  fieldName: count
+  oft: common
+  multiple: false

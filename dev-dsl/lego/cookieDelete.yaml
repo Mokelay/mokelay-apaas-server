@@ -1,0 +1,18 @@
+id: 56
+name: Cookie删除
+description: null
+alias: cookieDelete
+supportDST: null
+icon: ty-lg_delete
+generateSupport: false
+useNum: 0
+createDate: '2018-04-23 20:03:40'
+createrId: 3
+createrName: 陈征
+owerId: 3
+owerName: 陈征
+type: storage
+'inputFieldDescribe ': [
+  ]
+outputFieldDescribe: [
+  ]

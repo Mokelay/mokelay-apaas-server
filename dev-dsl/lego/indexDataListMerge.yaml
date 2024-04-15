@@ -1,0 +1,47 @@
+id: 65
+name: 列表合并
+description: dataList合并
+alias: indexDataListMerge
+supportDST: '["mysql"]'
+icon: ty-dxhebing
+generateSupport: false
+useNum: 1
+createDate: '2018-06-25 21:49:39'
+createrId: 2
+createrName: 肖兵成
+owerId: 2
+owerName: 肖兵成
+type: business
+'inputFieldDescribe ':
+- id: 142
+  name: 主列表
+  description: List<String>类型
+  legoAlias: indexDataListMerge
+  fieldName: index_data_list
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 143
+  name: 内存字段组
+  description: 所有需要合并的列表
+  legoAlias: indexDataListMerge
+  fieldName: null
+  multiple: true
+  ift: memory
+  fromOIFields: false
+- id: 144
+  name: 主列字段
+  description: 如果是单列，id；如果是多列id1,id2,id3
+  legoAlias: indexDataListMerge
+  fieldName: index_name
+  multiple: false
+  ift: common
+  fromOIFields: false
+outputFieldDescribe:
+- id: 103
+  name: 合并数据
+  description: null
+  legoAlias: indexDataListMerge
+  fieldName: merge_data_list
+  oft: common
+  multiple: false

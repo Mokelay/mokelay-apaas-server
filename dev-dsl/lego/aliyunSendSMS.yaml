@@ -1,0 +1,92 @@
+id: 84
+name: 阿里云短信服务
+description: null
+alias: aliyunSendSMS
+supportDST: null
+icon: ty-aduanxin
+generateSupport: false
+useNum: 0
+createDate: '2018-07-30 03:44:33'
+createrId: 11785
+createrName: 陈征
+owerId: 11785
+owerName: 陈征
+type: cloud
+'inputFieldDescribe ':
+- id: 204
+  name: AccessKey
+  description: null
+  legoAlias: aliyunSendSMS
+  fieldName: accessKey_id
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 205
+  name: AccessKeySecret
+  description: null
+  legoAlias: aliyunSendSMS
+  fieldName: access_key_secret
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 206
+  name: 手机号
+  description: null
+  legoAlias: aliyunSendSMS
+  fieldName: phone_numbers
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 207
+  name: 签名
+  description: null
+  legoAlias: aliyunSendSMS
+  fieldName: sign_name
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 208
+  name: 模板代码
+  description: null
+  legoAlias: aliyunSendSMS
+  fieldName: template_code
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 209
+  name: 模板变量
+  description: null
+  legoAlias: aliyunSendSMS
+  fieldName: template_param
+  multiple: false
+  ift: common
+  fromOIFields: false
+outputFieldDescribe:
+- id: 128
+  name: 响应代码
+  description: null
+  legoAlias: aliyunSendSMS
+  fieldName: code
+  oft: common
+  multiple: false
+- id: 129
+  name: 响应消息
+  description: null
+  legoAlias: aliyunSendSMS
+  fieldName: message
+  oft: common
+  multiple: false
+- id: 130
+  name: 请求ID
+  description: null
+  legoAlias: aliyunSendSMS
+  fieldName: request_id
+  oft: common
+  multiple: false
+- id: 131
+  name: 业务ID
+  description: null
+  legoAlias: aliyunSendSMS
+  fieldName: biz_id
+  oft: common
+  multiple: false

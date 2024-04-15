@@ -1,0 +1,102 @@
+id: 55
+name: Fastdfs上传
+description: fastdfs上传文件
+alias: fastdfsFileSave
+supportDST: '["local_storage"]'
+icon: ty-lg_file_save
+generateSupport: false
+useNum: 5
+createDate: '2018-04-13 03:35:09'
+createrId: 2
+createrName: 肖兵成
+owerId: 2
+owerName: 肖兵成
+type: lego
+'inputFieldDescribe ':
+- id: 115
+  name: 上传文件
+  description: 上传的文件流
+  legoAlias: fastdfsFileSave
+  fieldName: file
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 116
+  name: 应用名
+  description: fastdfs上传文件需要记录是哪个应用，默认是ty
+  legoAlias: fastdfsFileSave
+  fieldName: appName
+  multiple: false
+  ift: common
+  fromOIFields: false
+outputFieldDescribe:
+- id: 77
+  name: 文件URL(带水印)
+  description: '1'
+  legoAlias: fastdfsFileSave
+  fieldName: fileUrl
+  oft: common
+  multiple: false
+- id: 78
+  name: 文件URL(不带水印)
+  description: null
+  legoAlias: fastdfsFileSave
+  fieldName: noWaterMarkFileUrl
+  oft: common
+  multiple: false
+- id: 79
+  name: 图片宽度
+  description: null
+  legoAlias: fastdfsFileSave
+  fieldName: width
+  oft: common
+  multiple: false
+- id: 80
+  name: 图片高度
+  description: null
+  legoAlias: fastdfsFileSave
+  fieldName: height
+  oft: common
+  multiple: false
+- id: 81
+  name: 文件类型
+  description: null
+  legoAlias: fastdfsFileSave
+  fieldName: fileType
+  oft: common
+  multiple: false
+- id: 82
+  name: 文件ID
+  description: null
+  legoAlias: fastdfsFileSave
+  fieldName: fileId
+  oft: common
+  multiple: false
+- id: 83
+  name: 文件编码
+  description: null
+  legoAlias: fastdfsFileSave
+  fieldName: fileNo
+  oft: common
+  multiple: false
+- id: 84
+  name: 原文件名
+  description: null
+  legoAlias: fastdfsFileSave
+  fieldName: originaName
+  oft: common
+  multiple: false
+- id: 85
+  name: 文件大小
+  description: null
+  legoAlias: fastdfsFileSave
+  fieldName: size
+  oft: common
+  multiple: false
+- id: 86
+  name: 上传时间
+  description: null
+  legoAlias: fastdfsFileSave
+  fieldName: uploadTime
+  oft: common
+  multiple: false

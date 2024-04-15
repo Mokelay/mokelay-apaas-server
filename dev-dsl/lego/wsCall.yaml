@@ -1,0 +1,63 @@
+id: 101
+name: WS调用
+description: web service接口调用
+alias: wsCall
+supportDST: '["rest_api"]'
+icon: null
+generateSupport: false
+useNum: 0
+createDate: '2018-10-25 00:46:50'
+createrId: 2
+createrName: 肖兵成
+owerId: 2
+owerName: 肖兵成
+type: cloud
+'inputFieldDescribe ':
+- id: 268
+  name: WSDL地址
+  description: null
+  legoAlias: wsCall
+  fieldName: wsdlUrl
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 269
+  name: 请求体
+  description: 参数
+  legoAlias: wsCall
+  fieldName: requestBody
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 270
+  name: 命名空间
+  description: null
+  legoAlias: wsCall
+  fieldName: targetNamespace
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 271
+  name: soap地址
+  description: null
+  legoAlias: wsCall
+  fieldName: soapAction
+  multiple: false
+  ift: common
+  fromOIFields: false
+- id: 272
+  name: 调用方法名
+  description: null
+  legoAlias: wsCall
+  fieldName: method
+  multiple: false
+  ift: common
+  fromOIFields: false
+outputFieldDescribe:
+- id: 148
+  name: ws返回数据
+  description: null
+  legoAlias: wsCall
+  fieldName: wsResponse
+  oft: common
+  multiple: false
