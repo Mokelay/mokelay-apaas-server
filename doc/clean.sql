@@ -23,6 +23,6 @@ DELETE FROM db_ty.ty_api where `type` not in (select alias from db_ty.ty_api_typ
 DELETE FROM db_ty.ty_oi where dsAlias not in (select alias from db_ty.ty_ds);
 DELETE FROM db_ty.ty_field where oiAlias not in (select alias from db_ty.ty_oi);
 DELETE FROM db_ty.ty_api_lego where apiAlias not in (select alias from ty_api);
+DELETE FROM db_ty.ty_page where appAlias not in (SELECT alias FROM db_ty.ty_app ) or appAlias is null;
 DELETE FROM db_ty.ty_page_building_block where pageAlias not in (select alias from ty_page);
 DELETE FROM db_ty.ty_page_building_block where pageAlias is null;
-DELETE FROM db_ty.ty_page where appAlias not in (SELECT alias FROM db_ty.ty_app ) or appAlias is null;
