@@ -7,9 +7,7 @@ import org.yaml.snakeyaml.Yaml;
 import org.yaml.snakeyaml.constructor.Constructor;
 
 import java.io.*;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 /**
  * YAML Test
@@ -33,6 +31,19 @@ public class YAMLTest extends MokelayBaseTest {
 
         data.put("address", address);
 
+        Map<String, Object> data2 = new HashMap<String, Object>();
+        data2.put("name", "AAAA");
+        data2.put("age", 444);
+        data2.put("married", false);
+        data2.put("children", Arrays.asList("DDDD", "EEE"));
+
+        Map<String, Object> address2 = new HashMap<>();
+        address2.put("street", "CHINA");
+        address2.put("city", "SHANGHAI");
+        address2.put("zip", "200001");
+
+        data2.put("address", address2);
+
         // 配置YAML生成选项
         DumperOptions options = new DumperOptions();
         options.setDefaultFlowStyle(DumperOptions.FlowStyle.BLOCK); // 使用块风格
@@ -46,7 +57,11 @@ public class YAMLTest extends MokelayBaseTest {
         // 写入文件
         try {
             FileWriter writer = new FileWriter(folder + "/output.yaml");
-            yaml.dump(data, writer);
+
+            List l = new ArrayList();
+            l.add(data);
+            l.add(data2);
+            yaml.dump(l, writer);
         } catch (IOException e) {
             e.printStackTrace();
         }
