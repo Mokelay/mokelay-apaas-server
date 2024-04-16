@@ -2,6 +2,7 @@ package com.mokelay.core.manager;
 
 import com.mokelay.base.bean.DBException;
 import com.mokelay.core.bean.auth.AuthType;
+import com.mokelay.core.bean.task.Task;
 import com.mokelay.db.bean.oi.Connector;
 import com.mokelay.db.bean.oi.DS;
 import com.mokelay.db.bean.oi.Field;
@@ -40,6 +41,8 @@ public class TYCacheService {
     private DSManager dsManager;
     @Autowired
     private AuthTypeManager authTypeManager;
+    @Autowired
+    private TaskManager taskManager;
 
     /**
      * 清除所有TY cache缓存
@@ -53,7 +56,8 @@ public class TYCacheService {
             @CacheEvict(value="fields",beforeInvocation = true,allEntries = true),
             @CacheEvict(value="oi",beforeInvocation = true,allEntries = true),
             @CacheEvict(value="ds",beforeInvocation = true,allEntries = true),
-            @CacheEvict(value="authType",beforeInvocation = true,allEntries = true)
+            @CacheEvict(value="authType",beforeInvocation = true,allEntries = true),
+            @CacheEvict(value="tasks",beforeInvocation = true,allEntries = true)
     })
     public void clearAllCache(){
         //清空oi view 缓存
@@ -100,4 +104,8 @@ public class TYCacheService {
         return authTypeManager.getAuthTypeByAlias(alias);
     }
 
+    @Cacheable(value = "tasks")
+    public List<Task> listTasks(){
+        return taskManager.list();
+    }
 }

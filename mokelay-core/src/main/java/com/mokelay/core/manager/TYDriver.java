@@ -35,11 +35,4 @@ public interface TYDriver {
      * @return
      */
     TYCacheService getTyCacheService();
-
-    /**
-     * Task Manager
-     *
-     * @return
-     */
-    public TaskManager getTaskManager();
 }

@@ -34,9 +34,6 @@
     <bean id="fileStorageManager" class="com.mokelay.core.manager.ext.SimpleFileStorageManager"
           parent="abstractBasicManager"/>
 
-    <!-- Task Manager-->
-    <bean id="taskManager" class="com.mokelay.core.manager.ext.SimpleTaskManager" parent="abstractBasicManager"/>
-
     <!-- Auth Type Manager-->
     <bean id="authTypeManager" class="com.mokelay.core.manager.ext.SimpleAuthTypeManager"
           parent="abstractBasicManager"/>

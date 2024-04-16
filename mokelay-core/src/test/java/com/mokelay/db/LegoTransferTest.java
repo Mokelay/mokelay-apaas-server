@@ -4,6 +4,7 @@ import com.mokelay.DBBaseTest;
 import com.mokelay.base.bean.DBException;
 import com.mokelay.base.bean.constant.CT;
 import com.mokelay.base.bean.view.Condition;
+import com.mokelay.base.util.ObjectUtil;
 import com.mokelay.core.bean.view.APIView;
 import com.mokelay.core.lego.system.TYPPC;
 import com.mokelay.db.bean.oi.Field;
@@ -81,7 +82,7 @@ public class LegoTransferTest extends DBBaseTest {
         List<Map> data = yaml.load(inputStream);
         for (Map f : data) {
             System.out.println(f);
-            fields.add(mapToClass(f, Field.class));
+            fields.add(ObjectUtil.mapToClass(f, Field.class));
         }
         MysqlDataManager mysqlDataManager = (MysqlDataManager) context.getBean("mysqlDataManager");
         return mysqlDataManager.list(oi, fields, null).getList();
@@ -117,7 +118,7 @@ public class LegoTransferTest extends DBBaseTest {
         List<Map> data = yaml.load(inputStream);
         for (Map f : data) {
             System.out.println(f);
-            fields.add(mapToClass(f, Field.class));
+            fields.add(ObjectUtil.mapToClass(f, Field.class));
         }
 
         //条件
@@ -151,7 +152,7 @@ public class LegoTransferTest extends DBBaseTest {
         List<Map> data = yaml.load(inputStream);
         for (Map f : data) {
             System.out.println(f);
-            fields.add(mapToClass(f, Field.class));
+            fields.add(ObjectUtil.mapToClass(f, Field.class));
         }
 
         //条件
@@ -164,17 +165,5 @@ public class LegoTransferTest extends DBBaseTest {
         MultiCondition condition = new MultiCondition(conList);
 
         return mysqlDataManager.list(oi, fields, condition).getList();
-    }
-
-    public static <T> T mapToClass(Map<String, Object> map, Class<T> clazz) throws InstantiationException, IllegalAccessException {
-        T instance = clazz.newInstance();
-        for (java.lang.reflect.Field field : clazz.getDeclaredFields()) {
-            field.setAccessible(true); // 允许访问私有字段
-            Object value = map.get(field.getName());
-            if (value != null) {
-                field.set(instance, value);
-            }
-        }
-        return instance;
     }
 }
