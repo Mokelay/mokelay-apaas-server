@@ -17,12 +17,4 @@ public interface ConnectorManager extends BasicManager {
      * @throws DBException
      */
     public Connector getConnectorByAlias(String alias) throws DBException;
-
-    /**
-     * 通过from oi alias 获取Connector list
-     * @param fromOiAlias
-     * @return
-     * @throws DBException
-     */
-    public List<Connector> getConnectorByFromOiAlias(String fromOiAlias) throws DBException;
 }
