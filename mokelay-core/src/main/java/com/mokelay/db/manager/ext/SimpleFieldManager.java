@@ -3,6 +3,7 @@ package com.mokelay.db.manager.ext;
 import com.mokelay.base.bean.DBException;
 import com.mokelay.base.manager.ext.AbstractBasicManager;
 import com.mokelay.base.bean.constant.CT;
+import com.mokelay.base.util.CollectionUtil;
 import com.mokelay.db.bean.oi.Field;
 import com.mokelay.base.bean.view.Condition;
 import com.mokelay.db.bean.view.MultiCondition;
@@ -23,11 +24,11 @@ public class SimpleFieldManager extends AbstractBasicManager implements FieldMan
 
     @Override
     public List<Field> getFields(String oiAlias) throws DBException {
-        return (List<Field>) this.list("oiAlias",oiAlias);
+        return (List<Field>) this.list("oiAlias", oiAlias);
     }
 
     @Override
-    public List<Field> getFields(String oiAlias, String fieldName) throws DBException {
+    public Field getField(String oiAlias, String fieldName) throws DBException {
         MultiCondition con = new MultiCondition();
         Condition con1 = new Condition();
         con1.setConditionFieldName("oiAlias");
@@ -39,6 +40,7 @@ public class SimpleFieldManager extends AbstractBasicManager implements FieldMan
         con2.setConditionFieldValue(fieldName);
         con2.setCt(CT.EQ.getName());
         con.addCondition(con2);
-        return (List<Field>) this.list(con);
+        List<Field> fs = (List<Field>) this.list(con);
+        return CollectionUtil.isValid(fs) ? fs.get(0) : null;
     }
 }

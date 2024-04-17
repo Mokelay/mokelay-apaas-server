@@ -95,8 +95,8 @@ public class InitDBConfig implements Lego ,ExceptionCode {
                     //判断数据库中的字段是否有多的，如果有多的，则插入
                     List<Field> fields = oiView.getFields();
                     for (Field field : fields) {
-                        List<Field> fs = fieldManager.getFields(oi.getAlias(), field.getFieldName());
-                        if (CollectionUtil.isValid(fs)) {
+                        Field f = fieldManager.getField(oi.getAlias(), field.getFieldName());
+                        if (f!=null) {
                             //说明已经有这个字段了
                             continue;
                         }
