@@ -14,7 +14,7 @@ DELETE FROM db_ty.ty_module;
 DELETE FROM db_ty.ty_app where id >1;
 DELETE FROM db_ty.ty_app_role where appAlias !='ty';
 DELETE FROM db_ty.ty_ds where id not in (2,3,13,25,43,44,45,46,47,50);
-DELETE FROM db_ty.ty_api_type where id not in (1,3,7,11);
+DELETE FROM db_ty.ty_api_type where id not in (1);
 DELETE FROM db_ty.ty_api where `version` is null;
 DELETE FROM db_ty.ty_output_field;
 DELETE FROM db_ty.ty_input_field;
@@ -26,3 +26,7 @@ DELETE FROM db_ty.ty_api_lego where apiAlias not in (select alias from ty_api);
 DELETE FROM db_ty.ty_page where appAlias not in (SELECT alias FROM db_ty.ty_app ) or appAlias is null;
 DELETE FROM db_ty.ty_page_building_block where pageAlias not in (select alias from ty_page);
 DELETE FROM db_ty.ty_page_building_block where pageAlias is null;
+
+DELETE FROM db_ty.ty_file_storage;
+DELETE FROM db_ty.ty_api_lego;
+DELETE FROM db_ty.ty_api_log;

@@ -35,7 +35,7 @@ public class APITransferTest extends DBBaseTest {
             System.out.println("需要迁移API数量：" + apiList.size());
             if (CollectionUtil.isValid(apiList)) {
                 //存储地址
-                String folder = TYPPC.getTYProp("mokelay.config.dsl") + "/api/";
+                String apiFolder = TYPPC.getTYProp("mokelay.config.dsl") + "/api/";
 
                 Representer representer = new Representer();
                 representer.addClassTag(APIView.class, Tag.MAP);
@@ -46,24 +46,23 @@ public class APITransferTest extends DBBaseTest {
                 options.setPrettyFlow(true); // 生成更易读的YAML
 
                 for (API api : apiList) {
-                    String apiTypeFolder = folder + api.getType();
-                    File directory = new File(apiTypeFolder);
+                    File directory = new File(apiFolder);
 
                     // 检查文件夹是否存在
                     if (!directory.exists()) {
                         // 创建文件夹
                         boolean result = directory.mkdirs();
                         if (result) {
-                            System.out.println("Directory created: " + apiTypeFolder);
+                            System.out.println("Directory created: " + apiFolder);
                         } else {
-                            System.out.println("Failed to create directory:" + apiTypeFolder);
+                            System.out.println("Failed to create directory:" + apiFolder);
                         }
                     }
 
                     Yaml yaml = new Yaml(representer, options);
                     // 写入文件
                     try {
-                        FileWriter writer = new FileWriter(apiTypeFolder + "/" + api.getAlias() + ".yaml");
+                        FileWriter writer = new FileWriter(apiFolder + api.getAlias() + ".yaml");
 
                         APIView apiView = APIContentService.buildAPIView(tyDriver.getTyCacheService(), api.getAlias());
                         apiView.getApi().setContent(null);
