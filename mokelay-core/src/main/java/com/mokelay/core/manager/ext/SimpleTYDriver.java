@@ -44,9 +44,4 @@ public class SimpleTYDriver implements TYDriver {
     public TYCacheService getTyCacheService() {
         return tyCacheService;
     }
-
-    @Override
-    public TaskManager getTaskManager() {
-        return taskManager;
-    }
 }

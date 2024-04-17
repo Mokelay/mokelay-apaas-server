@@ -96,31 +96,4 @@
         <property name="fileUrl" column="`fileUrl`" type="string"/>
         <property name="uploadType" column="`uploadType`" type="string"/>
     </class>
-
-    <!-- Task-->
-    <class name="com.mokelay.core.bean.task.Task" table="ty_task" lazy="false">
-        <id name="id" column="id">
-            <generator class="identity"/>
-        </id>
-        <property name="name" column="name" type="string"/>
-        <property name="description" column="description" type="string"/>
-        <property name="alias" column="alias" type="string"/>
-        <property name="group" column="group" type="string"/>
-        <property name="cron" column="cron" type="string"/>
-        <property name="status" column="status" type="string"/>
-        <property name="createDate" column="createDate" type="java.util.Date"/>
-        <property name="apiAlias" column="apiAlias" type="string"/>
-    </class>
-
-    <!-- Auth Type-->
-    <class name="com.mokelay.core.bean.auth.AuthType" table="ty_auth_type" lazy="false">
-        <id name="id" column="id">
-            <generator class="identity"/>
-        </id>
-        <property name="name" column="name" type="string"/>
-        <property name="description" column="description" type="string"/>
-        <property name="alias" column="alias" type="string"/>
-        <property name="judgeAPIAlias" column="judgeAPIAlias" type="string"/>
-        <property name="noAuthErrorCode" column="noAuthErrorCode" type="long"/>
-    </class>
 </hibernate-mapping>

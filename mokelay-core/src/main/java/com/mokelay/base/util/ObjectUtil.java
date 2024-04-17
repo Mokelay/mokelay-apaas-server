@@ -6,8 +6,7 @@ import java.util.*;
 /**
  * ���󹤾���
  */
-public class ObjectUtil
-{
+public class ObjectUtil {
     /**
      * Empty
      */
@@ -33,8 +32,7 @@ public class ObjectUtil
      * This constructor is public to permit tools that require a JavaBean instance
      * to operate.
      */
-    protected ObjectUtil()
-    {
+    protected ObjectUtil() {
     }
 
     /**
@@ -44,8 +42,7 @@ public class ObjectUtil
      * @param defaultValue the default value to return
      * @return object if it is not null, defaultValue otherwise
      */
-    public static final Object defaultIfNull(Object object, Object defaultValue)
-    {
+    public static final Object defaultIfNull(Object object, Object defaultValue) {
         return (object != null ? object : defaultValue);
     }
 
@@ -57,8 +54,7 @@ public class ObjectUtil
      * @param object2 the second object
      * @return <code>true</code> if the values of both objects are the same
      */
-    public static final boolean equals(Object object1, Object object2)
-    {
+    public static final boolean equals(Object object1, Object object2) {
         if (object1 == object2) {
             return true;
         }
@@ -74,8 +70,7 @@ public class ObjectUtil
      * @param obj
      * @return �����hashCode
      */
-    public static final int hashCode(Object obj)
-    {
+    public static final int hashCode(Object obj) {
         if (obj == null) {
             return 0;
         }
@@ -89,16 +84,15 @@ public class ObjectUtil
      * @param object the object to create a toString for, may be null
      * @return the default toString text, or null if null passed in
      */
-    public static final String identityToString(Object object)
-    {
+    public static final String identityToString(Object object) {
         if (object == null) {
             return null;
         }
         return new StringBuilder()
-            .append(object.getClass().getName())
-            .append('@')
-            .append(Integer.toHexString(System.identityHashCode(object)))
-            .toString();
+                .append(object.getClass().getName())
+                .append('@')
+                .append(Integer.toHexString(System.identityHashCode(object)))
+                .toString();
     }
 
     /**
@@ -133,9 +127,8 @@ public class ObjectUtil
     /**
      * �������ó�������
      */
-    public static <V> ArrayList<V> getArrayList()
-    {
-        ArrayList<V> list = (ArrayList<V>)arrayListPool.get();
+    public static <V> ArrayList<V> getArrayList() {
+        ArrayList<V> list = (ArrayList<V>) arrayListPool.get();
         if (list == null) {
             list = new ArrayList<V>();
         }
@@ -145,9 +138,8 @@ public class ObjectUtil
     /**
      * �������ó�������
      */
-    public static <V> Vector<V> getVector()
-    {
-        Vector<V> list = (Vector<V>)vectorPool.get();
+    public static <V> Vector<V> getVector() {
+        Vector<V> list = (Vector<V>) vectorPool.get();
         if (list == null) {
             list = new Vector<V>();
         }
@@ -157,9 +149,8 @@ public class ObjectUtil
     /**
      * �������ó�������
      */
-    public static <K, V> HashMap<K, V> getHashMap()
-    {
-        HashMap<K, V> map = (HashMap<K, V>)hashMapPool.get();
+    public static <K, V> HashMap<K, V> getHashMap() {
+        HashMap<K, V> map = (HashMap<K, V>) hashMapPool.get();
         if (map == null) {
             map = new HashMap<K, V>();
         }
@@ -169,9 +160,8 @@ public class ObjectUtil
     /**
      * �������ó�������
      */
-    public static <K, V> Hashtable<K, V> getHashtable()
-    {
-        Hashtable<K, V> map = (Hashtable<K, V>)hashtablePool.get();
+    public static <K, V> Hashtable<K, V> getHashtable() {
+        Hashtable<K, V> map = (Hashtable<K, V>) hashtablePool.get();
         if (map == null) {
             map = new Hashtable<K, V>();
         }
@@ -183,9 +173,8 @@ public class ObjectUtil
      *
      * @return [StringHashMap]
      */
-    public static <V> StringHashMap<V> getStringHashMap()
-    {
-        StringHashMap<V> map = (StringHashMap<V>)stringMapPool.get();
+    public static <V> StringHashMap<V> getStringHashMap() {
+        StringHashMap<V> map = (StringHashMap<V>) stringMapPool.get();
         if (map == null) {
             map = new StringHashMap<V>();
         }
@@ -197,8 +186,7 @@ public class ObjectUtil
      *
      * @param map StringMap
      */
-    public static final void recycle(StringMap map)
-    {
+    public static final void recycle(StringMap map) {
         if (map == null) {
             return;
         }
@@ -206,7 +194,7 @@ public class ObjectUtil
         boolean recycle = map.size() <= 512; //����������С��
         map.clear();
         if (recycle && map.getClass() == StringHashMap.class) {
-            stringMapPool.put((StringHashMap)map);
+            stringMapPool.put((StringHashMap) map);
         }
     }
 
@@ -215,8 +203,7 @@ public class ObjectUtil
      *
      * @param list [java.util.List]
      */
-    public static final void recycle(List list)
-    {
+    public static final void recycle(List list) {
         if (list == null) {
             return;
         }
@@ -226,10 +213,9 @@ public class ObjectUtil
         if (recycle) {
             Class clazz = list.getClass();
             if (clazz == ArrayList.class) { //��������
-                arrayListPool.put((ArrayList)list);
-            }
-            else if (clazz == Vector.class) {
-                vectorPool.put((Vector)list);
+                arrayListPool.put((ArrayList) list);
+            } else if (clazz == Vector.class) {
+                vectorPool.put((Vector) list);
             }
         }
         list = null;
@@ -241,8 +227,7 @@ public class ObjectUtil
      * @param map [java.util.Map]
      */
 
-    public static final void recycle(Map map)
-    {
+    public static final void recycle(Map map) {
         if (map == null) {
             return;
         }
@@ -253,12 +238,67 @@ public class ObjectUtil
             //��������
             Class clazz = map.getClass();
             if (clazz == HashMap.class) {
-                hashMapPool.put((HashMap)map);
-            }
-            else if (clazz == Hashtable.class) {
-                hashtablePool.put((Hashtable)map);
+                hashMapPool.put((HashMap) map);
+            } else if (clazz == Hashtable.class) {
+                hashtablePool.put((Hashtable) map);
             }
         }
         map = null;
+    }
+
+    /**
+     * Map to Class
+     *
+     * @param map
+     * @param clazz
+     * @param <T>
+     * @return
+     * @throws InstantiationException
+     * @throws IllegalAccessException
+     */
+    public static <T> T mapToClass(Map<String, Object> map, Class<T> clazz) {
+        T instance = null;
+        try {
+            instance = clazz.newInstance();
+        } catch (InstantiationException e) {
+            throw new RuntimeException(e);
+        } catch (IllegalAccessException e) {
+            throw new RuntimeException(e);
+        }
+        List<java.lang.reflect.Field> fields = getAllFields(clazz);
+        for (java.lang.reflect.Field field :fields) {
+            field.setAccessible(true); // 允许访问私有字段
+            Object value = map.get(field.getName());
+            if (value != null) {
+                try {
+                    if(field.getType().equals(Date.class)){
+                        field.set(instance, DataUtil.getDate(value));
+                    }else{
+                        field.set(instance, value);
+                    }
+                } catch (IllegalAccessException e) {
+//                    e.printStackTrace();
+//                    throw new RuntimeException(e);
+                } catch (IllegalArgumentException e) {
+//                    e.printStackTrace();
+                }
+            }
+        }
+        return instance;
+    }
+
+    public static List<java.lang.reflect.Field> getAllFields(Class<?> clazz) {
+        List<java.lang.reflect.Field> fields = new ArrayList<>();
+        Class<?> currentClass = clazz;
+        while (currentClass != null) {
+            // 添加当前类声明的所有字段
+            java.lang.reflect.Field[] declaredFields = currentClass.getDeclaredFields();
+            for (java.lang.reflect.Field field : declaredFields) {
+                fields.add(field);
+            }
+            // 移动到父类
+            currentClass = currentClass.getSuperclass();
+        }
+        return fields;
     }
 }

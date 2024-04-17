@@ -23,10 +23,4 @@ public class SimpleConnectorManager  extends AbstractBasicManager implements Con
 
         return CollectionUtil.isValid(cs)?cs.get(0):null;
     }
-
-    @Override
-    public List<Connector> getConnectorByFromOiAlias(String fromOiAlias) throws DBException {
-        List<Connector> cs = this.list("fromOIAlias",fromOiAlias);
-        return cs;
-    }
 }

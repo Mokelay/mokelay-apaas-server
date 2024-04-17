@@ -36,13 +36,7 @@ public class MokelayTask {
         if (BooleanUtil.toBool(TYPPC.getTYProp("ty.job.enable"))) {
             System.out.println("Begin to build task....");
 
-            List<Task> tasks = null;
-            try {
-                tasks = tyDriver.getTaskManager().list();
-            } catch (DBException e) {
-                e.printStackTrace();
-                logger.error(e);
-            }
+            List<Task> tasks = tyDriver.getTyCacheService().listTasks();
 
             if (CollectionUtil.isValid(tasks)) {
                 SchedulerFactory schedulerfactory = new StdSchedulerFactory();//通过schedulerFactory获取一个调度器
