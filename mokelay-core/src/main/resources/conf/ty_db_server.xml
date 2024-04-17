@@ -34,10 +34,6 @@
     <bean id="fileStorageManager" class="com.mokelay.core.manager.ext.SimpleFileStorageManager"
           parent="abstractBasicManager"/>
 
-    <!-- Auth Type Manager-->
-    <bean id="authTypeManager" class="com.mokelay.core.manager.ext.SimpleAuthTypeManager"
-          parent="abstractBasicManager"/>
-
     <!-- Mysql Data Manager-->
     <bean id="mysqlDataManager" class="com.mokelay.db.database.mysql.manager.MysqlDataManager"/>
 
