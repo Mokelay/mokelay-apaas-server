@@ -1,0 +1,16 @@
+api:
+  alias: ccccddd
+  authType: null
+  category: config
+  content: null
+  createDate: 2018-07-16T15:42:31Z
+  description: null
+  id: 1649
+  method: POST
+  name: xxxx
+  type: ty
+  url: null
+  version: version_2
+apiLegoViews: [
+  ]
+authTypes: null

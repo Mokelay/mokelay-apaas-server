@@ -1,0 +1,95 @@
+api:
+  alias: update-batch-api-lego-index
+  authType: ty_auth
+  category: config
+  content: null
+  createDate: 2017-09-11T15:07:02Z
+  description: 更新API乐高排序
+  id: 303
+  method: POST
+  name: 更新API乐高排序
+  type: ty
+  url: null
+  version: version_2
+apiLegoViews:
+- apiLego:
+    apiAlias: update-batch-api-lego-index
+    attributes: null
+    description: null
+    id: 432
+    index: 1
+    legoAlias: batchSave
+    oiAlias: ty_api_lego
+    processControllerAlias: null
+    uuid: '432'
+  inputFields:
+  - alias: list_Param
+    apiLegoId: 432
+    apiLegoUuid: '432'
+    attributes: null
+    connectorPath: null
+    constant: null
+    ct: eq
+    description: null
+    dt: string
+    fieldName: list_Param
+    fieldTpl: null
+    fieldValue: null
+    fromApiLegoId: 0
+    fromApiLegoOutputFieldAlias: null
+    fromApiLegoUuid: '0'
+    fvt: request
+    id: 1415
+    ift: common
+    inputFieldDescribeId: 12
+    name: 批量添加list
+    requestParamName: list_Param
+    sessionParamName: null
+    uuid: '1415'
+    validate: '[{"validateName":"required"}]'
+  - alias: index
+    apiLegoId: 432
+    apiLegoUuid: '432'
+    attributes: null
+    connectorPath: ''
+    constant: null
+    ct: null
+    description: null
+    dt: null
+    fieldName: index
+    fieldTpl: null
+    fieldValue: null
+    fromApiLegoId: 0
+    fromApiLegoOutputFieldAlias: null
+    fromApiLegoUuid: null
+    fvt: request
+    id: 1416
+    ift: update
+    inputFieldDescribeId: 0
+    name: index
+    requestParamName: index
+    sessionParamName: null
+    uuid: '1416'
+    validate: null
+  outputFields:
+  - alias: list_unique_value
+    apiLegoId: 432
+    apiLegoUuid: '432'
+    description: null
+    dt: null
+    fieldName: list_unique_value
+    fieldValue: null
+    handle: null
+    id: 189
+    name: 批量添加的主键id列表
+    oft: common
+    outputFieldDescribeId: 14
+    response: false
+    uuid: '189'
+authTypes:
+- alias: ty_auth
+  description: TYSession校验
+  id: 1
+  judgeAPIAlias: ty_auth_check
+  name: E端登录校验
+  noAuthErrorCode: null

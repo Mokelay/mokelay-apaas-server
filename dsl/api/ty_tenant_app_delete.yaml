@@ -1,0 +1,58 @@
+api:
+  alias: ty_tenant_app_delete
+  authType: ty_auth
+  category: config
+  content: null
+  createDate: 2018-07-14T00:58:31Z
+  description: ''
+  id: 1605
+  method: POST
+  name: 删除租户应用
+  type: ty
+  url: ''
+  version: version_2
+apiLegoViews:
+- apiLego:
+    apiAlias: ty_tenant_app_delete
+    attributes: null
+    description: ''
+    id: 9729
+    index: 1
+    legoAlias: delete
+    oiAlias: ty_tenant_app
+    processControllerAlias: null
+    uuid: 38DA1577-94C7-4B82-A42D-6A98A1D5F00D1531501118980
+  inputFields:
+  - alias: id
+    apiLegoId: 0
+    apiLegoUuid: 38DA1577-94C7-4B82-A42D-6A98A1D5F00D1531501118980
+    attributes: null
+    connectorPath: ''
+    constant: ''
+    ct: eq
+    description: ''
+    dt: int
+    fieldName: id
+    fieldTpl: ''
+    fieldValue: null
+    fromApiLegoId: 0
+    fromApiLegoOutputFieldAlias: ''
+    fromApiLegoUuid: ''
+    fvt: request
+    id: 86838
+    ift: condition
+    inputFieldDescribeId: 0
+    name: ID
+    requestParamName: id
+    sessionParamName: ''
+    uuid: 1BA34DE9-6362-4580-BBB8-C744DD297DE31531501147898
+    validate: null
+  outputFields: [
+    ]
+authTypes:
+- alias: ty_auth
+  description: TYSession校验
+  id: 1
+  judgeAPIAlias: ty_auth_check
+  name: E端登录校验
+  noAuthErrorCode: null

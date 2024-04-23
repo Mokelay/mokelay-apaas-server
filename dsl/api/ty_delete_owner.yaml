@@ -1,0 +1,52 @@
+api:
+  alias: ty_delete_owner
+  authType: null
+  category: config
+  content: null
+  createDate: 2018-06-19T22:17:21Z
+  description: 删除管理员
+  id: 1306
+  method: GET
+  name: 删除管理员
+  type: ty
+  url: null
+  version: version_2
+apiLegoViews:
+- apiLego:
+    apiAlias: ty_delete_owner
+    attributes: null
+    description: ''
+    id: 6534
+    index: 1
+    legoAlias: delete
+    oiAlias: ty_owner
+    processControllerAlias: null
+    uuid: BD549EA2-EE4E-4066-A5CA-A8D19A5D638B1529417817304
+  inputFields:
+  - alias: id
+    apiLegoId: 0
+    apiLegoUuid: BD549EA2-EE4E-4066-A5CA-A8D19A5D638B1529417817304
+    attributes: null
+    connectorPath: ''
+    constant: ''
+    ct: eq
+    description: ''
+    dt: int
+    fieldName: id
+    fieldTpl: ''
+    fieldValue: null
+    fromApiLegoId: 0
+    fromApiLegoOutputFieldAlias: ''
+    fromApiLegoUuid: ''
+    fvt: request
+    id: 60007
+    ift: condition
+    inputFieldDescribeId: 0
+    name: id
+    requestParamName: id
+    sessionParamName: ''
+    uuid: 54E4177C-03AE-4ADC-8579-1978440F1E841529417840104
+    validate: null
+  outputFields: [
+    ]
+authTypes: null

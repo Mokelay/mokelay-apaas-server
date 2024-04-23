@@ -1,0 +1,113 @@
+api:
+  alias: ty_wx_get_open_id
+  authType: ''
+  category: config
+  content: null
+  createDate: 2018-09-14T17:23:13Z
+  description: ''
+  id: 2389
+  method: GET
+  name: TY_获取openid
+  type: ty
+  url: ''
+  version: version_2
+apiLegoViews:
+- apiLego:
+    apiAlias: ty_wx_get_open_id
+    attributes: null
+    description: null
+    id: null
+    index: null
+    legoAlias: wxGetOpenId
+    oiAlias: null
+    processControllerAlias: null
+    uuid: E6FE59D5-426F-4311-ACA3-D2942AB590AB1536917003525
+  inputFields:
+  - alias: openAppId
+    apiLegoId: null
+    apiLegoUuid: E6FE59D5-426F-4311-ACA3-D2942AB590AB1536917003525
+    attributes: null
+    connectorPath: null
+    constant: wx9f4c252fc910e928
+    ct: null
+    description: null
+    dt: null
+    fieldName: openAppId
+    fieldTpl: null
+    fieldValue: null
+    fromApiLegoId: null
+    fromApiLegoOutputFieldAlias: null
+    fromApiLegoUuid: null
+    fvt: constant
+    id: null
+    ift: common
+    inputFieldDescribeId: 137
+    name: 微信AppId
+    requestParamName: openAppId
+    sessionParamName: null
+    uuid: 11041341-3D72-4267-B4AD-CDEBEAFA15361536917003525
+    validate: null
+  - alias: openSecret
+    apiLegoId: null
+    apiLegoUuid: E6FE59D5-426F-4311-ACA3-D2942AB590AB1536917003525
+    attributes: null
+    connectorPath: null
+    constant: 291b3d7a19ae5b527156902039b5d418
+    ct: null
+    description: null
+    dt: null
+    fieldName: openSecret
+    fieldTpl: null
+    fieldValue: null
+    fromApiLegoId: null
+    fromApiLegoOutputFieldAlias: null
+    fromApiLegoUuid: null
+    fvt: constant
+    id: null
+    ift: common
+    inputFieldDescribeId: 138
+    name: 微信secret
+    requestParamName: openSecret
+    sessionParamName: null
+    uuid: 63B64DD4-49B6-49C1-A750-F6E324D91BFA1536917003525
+    validate: null
+  - alias: isMp
+    apiLegoId: null
+    apiLegoUuid: E6FE59D5-426F-4311-ACA3-D2942AB590AB1536917003525
+    attributes: null
+    connectorPath: null
+    constant: '1'
+    ct: null
+    description: null
+    dt: null
+    fieldName: isMp
+    fieldTpl: null
+    fieldValue: null
+    fromApiLegoId: null
+    fromApiLegoOutputFieldAlias: null
+    fromApiLegoUuid: null
+    fvt: constant
+    id: null
+    ift: common
+    inputFieldDescribeId: 256
+    name: 是否小程序
+    requestParamName: isMp
+    sessionParamName: null
+    uuid: B72A27ED-0F0F-4492-AF35-5C75B06D56B41536917003525
+    validate: null
+  outputFields:
+  - alias: openId
+    apiLegoId: null
+    apiLegoUuid: E6FE59D5-426F-4311-ACA3-D2942AB590AB1536917003525
+    description: null
+    dt: null
+    fieldName: openId
+    fieldValue: null
+    handle: null
+    id: null
+    name: OpenId
+    oft: common
+    outputFieldDescribeId: 101
+    response: true
+    uuid: 0D207950-708C-4FBC-9E68-38D98F8D62BC1536917003525
+authTypes: null

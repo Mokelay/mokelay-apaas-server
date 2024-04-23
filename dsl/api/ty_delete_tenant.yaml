@@ -1,0 +1,52 @@
+api:
+  alias: ty_delete_tenant
+  authType: null
+  category: config
+  content: null
+  createDate: 2018-06-28T13:34:57Z
+  description: 删除租户信息
+  id: 1358
+  method: POST
+  name: 删除租户信息
+  type: ty
+  url: null
+  version: version_2
+apiLegoViews:
+- apiLego:
+    apiAlias: ty_delete_tenant
+    attributes: null
+    description: ''
+    id: 7576
+    index: 1
+    legoAlias: delete
+    oiAlias: ty_tenant
+    processControllerAlias: null
+    uuid: A80CC681-9E4B-4854-BE45-EBB2936298CD1530164045723
+  inputFields:
+  - alias: id
+    apiLegoId: 0
+    apiLegoUuid: A80CC681-9E4B-4854-BE45-EBB2936298CD1530164045723
+    attributes: null
+    connectorPath: ''
+    constant: ''
+    ct: eq
+    description: ''
+    dt: int
+    fieldName: id
+    fieldTpl: ''
+    fieldValue: null
+    fromApiLegoId: 0
+    fromApiLegoOutputFieldAlias: ''
+    fromApiLegoUuid: ''
+    fvt: request
+    id: 68603
+    ift: condition
+    inputFieldDescribeId: 0
+    name: ID
+    requestParamName: id
+    sessionParamName: ''
+    uuid: 412D718B-5D07-4356-A736-1290650B21CA1530164059790
+    validate: null
+  outputFields: [
+    ]
+authTypes: null

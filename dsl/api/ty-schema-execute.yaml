@@ -1,0 +1,82 @@
+api:
+  alias: ty-schema-execute
+  authType: ty_auth
+  category: config
+  content: null
+  createDate: 2018-04-23T19:50:40Z
+  description: null
+  id: 1077
+  method: POST
+  name: 数据源同步执行
+  type: ty
+  url: null
+  version: version_2
+apiLegoViews:
+- apiLego:
+    apiAlias: ty-schema-execute
+    attributes: null
+    description: ''
+    id: 3205
+    index: 1
+    legoAlias: schemaExecute
+    oiAlias: null
+    processControllerAlias: null
+    uuid: 25EEC026-4541-4437-84EA-DD77CD9421D41524484272859
+  inputFields:
+  - alias: executeType
+    apiLegoId: 0
+    apiLegoUuid: 25EEC026-4541-4437-84EA-DD77CD9421D41524484272859
+    attributes: null
+    connectorPath: ''
+    constant: multiple
+    ct: ''
+    description: 批量执行
+    dt: ''
+    fieldName: executeType
+    fieldTpl: ''
+    fieldValue: null
+    fromApiLegoId: 0
+    fromApiLegoOutputFieldAlias: ''
+    fromApiLegoUuid: ''
+    fvt: constant
+    id: 26257
+    ift: common
+    inputFieldDescribeId: 0
+    name: 执行类型
+    requestParamName: executeType
+    sessionParamName: ''
+    uuid: 3494FCE0-186A-4EE2-A4BD-C8F6E3A108651524484272859
+    validate: null
+  - alias: executeData
+    apiLegoId: 0
+    apiLegoUuid: 25EEC026-4541-4437-84EA-DD77CD9421D41524484272859
+    attributes: null
+    connectorPath: ''
+    constant: ''
+    ct: ''
+    description: ''
+    dt: ''
+    fieldName: executeData
+    fieldTpl: ''
+    fieldValue: null
+    fromApiLegoId: 0
+    fromApiLegoOutputFieldAlias: ''
+    fromApiLegoUuid: ''
+    fvt: request
+    id: 26258
+    ift: common
+    inputFieldDescribeId: 0
+    name: 执行数据
+    requestParamName: executeData
+    sessionParamName: ''
+    uuid: 22626814-4834-41D8-8B47-CCA6DF76F1081524484272859
+    validate: '[{"validateName":"required","params":"参数缺失"}]'
+  outputFields: [
+    ]
+authTypes:
+- alias: ty_auth
+  description: TYSession校验
+  id: 1
+  judgeAPIAlias: ty_auth_check
+  name: E端登录校验
+  noAuthErrorCode: null

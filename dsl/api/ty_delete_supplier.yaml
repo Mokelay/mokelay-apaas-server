@@ -1,0 +1,52 @@
+api:
+  alias: ty_delete_supplier
+  authType: null
+  category: config
+  content: null
+  createDate: 2018-06-07T21:38:48Z
+  description: 删除账号
+  id: 1264
+  method: GET
+  name: 删除账号
+  type: ty
+  url: null
+  version: version_2
+apiLegoViews:
+- apiLego:
+    apiAlias: ty_delete_supplier
+    attributes: null
+    description: 删除供应商下账号
+    id: 5978
+    index: 1
+    legoAlias: delete
+    oiAlias: ty_supplier
+    processControllerAlias: null
+    uuid: D20ADB81-4EF9-41C1-BCB3-EAAD64A568F81528378698895
+  inputFields:
+  - alias: id
+    apiLegoId: 0
+    apiLegoUuid: D20ADB81-4EF9-41C1-BCB3-EAAD64A568F81528378698895
+    attributes: null
+    connectorPath: ''
+    constant: ''
+    ct: eq
+    description: ''
+    dt: int
+    fieldName: id
+    fieldTpl: ''
+    fieldValue: null
+    fromApiLegoId: 0
+    fromApiLegoOutputFieldAlias: ''
+    fromApiLegoUuid: ''
+    fvt: request
+    id: 55635
+    ift: condition
+    inputFieldDescribeId: 0
+    name: id
+    requestParamName: id
+    sessionParamName: ''
+    uuid: 37B890A1-C1F3-4905-A904-C3DCBA5632F71528378740960
+    validate: null
+  outputFields: [
+    ]
+authTypes: null

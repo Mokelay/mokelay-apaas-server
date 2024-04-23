@@ -1,0 +1,95 @@
+api:
+  alias: add_pbb
+  authType: ty_auth
+  category: config
+  content: null
+  createDate: 2017-08-30T10:00:24Z
+  description: 添加BB到Page中
+  id: 232
+  method: POST
+  name: 添加BB到Page中
+  type: ty
+  url: null
+  version: version_2
+apiLegoViews:
+- apiLego:
+    apiAlias: add_pbb
+    attributes: null
+    description: null
+    id: 323
+    index: 1
+    legoAlias: add
+    oiAlias: ty_page_building_block
+    processControllerAlias: null
+    uuid: '323'
+  inputFields:
+  - alias: pageAlias
+    apiLegoId: 323
+    apiLegoUuid: '323'
+    attributes: null
+    connectorPath: ''
+    constant: null
+    ct: null
+    description: null
+    dt: null
+    fieldName: pageAlias
+    fieldTpl: null
+    fieldValue: null
+    fromApiLegoId: 0
+    fromApiLegoOutputFieldAlias: null
+    fromApiLegoUuid: null
+    fvt: request
+    id: 780
+    ift: create
+    inputFieldDescribeId: 0
+    name: 页面别名
+    requestParamName: pageAlias
+    sessionParamName: null
+    uuid: '780'
+    validate: null
+  - alias: buildingBlockAlias
+    apiLegoId: 323
+    apiLegoUuid: '323'
+    attributes: null
+    connectorPath: ''
+    constant: null
+    ct: null
+    description: null
+    dt: null
+    fieldName: buildingBlockAlias
+    fieldTpl: null
+    fieldValue: null
+    fromApiLegoId: 0
+    fromApiLegoOutputFieldAlias: null
+    fromApiLegoUuid: null
+    fvt: request
+    id: 781
+    ift: create
+    inputFieldDescribeId: 0
+    name: 页面模块别名
+    requestParamName: buildingBlockAlias
+    sessionParamName: null
+    uuid: '781'
+    validate: null
+  outputFields:
+  - alias: unique_value
+    apiLegoId: 323
+    apiLegoUuid: '323'
+    description: null
+    dt: string
+    fieldName: unique_value
+    fieldValue: null
+    handle: ''
+    id: 120
+    name: 添加唯一值
+    oft: common
+    outputFieldDescribeId: 33
+    response: true
+    uuid: '120'
+authTypes:
+- alias: ty_auth
+  description: TYSession校验
+  id: 1
+  judgeAPIAlias: ty_auth_check
+  name: E端登录校验
+  noAuthErrorCode: null

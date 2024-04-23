@@ -1,0 +1,65 @@
+api:
+  alias: ty_auth_check
+  authType: null
+  category: config
+  content: null
+  createDate: 2017-12-19T14:56:34Z
+  description: 判断TY的session是否存在，不存在抛出异常
+  id: 542
+  method: POST
+  name: TY登录校验
+  type: ty
+  url: ty_auth_check
+  version: version_2
+apiLegoViews:
+- apiLego:
+    apiAlias: ty_auth_check
+    attributes: null
+    description: null
+    id: 1064
+    index: 1
+    legoAlias: sessionRead
+    oiAlias: null
+    processControllerAlias: null
+    uuid: '1064'
+  inputFields:
+  - alias: TY_SESSION_CONFIG_USER
+    apiLegoId: 1064
+    apiLegoUuid: '1064'
+    attributes: null
+    connectorPath: ''
+    constant: null
+    ct: eq
+    description: null
+    dt: string
+    fieldName: TY_SESSION_CONFIG_USER
+    fieldTpl: null
+    fieldValue: null
+    fromApiLegoId: 0
+    fromApiLegoOutputFieldAlias: null
+    fromApiLegoUuid: '0'
+    fvt: ''
+    id: 6873
+    ift: common
+    inputFieldDescribeId: 0
+    name: TY用户信息
+    requestParamName: ''
+    sessionParamName: null
+    uuid: '6873'
+    validate: ''
+  outputFields:
+  - alias: data
+    apiLegoId: 1064
+    apiLegoUuid: '1064'
+    description: 如果没有登录，就返回-400
+    dt: string
+    fieldName: data
+    fieldValue: null
+    handle: '[{"handleName":"dataResultEqJudge","params":"NULL,-400"}]'
+    id: 1154
+    name: 读取数据
+    oft: common
+    outputFieldDescribeId: 49
+    response: false
+    uuid: '1154'
+authTypes: null

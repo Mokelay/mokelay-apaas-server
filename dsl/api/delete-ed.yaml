@@ -1,0 +1,58 @@
+api:
+  alias: delete-ed
+  authType: ty_auth
+  category: config
+  content: null
+  createDate: 2017-09-01T11:20:10Z
+  description: 删除积木事件
+  id: 257
+  method: POST
+  name: 删除积木事件
+  type: ty
+  url: null
+  version: version_2
+apiLegoViews:
+- apiLego:
+    apiAlias: delete-ed
+    attributes: null
+    description: null
+    id: 355
+    index: 1
+    legoAlias: delete
+    oiAlias: ty_event_describe
+    processControllerAlias: null
+    uuid: '355'
+  inputFields:
+  - alias: id
+    apiLegoId: 355
+    apiLegoUuid: '355'
+    attributes: null
+    connectorPath: ''
+    constant: null
+    ct: eq
+    description: null
+    dt: string
+    fieldName: id
+    fieldTpl: null
+    fieldValue: null
+    fromApiLegoId: 0
+    fromApiLegoOutputFieldAlias: null
+    fromApiLegoUuid: null
+    fvt: request
+    id: 954
+    ift: condition
+    inputFieldDescribeId: 0
+    name: ID
+    requestParamName: id
+    sessionParamName: null
+    uuid: '954'
+    validate: '[{"validateName":"required"}]'
+  outputFields: [
+    ]
+authTypes:
+- alias: ty_auth
+  description: TYSession校验
+  id: 1
+  judgeAPIAlias: ty_auth_check
+  name: E端登录校验
+  noAuthErrorCode: null

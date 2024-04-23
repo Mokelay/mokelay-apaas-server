@@ -1,0 +1,58 @@
+api:
+  alias: delete-buzz
+  authType: ty_auth
+  category: config
+  content: null
+  createDate: 2017-09-08T10:39:17Z
+  description: 删除巴斯
+  id: 301
+  method: POST
+  name: 删除巴斯
+  type: ty
+  url: null
+  version: version_2
+apiLegoViews:
+- apiLego:
+    apiAlias: delete-buzz
+    attributes: null
+    description: null
+    id: 429
+    index: 1
+    legoAlias: delete
+    oiAlias: ty_code
+    processControllerAlias: null
+    uuid: '429'
+  inputFields:
+  - alias: id
+    apiLegoId: 429
+    apiLegoUuid: '429'
+    attributes: null
+    connectorPath: ''
+    constant: null
+    ct: eq
+    description: null
+    dt: string
+    fieldName: id
+    fieldTpl: null
+    fieldValue: null
+    fromApiLegoId: 0
+    fromApiLegoOutputFieldAlias: null
+    fromApiLegoUuid: null
+    fvt: request
+    id: 1400
+    ift: condition
+    inputFieldDescribeId: 0
+    name: ID
+    requestParamName: id
+    sessionParamName: null
+    uuid: '1400'
+    validate: '[{"validateName":"required"}]'
+  outputFields: [
+    ]
+authTypes:
+- alias: ty_auth
+  description: TYSession校验
+  id: 1
+  judgeAPIAlias: ty_auth_check
+  name: E端登录校验
+  noAuthErrorCode: null

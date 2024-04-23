@@ -1,0 +1,132 @@
+api:
+  alias: delete-apilego
+  authType: ty_auth
+  category: config
+  content: null
+  createDate: 2017-08-24T10:15:32Z
+  description: ''
+  id: 214
+  method: POST
+  name: 删除apilego
+  type: ty
+  url: null
+  version: version_2
+apiLegoViews:
+- apiLego:
+    apiAlias: delete-apilego
+    attributes: ''
+    description: null
+    id: 284
+    index: 1
+    legoAlias: delete
+    oiAlias: ty_input_field
+    processControllerAlias: null
+    uuid: '284'
+  inputFields:
+  - alias: apiLegoId
+    apiLegoId: 284
+    apiLegoUuid: '284'
+    attributes: ''
+    connectorPath: ''
+    constant: ''
+    ct: eq
+    description: ''
+    dt: string
+    fieldName: apiLegoId
+    fieldTpl: null
+    fieldValue: null
+    fromApiLegoId: 0
+    fromApiLegoOutputFieldAlias: ''
+    fromApiLegoUuid: '0'
+    fvt: request
+    id: 395
+    ift: condition
+    inputFieldDescribeId: 0
+    name: 条件apiLegoId
+    requestParamName: apiLegoId
+    sessionParamName: ''
+    uuid: '395'
+    validate: '[{"validateName":"required"}]'
+  outputFields: [
+    ]
+- apiLego:
+    apiAlias: delete-apilego
+    attributes: ''
+    description: null
+    id: 285
+    index: 2
+    legoAlias: delete
+    oiAlias: ty_output_field
+    processControllerAlias: null
+    uuid: '285'
+  inputFields:
+  - alias: apiLegoId
+    apiLegoId: 285
+    apiLegoUuid: '285'
+    attributes: ''
+    connectorPath: ''
+    constant: ''
+    ct: eq
+    description: ''
+    dt: string
+    fieldName: apiLegoId
+    fieldTpl: null
+    fieldValue: null
+    fromApiLegoId: 0
+    fromApiLegoOutputFieldAlias: null
+    fromApiLegoUuid: '0'
+    fvt: request
+    id: 396
+    ift: condition
+    inputFieldDescribeId: 0
+    name: 条件apiLegoId
+    requestParamName: apiLegoId
+    sessionParamName: null
+    uuid: '396'
+    validate: ''
+  outputFields: [
+    ]
+- apiLego:
+    apiAlias: delete-apilego
+    attributes: ''
+    description: null
+    id: 286
+    index: 3
+    legoAlias: delete
+    oiAlias: ty_api_lego
+    processControllerAlias: null
+    uuid: '286'
+  inputFields:
+  - alias: apiLegoId
+    apiLegoId: 286
+    apiLegoUuid: '286'
+    attributes: ''
+    connectorPath: ''
+    constant: ''
+    ct: eq
+    description: ''
+    dt: string
+    fieldName: id
+    fieldTpl: null
+    fieldValue: null
+    fromApiLegoId: 0
+    fromApiLegoOutputFieldAlias: null
+    fromApiLegoUuid: '0'
+    fvt: request
+    id: 397
+    ift: condition
+    inputFieldDescribeId: 0
+    name: 条件apiLegoId
+    requestParamName: apiLegoId
+    sessionParamName: null
+    uuid: '397'
+    validate: ''
+  outputFields: [
+    ]
+authTypes:
+- alias: ty_auth
+  description: TYSession校验
+  id: 1
+  judgeAPIAlias: ty_auth_check
+  name: E端登录校验
+  noAuthErrorCode: null

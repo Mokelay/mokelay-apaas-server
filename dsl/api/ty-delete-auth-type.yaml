@@ -1,0 +1,58 @@
+api:
+  alias: ty-delete-auth-type
+  authType: ty_auth
+  category: config
+  content: null
+  createDate: 2017-12-20T15:29:46Z
+  description: 一键生成接口
+  id: 555
+  method: GET
+  name: 删除授权信息
+  type: ty
+  url: ty-delete-auth-type
+  version: version_2
+apiLegoViews:
+- apiLego:
+    apiAlias: ty-delete-auth-type
+    attributes: null
+    description: 一键生成接口
+    id: 1087
+    index: 1
+    legoAlias: delete
+    oiAlias: ty_auth_type
+    processControllerAlias: null
+    uuid: '1087'
+  inputFields:
+  - alias: id
+    apiLegoId: 1087
+    apiLegoUuid: '1087'
+    attributes: null
+    connectorPath: null
+    constant: null
+    ct: eq
+    description: 一键生成
+    dt: string
+    fieldName: id
+    fieldTpl: null
+    fieldValue: null
+    fromApiLegoId: 0
+    fromApiLegoOutputFieldAlias: null
+    fromApiLegoUuid: null
+    fvt: request
+    id: 7055
+    ift: condition
+    inputFieldDescribeId: 0
+    name: ID
+    requestParamName: id
+    sessionParamName: null
+    uuid: '7055'
+    validate: null
+  outputFields: [
+    ]
+authTypes:
+- alias: ty_auth
+  description: TYSession校验
+  id: 1
+  judgeAPIAlias: ty_auth_check
+  name: E端登录校验
+  noAuthErrorCode: null

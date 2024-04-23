@@ -1,0 +1,100 @@
+api:
+  alias: ty_transfer_bb_management
+  authType: null
+  category: config
+  content: null
+  createDate: 2018-06-27T17:20:28Z
+  description: 转移积木管理权
+  id: 1352
+  method: POST
+  name: 转移积木管理权
+  type: ty
+  url: null
+  version: version_2
+apiLegoViews:
+- apiLego:
+    apiAlias: ty_transfer_bb_management
+    attributes: null
+    description: 转移积木管理权
+    id: 7433
+    index: 1
+    legoAlias: update
+    oiAlias: ty_building_block
+    processControllerAlias: null
+    uuid: 9BA3DF01-2292-4A52-ADE4-A0707BCCEA851530091182129
+  inputFields:
+  - alias: owerId
+    apiLegoId: 0
+    apiLegoUuid: 9BA3DF01-2292-4A52-ADE4-A0707BCCEA851530091182129
+    attributes: null
+    connectorPath: ''
+    constant: ''
+    ct: eq
+    description: ''
+    dt: int
+    fieldName: owerId
+    fieldTpl: ''
+    fieldValue: null
+    fromApiLegoId: 0
+    fromApiLegoOutputFieldAlias: ''
+    fromApiLegoUuid: ''
+    fvt: request
+    id: 67377
+    ift: update
+    inputFieldDescribeId: 0
+    name: 负责人ID
+    requestParamName: owerId
+    sessionParamName: ''
+    uuid: 08B2D050-9E6D-4F45-ACAE-1E17C7E2393F1530091212908
+    validate: null
+  - alias: owerName
+    apiLegoId: 0
+    apiLegoUuid: 9BA3DF01-2292-4A52-ADE4-A0707BCCEA851530091182129
+    attributes: null
+    connectorPath: ''
+    constant: ''
+    ct: eq
+    description: ''
+    dt: string
+    fieldName: owerName
+    fieldTpl: ''
+    fieldValue: null
+    fromApiLegoId: 0
+    fromApiLegoOutputFieldAlias: ''
+    fromApiLegoUuid: ''
+    fvt: request
+    id: 67378
+    ift: update
+    inputFieldDescribeId: 0
+    name: 负责人名称
+    requestParamName: owerName
+    sessionParamName: ''
+    uuid: 5918EC91-F897-4FCE-A579-7561B6366C4D1530091212908
+    validate: null
+  - alias: id
+    apiLegoId: 0
+    apiLegoUuid: 9BA3DF01-2292-4A52-ADE4-A0707BCCEA851530091182129
+    attributes: null
+    connectorPath: ''
+    constant: ''
+    ct: eq
+    description: ''
+    dt: int
+    fieldName: id
+    fieldTpl: ''
+    fieldValue: null
+    fromApiLegoId: 0
+    fromApiLegoOutputFieldAlias: ''
+    fromApiLegoUuid: ''
+    fvt: request
+    id: 67379
+    ift: condition
+    inputFieldDescribeId: 0
+    name: ID
+    requestParamName: id
+    sessionParamName: ''
+    uuid: A0007802-EFE1-49B0-BD4F-41D9C2B2562F1530091217698
+    validate: '[{"params":"id为必填项","validateName":"required"}]'
+  outputFields: [
+    ]
+authTypes: null

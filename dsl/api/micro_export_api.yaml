@@ -1,0 +1,16 @@
+api:
+  alias: micro_export_api
+  authType: null
+  category: config
+  content: null
+  createDate: null
+  description: 导出api
+  id: 3130
+  method: GET
+  name: 导出api
+  type: ty
+  url: null
+  version: version_2
+apiLegoViews: [
+  ]
+authTypes: null
