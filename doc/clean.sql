@@ -13,7 +13,7 @@ DELETE FROM db_ty.ty_owner ;
 DELETE FROM db_ty.ty_module;
 DELETE FROM db_ty.ty_app where id >1;
 DELETE FROM db_ty.ty_app_role where appAlias !='ty';
-DELETE FROM db_ty.ty_ds where id not in (2,3,13,25,43,44,45,46,47,50);
+DELETE FROM db_ty.ty_ds where id not in (2);
 DELETE FROM db_ty.ty_api_type where id not in (1);
 DELETE FROM db_ty.ty_api where `version` is null;
 DELETE FROM db_ty.ty_output_field;
