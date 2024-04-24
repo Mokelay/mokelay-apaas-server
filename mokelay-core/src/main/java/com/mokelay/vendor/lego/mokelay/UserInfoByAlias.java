@@ -9,6 +9,7 @@ import com.mokelay.api.lego.Lego;
 import com.mokelay.api.lego.LegoException;
 import com.mokelay.api.lego.Output;
 import com.mokelay.core.manager.TYDriver;
+import com.mokelay.db.manager.DSManager;
 import com.mokelay.db.util.DataSourceUtils;
 import com.mokelay.vendor.utils.VendorExceptionCode;
 import org.apache.log4j.Logger;
@@ -40,7 +41,7 @@ public class UserInfoByAlias implements ExceptionCode, Lego {
     private static final String Output_Key_User_Data = "data";//返回的data
 
     @Autowired
-    TYDriver tyDriver;
+    private DSManager dsManager;
 
     @Override
     public void execute(Input input, Output output) throws LegoException {
@@ -70,7 +71,7 @@ public class UserInfoByAlias implements ExceptionCode, Lego {
      * @return
      */
     private JdbcTemplate getTyTemplate(){
-        DataSource dataSource = DataSourceUtils.getDatasource("db_ty", tyDriver.getDsManager());
+        DataSource dataSource = DataSourceUtils.getDatasource("db_ty", dsManager);
         JdbcTemplate jdbcTemplate = new JdbcTemplate();
         jdbcTemplate.setDataSource(dataSource);
         return jdbcTemplate;

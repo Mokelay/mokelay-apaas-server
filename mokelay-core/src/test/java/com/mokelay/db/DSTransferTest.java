@@ -6,6 +6,7 @@ import com.mokelay.base.manager.ext.YamlBasicManager;
 import com.mokelay.base.util.CollectionUtil;
 import com.mokelay.core.bean.view.APIView;
 import com.mokelay.core.manager.TYDriver;
+import com.mokelay.core.manager.YamlDSViewManager;
 import com.mokelay.core.service.APIContentService;
 import com.mokelay.db.bean.oi.DS;
 import com.mokelay.db.bean.oi.Field;
@@ -78,5 +79,11 @@ public class DSTransferTest extends DBBaseTest {
                 }
             }
         }
+    }
+
+    public void testGetDSByAlias() throws DBException {
+        YamlDSViewManager dsViewManager = (YamlDSViewManager) context.getBean("dsViewManager");
+        DSView dsView = dsViewManager.getDSViewByAlias("db_ty");
+        System.out.println(dsView);
     }
 }

@@ -313,7 +313,7 @@ public class CascadeAdd implements ExceptionCode, Lego {
             }
             Connector connector = null;
             try {
-                connector = tyDriver.getConnectorManager().getConnectorByAlias(connectorAlais);
+                connector = tyDriver.getTyCacheService().getConnectorByAlias(connectorAlais);
             } catch (DBException e) {
                 e.printStackTrace();
                 throw new LegoException(e.getMessage(), e.getCode());

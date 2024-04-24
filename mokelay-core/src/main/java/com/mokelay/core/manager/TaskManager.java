@@ -1,9 +1,6 @@
 package com.mokelay.core.manager;
 
 import com.mokelay.base.manager.BasicManager;
-import com.mokelay.core.bean.task.Task;
-
-import java.util.List;
 
 /**
  * Task Manager
