@@ -43,7 +43,7 @@ public class ExcuteShell implements ExceptionCode, Lego{
             throw new LegoException("无效的shell命令",Lego_Error_Shell_Cmd_Null);
         }
         if(StringUtil.isInvalid(dir)){
-            String tmpPath = TYPPC.Upload_Temp_Dir;
+            String tmpPath = TYPPC.Upload_Temp_Dir();
             if(StringUtil.isValid(tmpPath)){
                 dir = tmpPath;
             }else{

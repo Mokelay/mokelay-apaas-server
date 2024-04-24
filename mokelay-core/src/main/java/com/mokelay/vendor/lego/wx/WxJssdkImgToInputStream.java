@@ -65,7 +65,7 @@ public class WxJssdkImgToInputStream extends WxAuth{
             BufferedInputStream in = new BufferedInputStream(uc.getInputStream());
             //先将微信媒体文件存到本地
             String locaPath = WxJssdkImgToInputStream.class.getResource("/").getPath();
-            String tmpPath = TYPPC.Upload_Temp_Dir;
+            String tmpPath = TYPPC.Upload_Temp_Dir();
             if(StringUtil.isValid(tmpPath)){
                 File tmpFile = new File(tmpPath);
                 if(!tmpFile.getParentFile().exists()){

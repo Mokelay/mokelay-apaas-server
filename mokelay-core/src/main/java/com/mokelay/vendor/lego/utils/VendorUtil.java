@@ -54,7 +54,7 @@ public class VendorUtil {
             BufferedInputStream in = new BufferedInputStream(uc.getInputStream());
             //先将微信媒体文件存到本地
             String locaPath = VendorUtil.class.getResource("/").getPath();
-            String tmpPath = TYPPC.Upload_Temp_Dir;
+            String tmpPath = TYPPC.Upload_Temp_Dir();
             if(StringUtil.isValid(tmpPath)){
                 File tmpFile = new File(tmpPath);
                 if(!tmpFile.exists()){
