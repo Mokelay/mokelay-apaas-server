@@ -12,15 +12,11 @@ import com.mokelay.core.manager.ext.YamlAPIViewManager;
 import com.mokelay.core.service.APIContentService;
 import org.yaml.snakeyaml.DumperOptions;
 import org.yaml.snakeyaml.Yaml;
-import org.yaml.snakeyaml.constructor.Constructor;
 import org.yaml.snakeyaml.nodes.Tag;
 import org.yaml.snakeyaml.representer.Representer;
 
 import java.io.*;
-import java.nio.file.*;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 import java.io.IOException;
 
 
@@ -85,19 +81,10 @@ public class APITransferTest extends DBBaseTest {
     /**
      * Test Read API
      */
-    public void testReadAPI() throws FileNotFoundException {
-        String folder = YamlBasicManager.DEFAULT_Mokelay_DS;
-
-        _read(folder + "/api/add-ad.yaml");
-    }
-
-    private APIView _read(String fileName) throws FileNotFoundException {
-        InputStream inputStream = new FileInputStream(fileName);
-
-        // 将YAML内容转换为Java对象
-        Yaml yaml = new Yaml(new Constructor(Map.class));
-        APIView data = yaml.loadAs(inputStream, APIView.class);
-        return data;
+    public void testReadAPI() throws FileNotFoundException, DBException {
+        YamlAPIViewManager apiViewManager = (YamlAPIViewManager) context.getBean("apiViewManager");
+        APIView apiView = apiViewManager.getAPIViewByAlias("add-ad");
+        System.out.println(apiView);
     }
 
     /**
