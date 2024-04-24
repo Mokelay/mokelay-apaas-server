@@ -82,14 +82,13 @@ public class APITransferTest extends DBBaseTest {
      * Test Read API
      */
     public void testReadAPI() throws FileNotFoundException {
-        String folder = YamlBasicManager.DEFAULT_Mokelay_DS + "/api";
+        String folder = YamlBasicManager.DEFAULT_Mokelay_DS;
 
-        InputStream inputStream = new FileInputStream(folder + "/ty/add-ad.yaml");
+        InputStream inputStream = new FileInputStream(folder + "/api/add-ad.yaml");
 
         // 将YAML内容转换为Java对象
         Yaml yaml = new Yaml(new Constructor(Map.class));
         APIView data = yaml.loadAs(inputStream, APIView.class);
-        ;
         System.out.println(data);
     }
 }

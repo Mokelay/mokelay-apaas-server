@@ -876,4 +876,4 @@ authTypes:
   id: 4
   judgeAPIAlias: ty_b_session_check
   name: B端登录校验
-  noAuthErrorCode: null
+  noAuthErrorCode: -410

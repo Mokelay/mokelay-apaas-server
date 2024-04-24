@@ -380,4 +380,4 @@ authTypes:
   id: 1
   judgeAPIAlias: ty_auth_check
   name: E端登录校验
-  noAuthErrorCode: null
+  noAuthErrorCode: -400
