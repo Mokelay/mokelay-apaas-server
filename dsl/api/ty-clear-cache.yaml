@@ -1,0 +1,35 @@
+api:
+  alias: ty-clear-cache
+  authType: ty_auth
+  category: config
+  content: null
+  createDate: 2017-12-05T15:29:41Z
+  description: ''
+  id: 497
+  method: GET
+  name: 清除TY内置缓存
+  type: ty
+  url: ty-clear-cache
+  version: version_2
+apiLegoViews:
+- apiLego:
+    apiAlias: ty-clear-cache
+    attributes: null
+    description: null
+    id: 965
+    index: 1
+    legoAlias: clearCache
+    oiAlias: null
+    processControllerAlias: null
+    uuid: '965'
+  inputFields: [
+    ]
+  outputFields: [
+    ]
+authTypes:
+- alias: ty_auth
+  description: TYSession校验
+  id: 1
+  judgeAPIAlias: ty_auth_check
+  name: E端登录校验
+  noAuthErrorCode: -400

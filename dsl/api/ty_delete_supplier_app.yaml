@@ -1,0 +1,52 @@
+api:
+  alias: ty_delete_supplier_app
+  authType: null
+  category: config
+  content: null
+  createDate: 2018-06-08T14:55:55Z
+  description: null
+  id: 1268
+  method: GET
+  name: 删除供应商app
+  type: ty
+  url: null
+  version: version_2
+apiLegoViews:
+- apiLego:
+    apiAlias: ty_delete_supplier_app
+    attributes: null
+    description: ''
+    id: 6011
+    index: 1
+    legoAlias: delete
+    oiAlias: ty_supplier_app
+    processControllerAlias: null
+    uuid: 7DC3081A-A963-4DF6-84F3-B86751ACA69D1528440921843
+  inputFields:
+  - alias: id
+    apiLegoId: 0
+    apiLegoUuid: 7DC3081A-A963-4DF6-84F3-B86751ACA69D1528440921843
+    attributes: null
+    connectorPath: ''
+    constant: ''
+    ct: eq
+    description: ''
+    dt: int
+    fieldName: id
+    fieldTpl: ''
+    fieldValue: null
+    fromApiLegoId: 0
+    fromApiLegoOutputFieldAlias: ''
+    fromApiLegoUuid: ''
+    fvt: request
+    id: 55887
+    ift: condition
+    inputFieldDescribeId: 0
+    name: id
+    requestParamName: id
+    sessionParamName: ''
+    uuid: B094E20F-AE87-417D-A8B0-6E86FD7834071528441023747
+    validate: '[{"params":"id为必填字段","validateName":"required"}]'
+  outputFields: [
+    ]
+authTypes: null

@@ -1,0 +1,107 @@
+api:
+  alias: ty-upload
+  authType: null
+  category: config
+  content: null
+  createDate: 2018-01-09T17:12:02Z
+  description: 上传到web服务器
+  id: 609
+  method: POST
+  name: TY上传
+  type: ty
+  url: null
+  version: version_2
+apiLegoViews:
+- apiLego:
+    apiAlias: ty-upload
+    attributes: null
+    description: null
+    id: 1224
+    index: 1
+    legoAlias: file_save
+    oiAlias: uploadImg
+    processControllerAlias: null
+    uuid: '1224'
+  inputFields:
+  - alias: file_stream
+    apiLegoId: 1224
+    apiLegoUuid: '1224'
+    attributes: ''
+    connectorPath: ''
+    constant: ''
+    ct: eq
+    description: 文件流
+    dt: multipart
+    fieldName: file_stream
+    fieldTpl: ''
+    fieldValue: null
+    fromApiLegoId: 0
+    fromApiLegoOutputFieldAlias: ''
+    fromApiLegoUuid: '0'
+    fvt: request
+    id: 8174
+    ift: common
+    inputFieldDescribeId: 0
+    name: 文件流
+    requestParamName: file
+    sessionParamName: ''
+    uuid: '8174'
+    validate: ''
+  outputFields:
+  - alias: file
+    apiLegoId: 1224
+    apiLegoUuid: '1224'
+    description: file_serialize_name
+    dt: string
+    fieldName: file_serialize_name
+    fieldValue: null
+    handle: ''
+    id: 1345
+    name: file_serialize_name
+    oft: common
+    outputFieldDescribeId: 0
+    response: true
+    uuid: '1345'
+  - alias: file_original_name
+    apiLegoId: 1224
+    apiLegoUuid: '1224'
+    description: file_original_name
+    dt: null
+    fieldName: file_original_name
+    fieldValue: null
+    handle: ''
+    id: 1346
+    name: file_original_name
+    oft: ''
+    outputFieldDescribeId: 0
+    response: false
+    uuid: '1346'
+  - alias: file_size
+    apiLegoId: 1224
+    apiLegoUuid: '1224'
+    description: file_size
+    dt: null
+    fieldName: file_size
+    fieldValue: null
+    handle: ''
+    id: 1347
+    name: file_size
+    oft: ''
+    outputFieldDescribeId: 0
+    response: false
+    uuid: '1347'
+  - alias: file_type
+    apiLegoId: 1224
+    apiLegoUuid: '1224'
+    description: file_type
+    dt: null
+    fieldName: file_type
+    fieldValue: null
+    handle: ''
+    id: 1348
+    name: file_type
+    oft: ''
+    outputFieldDescribeId: 0
+    response: false
+    uuid: '1348'
+authTypes: null

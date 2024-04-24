@@ -1,0 +1,58 @@
+api:
+  alias: ty-delete-user
+  authType: ty_auth
+  category: config
+  content: null
+  createDate: 2018-05-31T20:45:39Z
+  description: null
+  id: 1230
+  method: POST
+  name: TY删除用户
+  type: ty
+  url: null
+  version: version_2
+apiLegoViews:
+- apiLego:
+    apiAlias: ty-delete-user
+    attributes: null
+    description: ''
+    id: 5758
+    index: 1
+    legoAlias: delete
+    oiAlias: ty_user
+    processControllerAlias: null
+    uuid: 9B9C8980-45AD-434B-931F-0F6FDFC83B051527770750330
+  inputFields:
+  - alias: id
+    apiLegoId: 0
+    apiLegoUuid: 9B9C8980-45AD-434B-931F-0F6FDFC83B051527770750330
+    attributes: null
+    connectorPath: ''
+    constant: ''
+    ct: eq
+    description: ''
+    dt: int
+    fieldName: id
+    fieldTpl: ''
+    fieldValue: null
+    fromApiLegoId: 0
+    fromApiLegoOutputFieldAlias: ''
+    fromApiLegoUuid: ''
+    fvt: request
+    id: 53519
+    ift: condition
+    inputFieldDescribeId: 0
+    name: ID
+    requestParamName: id
+    sessionParamName: ''
+    uuid: 77A8F12C-7483-4219-8E99-E9A6FE702F341527770785654
+    validate: null
+  outputFields: [
+    ]
+authTypes:
+- alias: ty_auth
+  description: TYSession校验
+  id: 1
+  judgeAPIAlias: ty_auth_check
+  name: E端登录校验
+  noAuthErrorCode: -400

@@ -21,11 +21,11 @@ public interface FieldManager extends BasicManager {
 
     /**
      * 获取字段
+     *
      * @param oiAlias
      * @param fieldName
      * @return
      * @throws DBException
      */
-    public List<Field> getFields(String oiAlias,String fieldName) throws DBException;
-
+    public Field getField(String oiAlias, String fieldName) throws DBException;
 }

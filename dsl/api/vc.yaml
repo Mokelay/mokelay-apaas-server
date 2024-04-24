@@ -1,0 +1,116 @@
+api:
+  alias: vc
+  authType: ''
+  category: config
+  content: null
+  createDate: 2017-08-06T21:54:38Z
+  description: 生成图形验证码
+  id: 13
+  method: GET
+  name: 生成图形验证码
+  type: ty
+  url: ''
+  version: version_2
+apiLegoViews:
+- apiLego:
+    apiAlias: vc
+    attributes: ''
+    description: null
+    id: 14
+    index: 1
+    legoAlias: getGraphicVC
+    oiAlias: ty_api
+    processControllerAlias: null
+    uuid: '14'
+  inputFields:
+  - alias: sysFontNum
+    apiLegoId: null
+    apiLegoUuid: '14'
+    attributes: null
+    connectorPath: null
+    constant: null
+    ct: eq
+    description: null
+    dt: string
+    fieldName: sysFontNum
+    fieldTpl: null
+    fieldValue: null
+    fromApiLegoId: null
+    fromApiLegoOutputFieldAlias: null
+    fromApiLegoUuid: null
+    fvt: request
+    id: null
+    ift: common
+    inputFieldDescribeId: null
+    name: 系统第几个字体
+    requestParamName: sysFontNum
+    sessionParamName: null
+    uuid: 7CC89CE3-5792-4A0C-8761-3CCE629694B91541572067586
+    validate: null
+  outputFields:
+  - alias: file_stream
+    apiLegoId: 14
+    apiLegoUuid: '14'
+    description: 验证码
+    dt: multipart
+    fieldName: file_stream
+    fieldValue: null
+    handle: ''
+    id: 18
+    name: 验证码图片
+    oft: common
+    outputFieldDescribeId: 0
+    response: true
+    uuid: '18'
+  - alias: vc
+    apiLegoId: 14
+    apiLegoUuid: '14'
+    description: 验证码
+    dt: string
+    fieldName: vc
+    fieldValue: null
+    handle: ''
+    id: 19
+    name: 验证码
+    oft: common
+    outputFieldDescribeId: 0
+    response: false
+    uuid: '19'
+- apiLego:
+    apiAlias: vc
+    attributes: ''
+    description: ' '
+    id: 15
+    index: 2
+    legoAlias: sessionStore
+    oiAlias: ''
+    processControllerAlias: null
+    uuid: '15'
+  inputFields:
+  - alias: vc
+    apiLegoId: 15
+    apiLegoUuid: '15'
+    attributes: ''
+    connectorPath: ''
+    constant: ''
+    ct: eq
+    description: 验证码存入session
+    dt: string
+    fieldName: vc
+    fieldTpl: ''
+    fieldValue: null
+    fromApiLegoId: 14
+    fromApiLegoOutputFieldAlias: vc
+    fromApiLegoUuid: '14'
+    fvt: output
+    id: 42
+    ift: common
+    inputFieldDescribeId: 0
+    name: 验证码
+    requestParamName: ''
+    sessionParamName: ''
+    uuid: '42'
+    validate: ''
+  outputFields: [
+    ]
+authTypes: null

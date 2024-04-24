@@ -1,0 +1,100 @@
+api:
+  alias: ty_updata_supplier_app
+  authType: null
+  category: config
+  content: null
+  createDate: 2018-06-08T15:10:10Z
+  description: 修改供应商app
+  id: 1270
+  method: POST
+  name: 修改供应商app
+  type: ty
+  url: null
+  version: version_2
+apiLegoViews:
+- apiLego:
+    apiAlias: ty_updata_supplier_app
+    attributes: null
+    description: 修改供应商app
+    id: 6020
+    index: 1
+    legoAlias: update
+    oiAlias: ty_supplier_app
+    processControllerAlias: null
+    uuid: 5D8FB27F-B3F5-4120-B203-DD9B66ABA3A51528448531273
+  inputFields:
+  - alias: id
+    apiLegoId: 0
+    apiLegoUuid: 5D8FB27F-B3F5-4120-B203-DD9B66ABA3A51528448531273
+    attributes: null
+    connectorPath: ''
+    constant: ''
+    ct: eq
+    description: ''
+    dt: int
+    fieldName: id
+    fieldTpl: ''
+    fieldValue: null
+    fromApiLegoId: 0
+    fromApiLegoOutputFieldAlias: ''
+    fromApiLegoUuid: ''
+    fvt: request
+    id: 55922
+    ift: condition
+    inputFieldDescribeId: 0
+    name: id
+    requestParamName: id
+    sessionParamName: ''
+    uuid: 09017225-08EA-43B8-9CD5-995AFDF912101528448552447
+    validate: '[{"params":"id为必填字段","validateName":"required"}]'
+  - alias: supplierSerialNumber
+    apiLegoId: 0
+    apiLegoUuid: 5D8FB27F-B3F5-4120-B203-DD9B66ABA3A51528448531273
+    attributes: null
+    connectorPath: ''
+    constant: ''
+    ct: eq
+    description: ''
+    dt: string
+    fieldName: supplierSerialNumber
+    fieldTpl: ''
+    fieldValue: null
+    fromApiLegoId: 0
+    fromApiLegoOutputFieldAlias: ''
+    fromApiLegoUuid: ''
+    fvt: request
+    id: 55923
+    ift: update
+    inputFieldDescribeId: 0
+    name: supplierSerialNumber
+    requestParamName: supplierSerialNumber
+    sessionParamName: ''
+    uuid: 827F741B-11C6-494E-942B-AB40C816DBA01528448557437
+    validate: null
+  - alias: appAlias
+    apiLegoId: 0
+    apiLegoUuid: 5D8FB27F-B3F5-4120-B203-DD9B66ABA3A51528448531273
+    attributes: null
+    connectorPath: ''
+    constant: ''
+    ct: eq
+    description: ''
+    dt: string
+    fieldName: appAlias
+    fieldTpl: ''
+    fieldValue: null
+    fromApiLegoId: 0
+    fromApiLegoOutputFieldAlias: ''
+    fromApiLegoUuid: ''
+    fvt: request
+    id: 55924
+    ift: update
+    inputFieldDescribeId: 0
+    name: appAlias
+    requestParamName: appAlias
+    sessionParamName: ''
+    uuid: 0788FF12-9261-40C7-B869-228CBFB4B1651528448557438
+    validate: null
+  outputFields: [
+    ]
+authTypes: null

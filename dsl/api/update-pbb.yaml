@@ -1,0 +1,82 @@
+api:
+  alias: update-pbb
+  authType: ty_auth
+  category: config
+  content: null
+  createDate: 2017-09-23T15:22:00Z
+  description: 更新PBB，更新pbb属性json
+  id: 341
+  method: POST
+  name: 更新PBB
+  type: ty
+  url: null
+  version: version_2
+apiLegoViews:
+- apiLego:
+    apiAlias: update-pbb
+    attributes: null
+    description: null
+    id: 487
+    index: 1
+    legoAlias: update
+    oiAlias: ty_page_building_block
+    processControllerAlias: null
+    uuid: '487'
+  inputFields:
+  - alias: id
+    apiLegoId: 487
+    apiLegoUuid: '487'
+    attributes: null
+    connectorPath: ''
+    constant: null
+    ct: eq
+    description: null
+    dt: string
+    fieldName: id
+    fieldTpl: null
+    fieldValue: null
+    fromApiLegoId: 0
+    fromApiLegoOutputFieldAlias: null
+    fromApiLegoUuid: null
+    fvt: request
+    id: 1971
+    ift: condition
+    inputFieldDescribeId: 0
+    name: ID
+    requestParamName: pbbId
+    sessionParamName: null
+    uuid: '1971'
+    validate: '[{"validateName":"required"}]'
+  - alias: attributes
+    apiLegoId: 487
+    apiLegoUuid: '487'
+    attributes: null
+    connectorPath: ''
+    constant: null
+    ct: null
+    description: null
+    dt: null
+    fieldName: attributes
+    fieldTpl: null
+    fieldValue: null
+    fromApiLegoId: 0
+    fromApiLegoOutputFieldAlias: null
+    fromApiLegoUuid: null
+    fvt: request
+    id: 1972
+    ift: update
+    inputFieldDescribeId: 0
+    name: PBB属性
+    requestParamName: attributes
+    sessionParamName: null
+    uuid: '1972'
+    validate: null
+  outputFields: [
+    ]
+authTypes:
+- alias: ty_auth
+  description: TYSession校验
+  id: 1
+  judgeAPIAlias: ty_auth_check
+  name: E端登录校验
+  noAuthErrorCode: -400

@@ -1,0 +1,95 @@
+api:
+  alias: delete-pbb
+  authType: ty_auth
+  category: config
+  content: null
+  createDate: 2017-08-31T14:50:16Z
+  description: 删除页面中的BB(同时删除pbb下面的所有属性和交互)
+  id: 240
+  method: POST
+  name: 删除页面中的BB
+  type: ty
+  url: null
+  version: version_2
+apiLegoViews:
+- apiLego:
+    apiAlias: delete-pbb
+    attributes: null
+    description: null
+    id: 336
+    index: 1
+    legoAlias: delete
+    oiAlias: ty_page_building_block
+    processControllerAlias: null
+    uuid: '336'
+  inputFields:
+  - alias: id
+    apiLegoId: 336
+    apiLegoUuid: '336'
+    attributes: null
+    connectorPath: ''
+    constant: null
+    ct: eq
+    description: null
+    dt: string
+    fieldName: id
+    fieldTpl: null
+    fieldValue: null
+    fromApiLegoId: 0
+    fromApiLegoOutputFieldAlias: null
+    fromApiLegoUuid: null
+    fvt: request
+    id: 854
+    ift: condition
+    inputFieldDescribeId: 0
+    name: ID
+    requestParamName: id
+    sessionParamName: null
+    uuid: '854'
+    validate: '[{"validateName":"required"}]'
+  outputFields: [
+    ]
+- apiLego:
+    apiAlias: delete-pbb
+    attributes: null
+    description: null
+    id: 448
+    index: 3
+    legoAlias: delete
+    oiAlias: ty_interactive
+    processControllerAlias: null
+    uuid: '448'
+  inputFields:
+  - alias: pbbId
+    apiLegoId: 448
+    apiLegoUuid: '448'
+    attributes: null
+    connectorPath: ''
+    constant: null
+    ct: eq
+    description: null
+    dt: string
+    fieldName: pbbId
+    fieldTpl: null
+    fieldValue: null
+    fromApiLegoId: 0
+    fromApiLegoOutputFieldAlias: null
+    fromApiLegoUuid: null
+    fvt: request
+    id: 1548
+    ift: condition
+    inputFieldDescribeId: 0
+    name: 所属pageBB
+    requestParamName: id
+    sessionParamName: null
+    uuid: '1548'
+    validate: '[{"validateName":"required"}]'
+  outputFields: [
+    ]
+authTypes:
+- alias: ty_auth
+  description: TYSession校验
+  id: 1
+  judgeAPIAlias: ty_auth_check
+  name: E端登录校验
+  noAuthErrorCode: -400

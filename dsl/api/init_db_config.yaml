@@ -1,0 +1,95 @@
+api:
+  alias: init_db_config
+  authType: ty_auth
+  category: config
+  content: null
+  createDate: 2017-07-28T09:28:09Z
+  description: 从DB导入数据描述模型
+  id: 2
+  method: POST
+  name: 初始化DB
+  type: ty
+  url: null
+  version: version_2
+apiLegoViews:
+- apiLego:
+    apiAlias: init_db_config
+    attributes: ''
+    description: 初始化数据源
+    id: 2
+    index: 1
+    legoAlias: init_db_config
+    oiAlias: ty_api
+    processControllerAlias: null
+    uuid: '2'
+  inputFields:
+  - alias: ds_alias
+    apiLegoId: 2
+    apiLegoUuid: '2'
+    attributes: ''
+    connectorPath: ''
+    constant: ''
+    ct: eq
+    description: ''
+    dt: string
+    fieldName: ds_alias
+    fieldTpl: null
+    fieldValue: null
+    fromApiLegoId: 0
+    fromApiLegoOutputFieldAlias: ''
+    fromApiLegoUuid: '0'
+    fvt: request
+    id: 2
+    ift: common
+    inputFieldDescribeId: 0
+    name: 数据源
+    requestParamName: ds_alias
+    sessionParamName: ''
+    uuid: '2'
+    validate: '[{"validateName":"required"}]'
+  - alias: init_commit
+    apiLegoId: 2
+    apiLegoUuid: '2'
+    attributes: null
+    connectorPath: null
+    constant: null
+    ct: eq
+    description: boolean类型
+    dt: string
+    fieldName: init_commit
+    fieldTpl: null
+    fieldValue: null
+    fromApiLegoId: 0
+    fromApiLegoOutputFieldAlias: null
+    fromApiLegoUuid: '0'
+    fvt: request
+    id: 1456
+    ift: common
+    inputFieldDescribeId: 0
+    name: 是否执行
+    requestParamName: commit
+    sessionParamName: null
+    uuid: '1456'
+    validate: ''
+  outputFields:
+  - alias: commit_report
+    apiLegoId: 2
+    apiLegoUuid: '2'
+    description: 导入记录
+    dt: string
+    fieldName: commit_report
+    fieldValue: null
+    handle: ''
+    id: 194
+    name: 导入记录
+    oft: common
+    outputFieldDescribeId: 0
+    response: true
+    uuid: '194'
+authTypes:
+- alias: ty_auth
+  description: TYSession校验
+  id: 1
+  judgeAPIAlias: ty_auth_check
+  name: E端登录校验
+  noAuthErrorCode: -400

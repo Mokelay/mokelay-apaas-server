@@ -1,0 +1,58 @@
+api:
+  alias: delete-inputField
+  authType: ty_auth
+  category: config
+  content: null
+  createDate: 2017-08-29T17:42:08Z
+  description: ''
+  id: 230
+  method: POST
+  name: 删除inputField
+  type: ty
+  url: null
+  version: version_2
+apiLegoViews:
+- apiLego:
+    apiAlias: delete-inputField
+    attributes: null
+    description: null
+    id: 321
+    index: 1
+    legoAlias: delete
+    oiAlias: ty_input_field
+    processControllerAlias: null
+    uuid: '321'
+  inputFields:
+  - alias: id
+    apiLegoId: 321
+    apiLegoUuid: '321'
+    attributes: null
+    connectorPath: ''
+    constant: null
+    ct: eq
+    description: null
+    dt: string
+    fieldName: id
+    fieldTpl: null
+    fieldValue: null
+    fromApiLegoId: 0
+    fromApiLegoOutputFieldAlias: null
+    fromApiLegoUuid: null
+    fvt: request
+    id: 778
+    ift: condition
+    inputFieldDescribeId: 0
+    name: id
+    requestParamName: fieldId
+    sessionParamName: null
+    uuid: '778'
+    validate: '[{"validateName":"required"}]'
+  outputFields: [
+    ]
+authTypes:
+- alias: ty_auth
+  description: TYSession校验
+  id: 1
+  judgeAPIAlias: ty_auth_check
+  name: E端登录校验
+  noAuthErrorCode: -400

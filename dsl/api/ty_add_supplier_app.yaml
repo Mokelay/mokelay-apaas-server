@@ -1,0 +1,113 @@
+api:
+  alias: ty_add_supplier_app
+  authType: null
+  category: config
+  content: null
+  createDate: 2018-06-08T14:26:58Z
+  description: 添加供应商安装app
+  id: 1267
+  method: POST
+  name: 添加供应商安装app
+  type: ty
+  url: null
+  version: version_2
+apiLegoViews:
+- apiLego:
+    apiAlias: ty_add_supplier_app
+    attributes: null
+    description: 添加供应商安装app
+    id: 6158
+    index: 1
+    legoAlias: add
+    oiAlias: ty_supplier_app
+    processControllerAlias: null
+    uuid: 5CB326B0-871B-4F77-B3F4-427BFDF9DEDF1528439988303
+  inputFields:
+  - alias: supplierSerialNumber
+    apiLegoId: 0
+    apiLegoUuid: 5CB326B0-871B-4F77-B3F4-427BFDF9DEDF1528439988303
+    attributes: null
+    connectorPath: ''
+    constant: ''
+    ct: eq
+    description: ''
+    dt: string
+    fieldName: supplierSerialNumber
+    fieldTpl: ${session.TY_SESSION_CONFIG_USER.tenantSerialNumber}
+    fieldValue: null
+    fromApiLegoId: 0
+    fromApiLegoOutputFieldAlias: ''
+    fromApiLegoUuid: ''
+    fvt: request
+    id: 56887
+    ift: create
+    inputFieldDescribeId: 0
+    name: supplierSerialNumber
+    requestParamName: supplierSerialNumber
+    sessionParamName: ''
+    uuid: 2F8B363C-DCF1-41A9-B67E-AEA707A7086F1528440158782
+    validate: null
+  - alias: appAlias
+    apiLegoId: 0
+    apiLegoUuid: 5CB326B0-871B-4F77-B3F4-427BFDF9DEDF1528439988303
+    attributes: null
+    connectorPath: ''
+    constant: ''
+    ct: eq
+    description: ''
+    dt: string
+    fieldName: appAlias
+    fieldTpl: ''
+    fieldValue: null
+    fromApiLegoId: 0
+    fromApiLegoOutputFieldAlias: ''
+    fromApiLegoUuid: ''
+    fvt: request
+    id: 56888
+    ift: create
+    inputFieldDescribeId: 0
+    name: appAlias
+    requestParamName: appAlias
+    sessionParamName: ''
+    uuid: 5CECF6B2-0621-47A6-B6C1-E722361A1A6F1528440158782
+    validate: null
+  - alias: createDate
+    apiLegoId: 0
+    apiLegoUuid: 5CB326B0-871B-4F77-B3F4-427BFDF9DEDF1528439988303
+    attributes: null
+    connectorPath: ''
+    constant: ''
+    ct: eq
+    description: ''
+    dt: time
+    fieldName: createDate
+    fieldTpl: ''
+    fieldValue: null
+    fromApiLegoId: 0
+    fromApiLegoOutputFieldAlias: ''
+    fromApiLegoUuid: ''
+    fvt: ''
+    id: 56889
+    ift: create
+    inputFieldDescribeId: 0
+    name: createDate
+    requestParamName: createDate
+    sessionParamName: ''
+    uuid: D6D0E538-3A03-4608-81C8-0E6C604953DD1528440158782
+    validate: '[{"validateName":"systemTimeAssign"}]'
+  outputFields:
+  - alias: unique_value
+    apiLegoId: 0
+    apiLegoUuid: 5CB326B0-871B-4F77-B3F4-427BFDF9DEDF1528439988303
+    description: ''
+    dt: ''
+    fieldName: unique_value
+    fieldValue: null
+    handle: ''
+    id: 8542
+    name: 添加唯一值
+    oft: common
+    outputFieldDescribeId: 0
+    response: false
+    uuid: 2D0A97EB-1040-4E59-8DC0-43A6A0494B501528439988303
+authTypes: null

@@ -1,0 +1,82 @@
+api:
+  alias: update-apilego-des-by-id
+  authType: ty_auth
+  category: config
+  content: null
+  createDate: 2017-09-06T11:24:00Z
+  description: 更新apilego的描述信息
+  id: 291
+  method: POST
+  name: 更新apilego的描述信息
+  type: ty
+  url: null
+  version: version_2
+apiLegoViews:
+- apiLego:
+    apiAlias: update-apilego-des-by-id
+    attributes: null
+    description: null
+    id: 410
+    index: 1
+    legoAlias: update
+    oiAlias: ty_api_lego
+    processControllerAlias: null
+    uuid: '410'
+  inputFields:
+  - alias: description
+    apiLegoId: 410
+    apiLegoUuid: '410'
+    attributes: null
+    connectorPath: ''
+    constant: null
+    ct: null
+    description: null
+    dt: null
+    fieldName: description
+    fieldTpl: null
+    fieldValue: null
+    fromApiLegoId: 0
+    fromApiLegoOutputFieldAlias: null
+    fromApiLegoUuid: null
+    fvt: request
+    id: 1177
+    ift: update
+    inputFieldDescribeId: 0
+    name: description
+    requestParamName: description
+    sessionParamName: null
+    uuid: '1177'
+    validate: null
+  - alias: id
+    apiLegoId: 410
+    apiLegoUuid: '410'
+    attributes: ''
+    connectorPath: ''
+    constant: ''
+    ct: eq
+    description: ''
+    dt: string
+    fieldName: id
+    fieldTpl: ''
+    fieldValue: null
+    fromApiLegoId: 0
+    fromApiLegoOutputFieldAlias: ''
+    fromApiLegoUuid: '0'
+    fvt: request
+    id: 1178
+    ift: condition
+    inputFieldDescribeId: 0
+    name: id
+    requestParamName: id
+    sessionParamName: ''
+    uuid: '1178'
+    validate: '[{"validateName":"required"}]'
+  outputFields: [
+    ]
+authTypes:
+- alias: ty_auth
+  description: TYSession校验
+  id: 1
+  judgeAPIAlias: ty_auth_check
+  name: E端登录校验
+  noAuthErrorCode: -400

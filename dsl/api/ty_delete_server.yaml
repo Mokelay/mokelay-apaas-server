@@ -1,0 +1,52 @@
+api:
+  alias: ty_delete_server
+  authType: null
+  category: config
+  content: null
+  createDate: 2018-06-15T15:19:05Z
+  description: 删除服务器
+  id: 1302
+  method: GET
+  name: 删除
+  type: ty
+  url: null
+  version: version_2
+apiLegoViews:
+- apiLego:
+    apiAlias: ty_delete_server
+    attributes: null
+    description: 删除服务器
+    id: 6522
+    index: 1
+    legoAlias: delete
+    oiAlias: ty_server
+    processControllerAlias: null
+    uuid: FC03E7AA-A4DE-430B-AF85-AD526059F1B21529047103402
+  inputFields:
+  - alias: id
+    apiLegoId: 0
+    apiLegoUuid: FC03E7AA-A4DE-430B-AF85-AD526059F1B21529047103402
+    attributes: null
+    connectorPath: ''
+    constant: ''
+    ct: eq
+    description: ''
+    dt: int
+    fieldName: id
+    fieldTpl: ''
+    fieldValue: null
+    fromApiLegoId: 0
+    fromApiLegoOutputFieldAlias: ''
+    fromApiLegoUuid: ''
+    fvt: request
+    id: 59915
+    ift: condition
+    inputFieldDescribeId: 0
+    name: id
+    requestParamName: id
+    sessionParamName: ''
+    uuid: 83C563B8-79F4-481D-9AC2-E0ACBBF3C0CA1529047134079
+    validate: '[{"params":"id为必填字段","validateName":"required"}]'
+  outputFields: [
+    ]
+authTypes: null

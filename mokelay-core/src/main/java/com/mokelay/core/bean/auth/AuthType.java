@@ -16,7 +16,7 @@ public class AuthType extends SimpleIND implements IND, AliasBean {
     //判断执行的API
     private String judgeAPIAlias;
     //没有权限的错误代码
-    private Long noAuthErrorCode;
+    private int noAuthErrorCode;
 
     @Override
     public String getAlias() {
@@ -35,11 +35,11 @@ public class AuthType extends SimpleIND implements IND, AliasBean {
         this.judgeAPIAlias = judgeAPIAlias;
     }
 
-    public Long getNoAuthErrorCode() {
+    public int getNoAuthErrorCode() {
         return noAuthErrorCode;
     }
 
-    public void setNoAuthErrorCode(Long noAuthErrorCode) {
+    public void setNoAuthErrorCode(int noAuthErrorCode) {
         this.noAuthErrorCode = noAuthErrorCode;
     }
 }

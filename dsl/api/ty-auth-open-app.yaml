@@ -1,0 +1,16 @@
+api:
+  alias: ty-auth-open-app
+  authType: null
+  category: custom
+  content: null
+  createDate: 2018-01-25T20:16:56Z
+  description: null
+  id: 646
+  method: GET
+  name: 获取当前用户开通的APP
+  type: ty
+  url: /ty/openApps
+  version: version_2
+apiLegoViews: [
+  ]
+authTypes: null

@@ -1,6 +1,7 @@
 package com.mokelay.core.manager.ext;
 
 import com.mokelay.MokelayBaseTest;
+import com.mokelay.base.bean.DBException;
 import com.mokelay.base.util.CollectionUtil;
 import com.mokelay.core.bean.task.Task;
 import com.mokelay.core.manager.TaskManager;
@@ -10,7 +11,7 @@ import java.util.List;
 
 public class YamlTaskManagerTest extends MokelayBaseTest {
 
-    public void testList() {
+    public void testList() throws DBException {
         TaskManager taskManager = (TaskManager) context.getBean("taskManager");
         List<Task> tasks = taskManager.list();
         if (CollectionUtil.isValid(tasks)) {

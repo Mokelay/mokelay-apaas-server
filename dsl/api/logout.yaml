@@ -1,0 +1,29 @@
+api:
+  alias: logout
+  authType: null
+  category: config
+  content: null
+  createDate: 2017-08-06T23:37:13Z
+  description: 登出
+  id: 16
+  method: POST
+  name: 登出
+  type: ty
+  url: null
+  version: version_2
+apiLegoViews:
+- apiLego:
+    apiAlias: logout
+    attributes: null
+    description: null
+    id: 24
+    index: 1
+    legoAlias: sessionDestroy
+    oiAlias: ty_test_user
+    processControllerAlias: null
+    uuid: '24'
+  inputFields: [
+    ]
+  outputFields: [
+    ]
+authTypes: null

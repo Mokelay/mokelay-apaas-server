@@ -1,0 +1,58 @@
+api:
+  alias: ty-delete-user-app-role
+  authType: ty_auth
+  category: config
+  content: null
+  createDate: 2017-11-14T10:56:06Z
+  description: 根据id 删除用户授权
+  id: 464
+  method: POST
+  name: 删除TY用户授权
+  type: ty
+  url: ty-delete-user-app-role
+  version: version_2
+apiLegoViews:
+- apiLego:
+    apiAlias: ty-delete-user-app-role
+    attributes: null
+    description: null
+    id: 863
+    index: 1
+    legoAlias: delete
+    oiAlias: ty_user_app_role
+    processControllerAlias: null
+    uuid: '863'
+  inputFields:
+  - alias: id
+    apiLegoId: 863
+    apiLegoUuid: '863'
+    attributes: ''
+    connectorPath: ''
+    constant: ''
+    ct: eq
+    description: ''
+    dt: string
+    fieldName: id
+    fieldTpl: null
+    fieldValue: null
+    fromApiLegoId: 0
+    fromApiLegoOutputFieldAlias: ''
+    fromApiLegoUuid: '0'
+    fvt: request
+    id: 5078
+    ift: condition
+    inputFieldDescribeId: 0
+    name: id
+    requestParamName: id
+    sessionParamName: ''
+    uuid: '5078'
+    validate: '[{"validateName":"required"}]'
+  outputFields: [
+    ]
+authTypes:
+- alias: ty_auth
+  description: TYSession校验
+  id: 1
+  judgeAPIAlias: ty_auth_check
+  name: E端登录校验
+  noAuthErrorCode: -400

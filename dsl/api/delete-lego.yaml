@@ -1,0 +1,132 @@
+api:
+  alias: delete-lego
+  authType: ty_auth
+  category: config
+  content: null
+  createDate: 2017-08-31T10:47:14Z
+  description: 删除乐高
+  id: 238
+  method: POST
+  name: 删除乐高
+  type: ty
+  url: null
+  version: version_2
+apiLegoViews:
+- apiLego:
+    apiAlias: delete-lego
+    attributes: null
+    description: null
+    id: 332
+    index: 1
+    legoAlias: delete
+    oiAlias: ty_output_field_describe
+    processControllerAlias: null
+    uuid: '332'
+  inputFields:
+  - alias: legoAlias
+    apiLegoId: 332
+    apiLegoUuid: '332'
+    attributes: null
+    connectorPath: ''
+    constant: null
+    ct: eq
+    description: null
+    dt: string
+    fieldName: legoAlias
+    fieldTpl: null
+    fieldValue: null
+    fromApiLegoId: 0
+    fromApiLegoOutputFieldAlias: null
+    fromApiLegoUuid: null
+    fvt: request
+    id: 831
+    ift: condition
+    inputFieldDescribeId: 0
+    name: legoAlias
+    requestParamName: legoAlias
+    sessionParamName: null
+    uuid: '831'
+    validate: '[{"validateName":"required"}]'
+  outputFields: [
+    ]
+- apiLego:
+    apiAlias: delete-lego
+    attributes: null
+    description: null
+    id: 331
+    index: 2
+    legoAlias: delete
+    oiAlias: ty_input_field_describe
+    processControllerAlias: null
+    uuid: '331'
+  inputFields:
+  - alias: legoAlias
+    apiLegoId: 331
+    apiLegoUuid: '331'
+    attributes: null
+    connectorPath: ''
+    constant: null
+    ct: eq
+    description: null
+    dt: string
+    fieldName: legoAlias
+    fieldTpl: null
+    fieldValue: null
+    fromApiLegoId: 0
+    fromApiLegoOutputFieldAlias: null
+    fromApiLegoUuid: null
+    fvt: request
+    id: 829
+    ift: condition
+    inputFieldDescribeId: 0
+    name: legoAlias
+    requestParamName: legoAlias
+    sessionParamName: null
+    uuid: '829'
+    validate: '[{"validateName":"required"}]'
+  outputFields: [
+    ]
+- apiLego:
+    apiAlias: delete-lego
+    attributes: null
+    description: null
+    id: 330
+    index: 3
+    legoAlias: delete
+    oiAlias: ty_lego
+    processControllerAlias: null
+    uuid: '330'
+  inputFields:
+  - alias: alias
+    apiLegoId: 330
+    apiLegoUuid: '330'
+    attributes: null
+    connectorPath: ''
+    constant: null
+    ct: eq
+    description: null
+    dt: string
+    fieldName: alias
+    fieldTpl: null
+    fieldValue: null
+    fromApiLegoId: 0
+    fromApiLegoOutputFieldAlias: null
+    fromApiLegoUuid: null
+    fvt: request
+    id: 830
+    ift: condition
+    inputFieldDescribeId: 0
+    name: alias
+    requestParamName: legoAlias
+    sessionParamName: null
+    uuid: '830'
+    validate: '[{"validateName":"required"}]'
+  outputFields: [
+    ]
+authTypes:
+- alias: ty_auth
+  description: TYSession校验
+  id: 1
+  judgeAPIAlias: ty_auth_check
+  name: E端登录校验
+  noAuthErrorCode: -400

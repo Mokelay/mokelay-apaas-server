@@ -1,0 +1,65 @@
+api:
+  alias: ty_b_session_check
+  authType: ''
+  category: config
+  content: null
+  createDate: 2018-07-14T15:34:12Z
+  description: ''
+  id: 1608
+  method: POST
+  name: B端session校验
+  type: ty
+  url: ''
+  version: version_2
+apiLegoViews:
+- apiLego:
+    apiAlias: ty_b_session_check
+    attributes: null
+    description: ''
+    id: 10203
+    index: 1
+    legoAlias: sessionRead
+    oiAlias: null
+    processControllerAlias: null
+    uuid: 18A29BE5-2561-4EF2-A96A-979A4BA247421531553672572
+  inputFields:
+  - alias: TY_SESSION_B_USER
+    apiLegoId: 0
+    apiLegoUuid: 18A29BE5-2561-4EF2-A96A-979A4BA247421531553672572
+    attributes: null
+    connectorPath: ''
+    constant: ''
+    ct: eq
+    description: ''
+    dt: string
+    fieldName: TY_SESSION_B_USER
+    fieldTpl: ''
+    fieldValue: null
+    fromApiLegoId: 0
+    fromApiLegoOutputFieldAlias: ''
+    fromApiLegoUuid: ''
+    fvt: ''
+    id: 90675
+    ift: common
+    inputFieldDescribeId: 0
+    name: 读取B用户信息
+    requestParamName: formater_type
+    sessionParamName: ''
+    uuid: A55EAE57-B797-4AB6-B73D-6F4ED7FB24E81531553672573
+    validate: null
+  outputFields:
+  - alias: data
+    apiLegoId: 0
+    apiLegoUuid: 18A29BE5-2561-4EF2-A96A-979A4BA247421531553672572
+    description: ''
+    dt: ''
+    fieldName: data
+    fieldValue: null
+    handle: '[{"handleName":"dataResultEqJudge","params":"NULL,-410"}]'
+    id: 13137
+    name: 读取数据
+    oft: common
+    outputFieldDescribeId: 0
+    response: false
+    uuid: A92E5686-2AB1-4B77-8510-C66C60ED27CA1531553672573
+authTypes: null

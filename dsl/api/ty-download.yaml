@@ -1,0 +1,65 @@
+api:
+  alias: ty-download
+  authType: null
+  category: config
+  content: null
+  createDate: 2017-08-02T15:04:35Z
+  description: TY下载
+  id: 610
+  method: GET
+  name: TY下载
+  type: ty
+  url: ty-download
+  version: version_2
+apiLegoViews:
+- apiLego:
+    apiAlias: ty-download
+    attributes: null
+    description: null
+    id: 1225
+    index: 1
+    legoAlias: fileRead
+    oiAlias: uploadImg
+    processControllerAlias: null
+    uuid: '1225'
+  inputFields:
+  - alias: file_serialize_name
+    apiLegoId: 1225
+    apiLegoUuid: '1225'
+    attributes: null
+    connectorPath: null
+    constant: null
+    ct: eq
+    description: 文件序列名
+    dt: string
+    fieldName: file_serialize_name
+    fieldTpl: null
+    fieldValue: null
+    fromApiLegoId: 0
+    fromApiLegoOutputFieldAlias: null
+    fromApiLegoUuid: '0'
+    fvt: request
+    id: 8175
+    ift: common
+    inputFieldDescribeId: 0
+    name: 文件序列名
+    requestParamName: file
+    sessionParamName: null
+    uuid: '8175'
+    validate: null
+  outputFields:
+  - alias: file_stream
+    apiLegoId: 1225
+    apiLegoUuid: '1225'
+    description: 下载文件
+    dt: multipart
+    fieldName: file_stream
+    fieldValue: null
+    handle: null
+    id: 1349
+    name: 下载文件
+    oft: common
+    outputFieldDescribeId: 0
+    response: true
+    uuid: '1349'
+authTypes: null

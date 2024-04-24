@@ -1,0 +1,113 @@
+api:
+  alias: ty_delete_apiType
+  authType: null
+  category: config
+  content: null
+  createDate: 2018-06-11T23:35:31Z
+  description: 删除接口分类
+  id: 1280
+  method: GET
+  name: 删除接口分类
+  type: ty
+  url: null
+  version: version_2
+apiLegoViews:
+- apiLego:
+    apiAlias: ty_delete_apiType
+    attributes: null
+    description: 删除接口分类
+    id: 9912
+    index: 1
+    legoAlias: delete
+    oiAlias: ty_api_type
+    processControllerAlias: null
+    uuid: 4D19FB6E-FF7D-4F4A-BE46-9BF0CDC475FF1528731295669
+  inputFields:
+  - alias: alias
+    apiLegoId: 0
+    apiLegoUuid: 4D19FB6E-FF7D-4F4A-BE46-9BF0CDC475FF1528731295669
+    attributes: null
+    connectorPath: ''
+    constant: ''
+    ct: eq
+    description: ''
+    dt: string
+    fieldName: alias
+    fieldTpl: ''
+    fieldValue: null
+    fromApiLegoId: 0
+    fromApiLegoOutputFieldAlias: ''
+    fromApiLegoUuid: ''
+    fvt: request
+    id: 88173
+    ift: condition
+    inputFieldDescribeId: 0
+    name: 别名
+    requestParamName: alias
+    sessionParamName: ''
+    uuid: CA83B057-DBE9-4571-AF40-825BF54B0E7F1531726347134
+    validate: null
+  outputFields: [
+    ]
+- apiLego:
+    apiAlias: ty_delete_apiType
+    attributes: null
+    description: ''
+    id: 9913
+    index: 2
+    legoAlias: delete
+    oiAlias: ty_owner
+    processControllerAlias: null
+    uuid: 0FBE3C98-63DD-4330-A42A-DC2E9140A3B91531726247797
+  inputFields:
+  - alias: alias
+    apiLegoId: 0
+    apiLegoUuid: 0FBE3C98-63DD-4330-A42A-DC2E9140A3B91531726247797
+    attributes: null
+    connectorPath: ''
+    constant: ''
+    ct: eq
+    description: ''
+    dt: string
+    fieldName: alias
+    fieldTpl: ''
+    fieldValue: null
+    fromApiLegoId: 0
+    fromApiLegoOutputFieldAlias: ''
+    fromApiLegoUuid: ''
+    fvt: request
+    id: 88174
+    ift: condition
+    inputFieldDescribeId: 0
+    name: 对应的别名
+    requestParamName: alias
+    sessionParamName: ''
+    uuid: 638CBE76-E2F6-4558-ADA8-F24A3AEF32731531726268344
+    validate: null
+  - alias: ownerType
+    apiLegoId: 0
+    apiLegoUuid: 0FBE3C98-63DD-4330-A42A-DC2E9140A3B91531726247797
+    attributes: null
+    connectorPath: ''
+    constant: api_type
+    ct: eq
+    description: ''
+    dt: string
+    fieldName: ownerType
+    fieldTpl: ''
+    fieldValue: null
+    fromApiLegoId: 0
+    fromApiLegoOutputFieldAlias: ''
+    fromApiLegoUuid: ''
+    fvt: constant
+    id: 88175
+    ift: condition
+    inputFieldDescribeId: 0
+    name: 管理员类型
+    requestParamName: ownerType
+    sessionParamName: ''
+    uuid: D9636D71-45E1-42E7-885B-997E4544B77A1531726268344
+    validate: null
+  outputFields: [
+    ]
+authTypes: null
