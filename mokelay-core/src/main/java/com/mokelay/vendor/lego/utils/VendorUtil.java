@@ -6,6 +6,7 @@ import com.mokelay.base.util.StringUtil;
 import com.mokelay.api.lego.LegoException;
 import com.mokelay.core.lego.system.TYPPC;
 import org.apache.log4j.Logger;
+import org.springframework.core.io.FileSystemResource;
 
 import java.io.*;
 import java.net.URL;
@@ -24,22 +25,6 @@ public class VendorUtil {
 
     private static final long ERROR_LEGO_NET_RESOURCE_INVALIDATE = 300054L;
     private static final long ERROR_LEGO_NET_RESOURCE_SAVE_ERROR = 300055L;
-
-    /**
-     * 获取上传临时目录
-     * @return
-     */
-    public static String getTmpPath() {
-        String locaPath = TYPPC.getTYProp("upload.temp.dir");
-        if (StringUtil.isInvalid(locaPath)) {
-            locaPath = "/";
-        }
-        File tmpDir = new File(locaPath);
-        if (!tmpDir.exists()) {
-            tmpDir.mkdirs();
-        }
-        return locaPath;
-    }
 
     /**
      * 根据网络地址，保存文件到临时目录
@@ -69,7 +54,7 @@ public class VendorUtil {
             BufferedInputStream in = new BufferedInputStream(uc.getInputStream());
             //先将微信媒体文件存到本地
             String locaPath = VendorUtil.class.getResource("/").getPath();
-            String tmpPath = TYPPC.getTYProp("upload.temp.dir");
+            String tmpPath = TYPPC.Upload_Temp_Dir;
             if(StringUtil.isValid(tmpPath)){
                 File tmpFile = new File(tmpPath);
                 if(!tmpFile.exists()){
@@ -80,7 +65,7 @@ public class VendorUtil {
 
             String filePath = locaPath+fileName;
             logger.info("[NetResourceToLocalFile] filePath="+filePath);
-            File file =  new File(filePath);
+            File file =  new FileSystemResource(filePath).getFile();
             if (!file.getParentFile().exists()) {
                 file.getParentFile().mkdirs();
             }

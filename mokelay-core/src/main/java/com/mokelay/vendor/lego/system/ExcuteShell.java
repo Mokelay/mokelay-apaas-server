@@ -8,6 +8,7 @@ import com.mokelay.api.lego.Lego;
 import com.mokelay.api.lego.LegoException;
 import com.mokelay.api.lego.Output;
 import org.apache.log4j.Logger;
+import org.springframework.core.io.FileSystemResource;
 import org.springframework.stereotype.Component;
 
 import java.io.BufferedReader;
@@ -42,14 +43,14 @@ public class ExcuteShell implements ExceptionCode, Lego{
             throw new LegoException("无效的shell命令",Lego_Error_Shell_Cmd_Null);
         }
         if(StringUtil.isInvalid(dir)){
-            String tmpPath = TYPPC.getTYProp("upload.temp.dir");
+            String tmpPath = TYPPC.Upload_Temp_Dir;
             if(StringUtil.isValid(tmpPath)){
                 dir = tmpPath;
             }else{
                 dir = "/";
             }
         }
-        File tmpDir = new File(dir);
+        File tmpDir = new FileSystemResource(dir).getFile();
         if(!tmpDir.exists()){
             tmpDir.mkdirs();
         }

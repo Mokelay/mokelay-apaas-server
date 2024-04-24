@@ -8,6 +8,7 @@ import com.mokelay.api.lego.Output;
 import com.mokelay.core.lego.system.TYPPC;
 import com.mokelay.vendor.lego.wx.util.WxUtil;
 import org.apache.log4j.Logger;
+import org.springframework.core.io.FileSystemResource;
 import org.springframework.stereotype.Component;
 
 import java.io.*;
@@ -64,7 +65,7 @@ public class WxJssdkImgToInputStream extends WxAuth{
             BufferedInputStream in = new BufferedInputStream(uc.getInputStream());
             //先将微信媒体文件存到本地
             String locaPath = WxJssdkImgToInputStream.class.getResource("/").getPath();
-            String tmpPath = TYPPC.getTYProp("upload.temp.dir");
+            String tmpPath = TYPPC.Upload_Temp_Dir;
             if(StringUtil.isValid(tmpPath)){
                 File tmpFile = new File(tmpPath);
                 if(!tmpFile.getParentFile().exists()){
@@ -74,7 +75,7 @@ public class WxJssdkImgToInputStream extends WxAuth{
             }
             String filePath = locaPath+fileName;
             logger.info("[wxJssdkImgToInputStream] filePath="+filePath);
-            File file =  new File(filePath);
+            File file =  new FileSystemResource(filePath).getFile();
             if (!file.getParentFile().exists()) {
                 file.getParentFile().mkdirs();
             }
@@ -89,7 +90,7 @@ public class WxJssdkImgToInputStream extends WxAuth{
             in.close();
             out.close();
 
-            output.setOutputValue(Output_Key_Wx_Media_Stream,new File(filePath));
+            output.setOutputValue(Output_Key_Wx_Media_Stream,new FileSystemResource(filePath).getFile());
 
         } catch (DBException e) {
             e.printStackTrace();

@@ -44,4 +44,6 @@ public class TYPPC extends PropertyPlaceholderConfigurer {
     public static String getTYProp(String name) {
         return TY_Prop_Data.get(name);
     }
+
+    public static final String Upload_Temp_Dir = TYPPC.getTYProp("upload.temp.dir");
 }

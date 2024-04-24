@@ -16,6 +16,7 @@ import com.itextpdf.text.pdf.PdfWriter;
 import com.itextpdf.tool.xml.XMLWorkerFontProvider;
 import com.itextpdf.tool.xml.XMLWorkerHelper;
 import org.jsoup.Jsoup;
+import org.springframework.core.io.FileSystemResource;
 import org.springframework.stereotype.Component;
 
 import java.io.ByteArrayInputStream;
@@ -47,7 +48,7 @@ public class HtmlToPdf implements Lego {
         String pdfName = input.getInputValue(Input_Key_Pdf_Name);
         try {
             String locaPath = HtmlToPdf.class.getResource("/").getPath();
-            String tmpPath = TYPPC.getTYProp("upload.temp.dir");
+            String tmpPath = TYPPC.Upload_Temp_Dir;
             if(StringUtil.isValid(tmpPath)){
                 File tmpFile = new File(tmpPath);
                 if(!tmpFile.getParentFile().exists()){
@@ -65,7 +66,7 @@ public class HtmlToPdf implements Lego {
             /*1、创建document对象*/
             Document doc = new Document(PageSize.A4);
             /*2、创建PdfWriter实例*/
-            PdfWriter pdfWriter = PdfWriter.getInstance(doc, new FileOutputStream(tmpFilePath));
+            PdfWriter pdfWriter = PdfWriter.getInstance(doc, new FileOutputStream(new FileSystemResource(tmpFilePath).getFile()));
             /*3、打开文档*/
             doc.open();
             // 标准化HTML代码
