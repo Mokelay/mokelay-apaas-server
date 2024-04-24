@@ -105,7 +105,7 @@ public class TYCacheService {
     }
 
     @Cacheable(value = "tasks")
-    public List<Task> listTasks(){
+    public List<Task> listTasks() throws DBException {
         return taskManager.list();
     }
 }

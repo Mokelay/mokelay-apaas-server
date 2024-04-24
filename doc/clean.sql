@@ -30,3 +30,5 @@ DELETE FROM db_ty.ty_page_building_block where pageAlias is null;
 DELETE FROM db_ty.ty_file_storage;
 DELETE FROM db_ty.ty_api_lego;
 DELETE FROM db_ty.ty_api_log;
+
+DROP TABLE db_ty.ty_api_lego;

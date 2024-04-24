@@ -1,6 +1,7 @@
 package com.mokelay.core.manager.ext;
 
 import com.mokelay.MokelayBaseTest;
+import com.mokelay.base.bean.DBException;
 import com.mokelay.base.util.CollectionUtil;
 import com.mokelay.core.bean.auth.AuthType;
 import com.mokelay.core.manager.AuthTypeManager;
@@ -10,7 +11,7 @@ import java.util.List;
 
 public class YAMLAuthTypeManagerTest extends MokelayBaseTest {
 
-    public void testGetAuthTypeByAlias() {
+    public void testGetAuthTypeByAlias() throws DBException {
         AuthTypeManager authTypeManager = (AuthTypeManager) context.getBean("authTypeManager");
 
         String atAlais = "ty_b_session";
@@ -19,9 +20,9 @@ public class YAMLAuthTypeManagerTest extends MokelayBaseTest {
         System.out.println(at.getJudgeAPIAlias());
     }
 
-    public void testGetAuthTypes() {
+    public void testGetAuthTypes() throws DBException {
         AuthTypeManager authTypeManager = (AuthTypeManager) context.getBean("authTypeManager");
-        List<AuthType> ats = authTypeManager.getAuthTypes();
+        List<AuthType> ats = authTypeManager.list();
         assertEquals(ats.size(), 3);
         if (CollectionUtil.isValid(ats)) {
             for (AuthType at : ats) {

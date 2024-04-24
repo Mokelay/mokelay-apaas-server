@@ -2,6 +2,7 @@ package com.mokelay.db;
 
 import com.mokelay.DBBaseTest;
 import com.mokelay.base.bean.DBException;
+import com.mokelay.base.manager.ext.YamlBasicManager;
 import com.mokelay.base.util.CollectionUtil;
 import com.mokelay.core.bean.server.API;
 import com.mokelay.core.bean.view.APIView;
@@ -35,7 +36,7 @@ public class APITransferTest extends DBBaseTest {
             System.out.println("需要迁移API数量：" + apiList.size());
             if (CollectionUtil.isValid(apiList)) {
                 //存储地址
-                String apiFolder = TYPPC.getTYProp("mokelay.config.dsl") + "/api/";
+                String apiFolder = YamlBasicManager.DEFAULT_Mokelay_DS + "/api/";
 
                 Representer representer = new Representer();
                 representer.addClassTag(APIView.class, Tag.MAP);
@@ -81,7 +82,7 @@ public class APITransferTest extends DBBaseTest {
      * Test Read API
      */
     public void testReadAPI() throws FileNotFoundException {
-        String folder = TYPPC.getTYProp("mokelay.config.dsl") + "/api";
+        String folder = YamlBasicManager.DEFAULT_Mokelay_DS + "/api";
 
         InputStream inputStream = new FileInputStream(folder + "/ty/add-ad.yaml");
 

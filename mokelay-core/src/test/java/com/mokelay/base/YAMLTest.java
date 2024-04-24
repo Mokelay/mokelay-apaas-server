@@ -1,6 +1,7 @@
 package com.mokelay.base;
 
 import com.mokelay.MokelayBaseTest;
+import com.mokelay.base.manager.ext.YamlBasicManager;
 import com.mokelay.core.lego.system.TYPPC;
 import org.yaml.snakeyaml.DumperOptions;
 import org.yaml.snakeyaml.Yaml;
@@ -49,7 +50,7 @@ public class YAMLTest extends MokelayBaseTest {
         options.setDefaultFlowStyle(DumperOptions.FlowStyle.BLOCK); // 使用块风格
         options.setPrettyFlow(true); // 生成更易读的YAML
 
-        String folder = TYPPC.getTYProp("mokelay.config.dsl");
+        String folder = YamlBasicManager.DEFAULT_Mokelay_DS;
 //        System.out.println(folder);
         // 创建Yaml实例
         Yaml yaml = new Yaml(options);
@@ -77,7 +78,7 @@ public class YAMLTest extends MokelayBaseTest {
         Yaml yaml = new Yaml(new Constructor(Map.class));
 
         try {
-            String folder = TYPPC.getTYProp("mokelay.config.dsl");
+            String folder = YamlBasicManager.DEFAULT_Mokelay_DS;
             // 读取YAML文件
             InputStream inputStream = new FileInputStream(folder + "/output.yaml");
 

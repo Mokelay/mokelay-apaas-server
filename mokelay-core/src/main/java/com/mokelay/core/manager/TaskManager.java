@@ -1,5 +1,6 @@
 package com.mokelay.core.manager;
 
+import com.mokelay.base.manager.BasicManager;
 import com.mokelay.core.bean.task.Task;
 
 import java.util.List;
@@ -9,11 +10,5 @@ import java.util.List;
  * <p>
  * Created by ty on 2017/12/10.
  */
-public interface TaskManager {
-    /**
-     * List Tasks
-     *
-     * @return
-     */
-    public List<Task> list();
+public interface TaskManager extends BasicManager {
 }
