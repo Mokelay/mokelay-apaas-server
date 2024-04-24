@@ -1,5 +1,6 @@
 package com.mokelay.db.bean.view;
 
+import com.mokelay.db.bean.oi.Connector;
 import com.mokelay.db.bean.oi.DS;
 
 import java.util.List;
@@ -17,6 +18,8 @@ public class DSView {
 
     private List<OIView> oiViews;
 
+    private List<Connector> connectors;
+
     public DS getDs() {
         return ds;
     }
@@ -31,5 +34,13 @@ public class DSView {
 
     public void setOiViews(List<OIView> oiViews) {
         this.oiViews = oiViews;
+    }
+
+    public List<Connector> getConnectors() {
+        return connectors;
+    }
+
+    public void setConnectors(List<Connector> connectors) {
+        this.connectors = connectors;
     }
 }

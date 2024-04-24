@@ -13,6 +13,7 @@ import com.mokelay.db.bean.oi.Field;
 import com.mokelay.db.bean.oi.OI;
 import com.mokelay.db.bean.view.DSView;
 import com.mokelay.db.bean.view.OIView;
+import com.mokelay.db.manager.ConnectorManager;
 import com.mokelay.db.manager.DSManager;
 import com.mokelay.db.manager.FieldManager;
 import com.mokelay.db.manager.OIManager;
@@ -31,6 +32,7 @@ public class DSTransferTest extends DBBaseTest {
         DSManager dsManager = (DSManager) context.getBean("dsManager");
         OIManager oiManager = (OIManager) context.getBean("oiManager");
         FieldManager fieldManager = (FieldManager) context.getBean("fieldManager");
+        ConnectorManager connectorManager = (ConnectorManager) context.getBean("connectorManager");
 
         //存储地址
         String dsFolder = YamlBasicManager.DEFAULT_Mokelay_DS + "/ds/";
@@ -68,6 +70,9 @@ public class DSTransferTest extends DBBaseTest {
                     dsView.setOiViews(oiViews);
                 }
 
+                //处理Connectors
+                //这里Connector数据已经做了清理，都是TY数据库的connector
+                dsView.setConnectors(connectorManager.list());
 
                 Yaml yaml = new Yaml(representer, options);
                 // 写入文件
