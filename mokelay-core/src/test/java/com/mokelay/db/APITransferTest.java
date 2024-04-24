@@ -10,6 +10,7 @@ import com.mokelay.core.manager.APIManager;
 import com.mokelay.core.manager.TYDriver;
 import com.mokelay.core.manager.ext.YamlAPIViewManager;
 import com.mokelay.core.service.APIContentService;
+import org.springframework.core.io.FileSystemResource;
 import org.yaml.snakeyaml.DumperOptions;
 import org.yaml.snakeyaml.Yaml;
 import org.yaml.snakeyaml.nodes.Tag;
@@ -47,7 +48,7 @@ public class APITransferTest extends DBBaseTest {
                 options.setPrettyFlow(true); // 生成更易读的YAML
 
                 for (API api : apiList) {
-                    File directory = new File(apiFolder);
+                    File directory = new FileSystemResource(apiFolder).getFile();
 
                     // 检查文件夹是否存在
                     if (!directory.exists()) {
@@ -63,7 +64,8 @@ public class APITransferTest extends DBBaseTest {
                     Yaml yaml = new Yaml(representer, options);
                     // 写入文件
                     try {
-                        FileWriter writer = new FileWriter(apiFolder + api.getAlias() + ".yaml");
+                        File f = new FileSystemResource(apiFolder + api.getAlias() + ".yaml").getFile();
+                        FileWriter writer = new FileWriter(f);
 
                         APIView apiView = APIContentService.buildAPIView(tyDriver.getTyCacheService(), api.getAlias());
                         apiView.getApi().setContent(null);

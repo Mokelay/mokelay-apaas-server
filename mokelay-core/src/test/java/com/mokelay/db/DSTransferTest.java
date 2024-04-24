@@ -17,11 +17,13 @@ import com.mokelay.db.manager.ConnectorManager;
 import com.mokelay.db.manager.DSManager;
 import com.mokelay.db.manager.FieldManager;
 import com.mokelay.db.manager.OIManager;
+import org.springframework.core.io.FileSystemResource;
 import org.yaml.snakeyaml.DumperOptions;
 import org.yaml.snakeyaml.Yaml;
 import org.yaml.snakeyaml.nodes.Tag;
 import org.yaml.snakeyaml.representer.Representer;
 
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -33,9 +35,6 @@ public class DSTransferTest extends DBBaseTest {
         OIManager oiManager = (OIManager) context.getBean("oiManager");
         FieldManager fieldManager = (FieldManager) context.getBean("fieldManager");
         ConnectorManager connectorManager = (ConnectorManager) context.getBean("connectorManager");
-
-        //存储地址
-        String dsFolder = YamlBasicManager.DEFAULT_Mokelay_DS + "/ds/";
 
         Representer representer = new Representer();
         representer.addClassTag(DSView.class, Tag.MAP);
@@ -77,7 +76,10 @@ public class DSTransferTest extends DBBaseTest {
                 Yaml yaml = new Yaml(representer, options);
                 // 写入文件
                 try {
-                    FileWriter writer = new FileWriter(dsFolder + ds.getAlias() + ".yaml");
+                    //存储地址
+                    String dsFolder = YamlBasicManager.DEFAULT_Mokelay_DS + "/ds/";
+                    File f = new FileSystemResource(dsFolder + ds.getAlias() + ".yaml").getFile();
+                    FileWriter writer = new FileWriter(f);
                     yaml.dump(dsView, writer);
                 } catch (IOException e) {
                     e.printStackTrace();

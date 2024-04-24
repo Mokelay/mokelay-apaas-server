@@ -10,6 +10,7 @@ import com.mokelay.core.bean.view.APIView;
 import com.mokelay.core.lego.system.TYPPC;
 import com.mokelay.db.bean.oi.DS;
 import com.mokelay.db.bean.oi.OI;
+import org.springframework.core.io.FileSystemResource;
 import org.yaml.snakeyaml.Yaml;
 import org.yaml.snakeyaml.constructor.Constructor;
 
@@ -77,7 +78,8 @@ public abstract class YamlBasicManager<T extends Identified> implements BasicMan
     @Override
     public List list() throws DBException {
         String path = connectionUrl + resource;
-        File f = new File(path);
+        File f = new FileSystemResource(path).getFile();
+//        File f = new File(path);
         if (f.isDirectory()) {
             File[] listOfFiles = f.listFiles();
 
