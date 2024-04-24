@@ -10,6 +10,9 @@ import java.util.List;
  * Created by CarlChen on 2017/5/25.
  */
 public class DSView {
+    public DSView() {
+    }
+
     private DS ds;
 
     private List<OIView> oiViews;
