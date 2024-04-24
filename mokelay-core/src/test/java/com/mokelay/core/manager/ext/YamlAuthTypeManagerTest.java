@@ -9,7 +9,7 @@ import junit.framework.TestCase;
 
 import java.util.List;
 
-public class YAMLAuthTypeManagerTest extends MokelayBaseTest {
+public class YamlAuthTypeManagerTest extends MokelayBaseTest {
 
     public void testGetAuthTypeByAlias() throws DBException {
         AuthTypeManager authTypeManager = (AuthTypeManager) context.getBean("authTypeManager");

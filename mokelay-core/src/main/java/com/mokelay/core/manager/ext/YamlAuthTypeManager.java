@@ -10,9 +10,9 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 
 @Component("authTypeManager")
-public class YAMLAuthTypeManager extends YamlBasicManager implements AuthTypeManager {
+public class YamlAuthTypeManager extends YamlBasicManager implements AuthTypeManager {
 
-    public YAMLAuthTypeManager() {
+    public YamlAuthTypeManager() {
         super(AuthType.class, DEFAULT_Mokelay_DS, "/auth_type/auth_type.yaml");
     }
 

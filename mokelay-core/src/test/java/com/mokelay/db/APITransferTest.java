@@ -6,9 +6,9 @@ import com.mokelay.base.manager.ext.YamlBasicManager;
 import com.mokelay.base.util.CollectionUtil;
 import com.mokelay.core.bean.server.API;
 import com.mokelay.core.bean.view.APIView;
-import com.mokelay.core.lego.system.TYPPC;
 import com.mokelay.core.manager.APIManager;
 import com.mokelay.core.manager.TYDriver;
+import com.mokelay.core.manager.ext.YamlAPIViewManager;
 import com.mokelay.core.service.APIContentService;
 import org.yaml.snakeyaml.DumperOptions;
 import org.yaml.snakeyaml.Yaml;
@@ -17,8 +17,12 @@ import org.yaml.snakeyaml.nodes.Tag;
 import org.yaml.snakeyaml.representer.Representer;
 
 import java.io.*;
+import java.nio.file.*;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.io.IOException;
+
 
 /**
  * API Transfer Test
@@ -84,11 +88,28 @@ public class APITransferTest extends DBBaseTest {
     public void testReadAPI() throws FileNotFoundException {
         String folder = YamlBasicManager.DEFAULT_Mokelay_DS;
 
-        InputStream inputStream = new FileInputStream(folder + "/api/add-ad.yaml");
+        _read(folder + "/api/add-ad.yaml");
+    }
+
+    private APIView _read(String fileName) throws FileNotFoundException {
+        InputStream inputStream = new FileInputStream(fileName);
 
         // 将YAML内容转换为Java对象
         Yaml yaml = new Yaml(new Constructor(Map.class));
         APIView data = yaml.loadAs(inputStream, APIView.class);
-        System.out.println(data);
+        return data;
+    }
+
+    /**
+     * Test List API
+     */
+    public void testListAPI() throws FileNotFoundException {
+        YamlAPIViewManager apiViewManager = (YamlAPIViewManager) context.getBean("apiViewManager");
+        try {
+            List apiList = apiViewManager.list();
+            System.out.println(apiList.size());
+        } catch (DBException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
