@@ -31,4 +31,6 @@ DELETE FROM db_ty.ty_file_storage;
 DELETE FROM db_ty.ty_api_lego;
 DELETE FROM db_ty.ty_api_log;
 
+DELETE FROM db_ty.ty_connector where fromOIAlias not in (select alias from db_ty.ty_oi);
+
 DROP TABLE db_ty.ty_api_lego;
