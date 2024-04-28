@@ -1,6 +1,5 @@
 package com.mokelay.db.lego;
 
-import com.mokelay.api.bean.server.InputField;
 import com.mokelay.api.lego.Input;
 import com.mokelay.api.lego.Lego;
 import com.mokelay.api.lego.LegoException;
@@ -13,10 +12,10 @@ import com.mokelay.core.manager.YamlDSViewManager;
 import com.mokelay.db.bean.view.DSView;
 import com.mokelay.db.bean.view.OIView;
 import com.mokelay.db.database.mysql.manager.MysqlDataManager;
+import com.mokelay.db.database.yaml.YamlDataManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -32,6 +31,8 @@ public class MokelayDataTransfer implements Lego {
     private YamlDSViewManager dsViewManager;
     @Autowired
     private MysqlDataManager mysqlDataManager;
+    @Autowired
+    private YamlDataManager yamlDataManager;
 
     public static final String Input_Key_Ignore_Transfer_OI = "ignore_transfer_oi";
 
@@ -46,7 +47,7 @@ public class MokelayDataTransfer implements Lego {
         try {
             List<DSView> dsViewList = dsViewManager.list();
             if (CollectionUtil.isValid(dsViewList)) {
-                List<String> result = new ArrayList<>();
+//                List<String> result = new ArrayList<>();
                 for (DSView dsView : dsViewList) {
                     List<OIView> oiViews = dsView.getOiViews();
                     for (OIView oiView : oiViews) {
@@ -59,14 +60,16 @@ public class MokelayDataTransfer implements Lego {
                         }
                         if (!ignore) {
                             DataList dataList = mysqlDataManager.list(oiView.getOi(), oiView.getFields(), null);
-                            result.add(oiView.getOi().getResource() + " Data Size:" + dataList.getTotalRecords());
+                            System.out.println(oiView.getOi().getResource() + " Data Size:" + dataList.getTotalRecords());
+
+                            yamlDataManager.batchCreate(oiView.getOi(), dataList.getList());
                         } else {
-//                            result.add(oiView.getOi().getResource() + " Ignore....");
+                            System.out.println(oiView.getOi().getResource() + " Ignore....");
                         }
                     }
                 }
 
-                System.out.println(result);
+//                System.out.println(result);
             }
         } catch (DBException e) {
             throw new RuntimeException(e);

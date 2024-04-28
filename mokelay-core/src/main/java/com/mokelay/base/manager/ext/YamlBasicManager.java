@@ -6,10 +6,7 @@ import com.mokelay.base.bean.Identified;
 import com.mokelay.base.bean.view.Condition;
 import com.mokelay.base.manager.BasicManager;
 import com.mokelay.base.util.ObjectUtil;
-import com.mokelay.core.bean.view.APIView;
 import com.mokelay.core.lego.system.TYPPC;
-import com.mokelay.db.bean.oi.DS;
-import com.mokelay.db.bean.oi.OI;
 import org.springframework.core.io.FileSystemResource;
 import org.yaml.snakeyaml.Yaml;
 import org.yaml.snakeyaml.constructor.Constructor;
@@ -26,18 +23,12 @@ import java.util.Map;
 /**
  * YAML Basic Manager
  */
-public abstract class YamlBasicManager<T extends Identified> implements BasicManager {
+public abstract class YamlBasicManager<T extends Identified> extends YamlManager implements BasicManager {
     public static final String DEFAULT_Mokelay_DS = TYPPC.getTYProp("mokelay.config.dsl");
 
     protected Class<T> beanClass;
     protected String connectionUrl;
     protected String resource;
-
-    public YamlBasicManager(Class<T> beanClass, DS ds, OI oi) {
-        this.beanClass = beanClass;
-        this.connectionUrl = ds.getConnectionUrl();
-        this.resource = oi.getResource();
-    }
 
     public YamlBasicManager(Class<T> beanClass, String connectionUrl, String resource) {
         this.beanClass = beanClass;
@@ -77,9 +68,8 @@ public abstract class YamlBasicManager<T extends Identified> implements BasicMan
 
     @Override
     public List list() throws DBException {
-        String path = connectionUrl + resource;
+        File path = getYamlBeanAddress(connectionUrl, resource);
         File f = new FileSystemResource(path).getFile();
-//        File f = new File(path);
         if (f.isDirectory()) {
             File[] listOfFiles = f.listFiles();
 
@@ -93,7 +83,7 @@ public abstract class YamlBasicManager<T extends Identified> implements BasicMan
                         if (file.getName().endsWith(".yaml")) {
                             InputStream inputStream = null;
                             try {
-                                inputStream = new FileInputStream(path + "/" + file.getName());
+                                inputStream = new FileInputStream(file);
                             } catch (FileNotFoundException e) {
                                 throw new DBException(e.getMessage(), e, 20000004);
                             }
