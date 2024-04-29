@@ -281,14 +281,14 @@ connectors:
   toOIAlias: ty_app
 ds:
   alias: db_ty
-  connectionPassword: nvwa_user
-  connectionUrl: jdbc:mysql://db201.dev.rs.com:3306/db_ty?useUnicode=true&characterEncoding=utf8&autoReconnect=true&user=nvwa&password=nvwa_user&zeroDateTimeBehavior=convertToNull&tinyInt1isBit=false&p
-  connectionUsername: nvwa
-  description: 红星开发环境数据库
+  connectionPassword:
+  connectionUrl: ../dsl
+  connectionUsername:
+  description: Mokelay核心配置数据库
   dsConfigFrom: file
-  dst: mysql
+  dst: yaml
   id: 2
-  name: TY核心库
+  name: Mokelay核心库
 oiViews:
 - fields:
   - description: ''

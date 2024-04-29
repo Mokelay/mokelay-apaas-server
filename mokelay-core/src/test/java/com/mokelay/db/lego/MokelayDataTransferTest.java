@@ -15,7 +15,7 @@ public class MokelayDataTransferTest extends MokelayBaseTest {
         List<InputField> inputFields = new ArrayList<>();
         InputField inputField = new InputField();
         inputField.setFieldName(MokelayDataTransfer.Input_Key_Ignore_Transfer_OI);
-        inputField.setFieldValue("ty_api,ty_api_lego,ty_auth_type,ty_ds,ty_oi,ty_field,ty_connector,ty_task");
+        inputField.setFieldValue("ty_api,ty_api_lego,ty_auth_type,ty_ds,ty_oi,ty_field,ty_connector,ty_task,ty_input_field,ty_output_field");
 
         inputFields.add(inputField);
 
